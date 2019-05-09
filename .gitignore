@@ -1,0 +1,16 @@
+# PureScript
+.psa*
+.psc*
+.pulp-cache
+.purs*
+generated-docs
+output
+
+# Bower
+bower_components
+
+# npm
+node_modules
+
+# macOS
+.DS_Store

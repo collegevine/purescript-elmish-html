@@ -1,0 +1,22 @@
+{
+  "name": "purescript-elmish-html",
+  "description": "Render HTML elements in Elmish",
+  "authors": [
+    "Daniel Gasienica <daniel@gasienica.ch>",
+    "Canopy Education, Inc."
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/collegevine/purescript-elmish-html.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-elmish": "^0.0.4"
+  }
+}
