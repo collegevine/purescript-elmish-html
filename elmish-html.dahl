@@ -11,7 +11,7 @@ For example:
           https://raw.githubusercontent.com/collegevine/purescript-elmish-html/master/elmish-html.dahl
 
     let additions = {
-      elmish-html = elmish-html "v0.0.4"
+      elmish-html = elmish-html "v0.0.2"
     }
 
     in  upstream // additions
