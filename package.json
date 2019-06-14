@@ -1,14 +1,15 @@
 {
   "name": "purescript-elmish-html",
   "description": "Render HTML elements in Elmish",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "author": "Canopy Education, Inc.",
   "contributors": [
     "Daniel Gasienica <daniel@gasienica.ch>"
   ],
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "build": "pulp build"
   },
   "keywords": [
     "purescript",
@@ -18,8 +19,8 @@
   ],
   "devDependencies": {
     "bower": "^1.8.8",
-    "pulp": "^12.4.2",
-    "purescript": "^0.12.5",
+    "pulp": "^13.0.0",
+    "purescript": "^0.13.0",
     "purescript-psa": "^0.7.3"
   },
   "license": "MIT"
