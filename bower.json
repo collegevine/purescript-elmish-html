@@ -17,6 +17,6 @@
     "output"
   ],
   "dependencies": {
-    "purescript-elmish": "^0.0.4"
+    "purescript-elmish": "^0.1.1"
   }
 }
