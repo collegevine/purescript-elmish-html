@@ -1,4 +1,5 @@
 # purescript-elmish-html
+[![CircleCI](https://circleci.com/gh/collegevine/purescript-elmish-html.svg?style=svg)](https://circleci.com/gh/collegevine/purescript-elmish-html)
 
 Render HTML elements in Elmish.
 
