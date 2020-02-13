@@ -15,8 +15,12 @@ import Elmish.React.Import
   , ImportedReactComponentConstructorWithContent
   )
 
+import Foreign.Object (Object)
+
+
 type OptProps_a r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -124,7 +128,8 @@ a = createElement $ unsafeCreateDOMComponent "a"
 
 
 type OptProps_abbr r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -225,7 +230,8 @@ abbr = createElement $ unsafeCreateDOMComponent "abbr"
 
 
 type OptProps_address r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -325,7 +331,8 @@ address = createElement $ unsafeCreateDOMComponent "address"
 
 
 type OptProps_area r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -433,7 +440,8 @@ area = createElement' $ unsafeCreateDOMComponent "area"
 
 
 type OptProps_article r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -533,7 +541,8 @@ article = createElement $ unsafeCreateDOMComponent "article"
 
 
 type OptProps_aside r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -633,7 +642,8 @@ aside = createElement $ unsafeCreateDOMComponent "aside"
 
 
 type OptProps_audio r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -738,7 +748,8 @@ audio = createElement $ unsafeCreateDOMComponent "audio"
 
 
 type OptProps_b r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -838,7 +849,8 @@ b = createElement $ unsafeCreateDOMComponent "b"
 
 
 type OptProps_base r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -940,7 +952,8 @@ base = createElement' $ unsafeCreateDOMComponent "base"
 
 
 type OptProps_bdi r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1040,7 +1053,8 @@ bdi = createElement $ unsafeCreateDOMComponent "bdi"
 
 
 type OptProps_bdo r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1141,7 +1155,8 @@ bdo = createElement $ unsafeCreateDOMComponent "bdo"
 
 
 type OptProps_blockquote r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1242,7 +1257,8 @@ blockquote = createElement $ unsafeCreateDOMComponent "blockquote"
 
 
 type OptProps_body r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1342,7 +1358,8 @@ body = createElement $ unsafeCreateDOMComponent "body"
 
 
 type OptProps_br r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1442,7 +1459,8 @@ br = createElement' $ unsafeCreateDOMComponent "br"
 
 
 type OptProps_button r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1547,7 +1565,8 @@ button = createElement $ unsafeCreateDOMComponent "button"
 
 
 type OptProps_canvas r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1649,7 +1668,8 @@ canvas = createElement $ unsafeCreateDOMComponent "canvas"
 
 
 type OptProps_caption r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1749,7 +1769,8 @@ caption = createElement $ unsafeCreateDOMComponent "caption"
 
 
 type OptProps_cite r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1849,7 +1870,8 @@ cite = createElement $ unsafeCreateDOMComponent "cite"
 
 
 type OptProps_code r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -1949,7 +1971,8 @@ code = createElement $ unsafeCreateDOMComponent "code"
 
 
 type OptProps_col r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2051,7 +2074,8 @@ col = createElement' $ unsafeCreateDOMComponent "col"
 
 
 type OptProps_colgroup r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2153,7 +2177,8 @@ colgroup = createElement $ unsafeCreateDOMComponent "colgroup"
 
 
 type OptProps_data r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2254,7 +2279,8 @@ data' = createElement $ unsafeCreateDOMComponent "data"
 
 
 type OptProps_datalist r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2354,7 +2380,8 @@ datalist = createElement $ unsafeCreateDOMComponent "datalist"
 
 
 type OptProps_dd r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2454,7 +2481,8 @@ dd = createElement $ unsafeCreateDOMComponent "dd"
 
 
 type OptProps_del r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2555,7 +2583,8 @@ del = createElement $ unsafeCreateDOMComponent "del"
 
 
 type OptProps_details r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2656,7 +2685,8 @@ details = createElement $ unsafeCreateDOMComponent "details"
 
 
 type OptProps_dfn r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2757,7 +2787,8 @@ dfn = createElement $ unsafeCreateDOMComponent "dfn"
 
 
 type OptProps_dialog r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2858,7 +2889,8 @@ dialog = createElement $ unsafeCreateDOMComponent "dialog"
 
 
 type OptProps_div r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -2958,7 +2990,8 @@ div = createElement $ unsafeCreateDOMComponent "div"
 
 
 type OptProps_dl r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3058,7 +3091,8 @@ dl = createElement $ unsafeCreateDOMComponent "dl"
 
 
 type OptProps_dt r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3158,7 +3192,8 @@ dt = createElement $ unsafeCreateDOMComponent "dt"
 
 
 type OptProps_em r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3258,7 +3293,8 @@ em = createElement $ unsafeCreateDOMComponent "em"
 
 
 type OptProps_embed r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3362,7 +3398,8 @@ embed = createElement' $ unsafeCreateDOMComponent "embed"
 
 
 type OptProps_fieldset r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3465,7 +3502,8 @@ fieldset = createElement $ unsafeCreateDOMComponent "fieldset"
 
 
 type OptProps_figcaption r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3565,7 +3603,8 @@ figcaption = createElement $ unsafeCreateDOMComponent "figcaption"
 
 
 type OptProps_figure r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3665,7 +3704,8 @@ figure = createElement $ unsafeCreateDOMComponent "figure"
 
 
 type OptProps_footer r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3765,7 +3805,8 @@ footer = createElement $ unsafeCreateDOMComponent "footer"
 
 
 type OptProps_form r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , accept :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3874,7 +3915,8 @@ form = createElement $ unsafeCreateDOMComponent "form"
 
 
 type OptProps_h1 r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -3974,7 +4016,8 @@ h1 = createElement $ unsafeCreateDOMComponent "h1"
 
 
 type OptProps_h2 r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4074,7 +4117,8 @@ h2 = createElement $ unsafeCreateDOMComponent "h2"
 
 
 type OptProps_h3 r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4174,7 +4218,8 @@ h3 = createElement $ unsafeCreateDOMComponent "h3"
 
 
 type OptProps_h4 r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4274,7 +4319,8 @@ h4 = createElement $ unsafeCreateDOMComponent "h4"
 
 
 type OptProps_h5 r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4374,7 +4420,8 @@ h5 = createElement $ unsafeCreateDOMComponent "h5"
 
 
 type OptProps_h6 r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4474,7 +4521,8 @@ h6 = createElement $ unsafeCreateDOMComponent "h6"
 
 
 type OptProps_head r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4575,7 +4623,8 @@ head = createElement $ unsafeCreateDOMComponent "head"
 
 
 type OptProps_header r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4675,7 +4724,8 @@ header = createElement $ unsafeCreateDOMComponent "header"
 
 
 type OptProps_hgroup r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4775,7 +4825,8 @@ hgroup = createElement $ unsafeCreateDOMComponent "hgroup"
 
 
 type OptProps_hr r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4877,7 +4928,8 @@ hr = createElement' $ unsafeCreateDOMComponent "hr"
 
 
 type OptProps_html r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -4978,7 +5030,8 @@ html = createElement $ unsafeCreateDOMComponent "html"
 
 
 type OptProps_i r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5078,7 +5131,8 @@ i = createElement $ unsafeCreateDOMComponent "i"
 
 
 type OptProps_iframe r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5184,7 +5238,8 @@ iframe = createElement $ unsafeCreateDOMComponent "iframe"
 
 
 type OptProps_img r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5290,7 +5345,8 @@ img = createElement' $ unsafeCreateDOMComponent "img"
 
 
 type OptProps_input r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , accept :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5418,7 +5474,8 @@ input = createElement' $ unsafeCreateDOMComponent "input"
 
 
 type OptProps_ins r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5519,7 +5576,8 @@ ins = createElement $ unsafeCreateDOMComponent "ins"
 
 
 type OptProps_kbd r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5619,7 +5677,8 @@ kbd = createElement $ unsafeCreateDOMComponent "kbd"
 
 
 type OptProps_keygen r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5723,7 +5782,8 @@ keygen = createElement $ unsafeCreateDOMComponent "keygen"
 
 
 type OptProps_label r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5824,7 +5884,8 @@ label = createElement $ unsafeCreateDOMComponent "label"
 
 
 type OptProps_legend r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -5924,7 +5985,8 @@ legend = createElement $ unsafeCreateDOMComponent "legend"
 
 
 type OptProps_li r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6026,7 +6088,8 @@ li = createElement $ unsafeCreateDOMComponent "li"
 
 
 type OptProps_link r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6137,7 +6200,8 @@ link = createElement' $ unsafeCreateDOMComponent "link"
 
 
 type OptProps_main r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6237,7 +6301,8 @@ main = createElement $ unsafeCreateDOMComponent "main"
 
 
 type OptProps_map r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6338,7 +6403,8 @@ map = createElement $ unsafeCreateDOMComponent "map"
 
 
 type OptProps_mark r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6438,7 +6504,8 @@ mark = createElement $ unsafeCreateDOMComponent "mark"
 
 
 type OptProps_math r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6538,7 +6605,8 @@ math = createElement $ unsafeCreateDOMComponent "math"
 
 
 type OptProps_menu r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6638,7 +6706,8 @@ menu = createElement $ unsafeCreateDOMComponent "menu"
 
 
 type OptProps_menuitem r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6738,7 +6807,8 @@ menuitem = createElement $ unsafeCreateDOMComponent "menuitem"
 
 
 type OptProps_meta r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6840,7 +6910,8 @@ meta = createElement' $ unsafeCreateDOMComponent "meta"
 
 
 type OptProps_meter r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -6946,7 +7017,8 @@ meter = createElement $ unsafeCreateDOMComponent "meter"
 
 
 type OptProps_nav r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7046,7 +7118,8 @@ nav = createElement $ unsafeCreateDOMComponent "nav"
 
 
 type OptProps_noscript r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7146,7 +7219,8 @@ noscript = createElement $ unsafeCreateDOMComponent "noscript"
 
 
 type OptProps_object r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7252,7 +7326,8 @@ object = createElement $ unsafeCreateDOMComponent "object"
 
 
 type OptProps_ol r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7355,7 +7430,8 @@ ol = createElement $ unsafeCreateDOMComponent "ol"
 
 
 type OptProps_optgroup r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7457,7 +7533,8 @@ optgroup = createElement $ unsafeCreateDOMComponent "optgroup"
 
 
 type OptProps_option r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7561,7 +7638,8 @@ option = createElement $ unsafeCreateDOMComponent "option"
 
 
 type OptProps_output r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7663,7 +7741,8 @@ output = createElement $ unsafeCreateDOMComponent "output"
 
 
 type OptProps_p r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7763,7 +7842,8 @@ p = createElement $ unsafeCreateDOMComponent "p"
 
 
 type OptProps_param r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7866,7 +7946,8 @@ param = createElement' $ unsafeCreateDOMComponent "param"
 
 
 type OptProps_picture r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -7966,7 +8047,8 @@ picture = createElement $ unsafeCreateDOMComponent "picture"
 
 
 type OptProps_pre r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8067,7 +8149,8 @@ pre = createElement $ unsafeCreateDOMComponent "pre"
 
 
 type OptProps_progress r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8169,7 +8252,8 @@ progress = createElement $ unsafeCreateDOMComponent "progress"
 
 
 type OptProps_q r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8270,7 +8354,8 @@ q = createElement $ unsafeCreateDOMComponent "q"
 
 
 type OptProps_rb r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8370,7 +8455,8 @@ rb = createElement $ unsafeCreateDOMComponent "rb"
 
 
 type OptProps_rp r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8470,7 +8556,8 @@ rp = createElement $ unsafeCreateDOMComponent "rp"
 
 
 type OptProps_rt r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8570,7 +8657,8 @@ rt = createElement $ unsafeCreateDOMComponent "rt"
 
 
 type OptProps_rtc r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8670,7 +8758,8 @@ rtc = createElement $ unsafeCreateDOMComponent "rtc"
 
 
 type OptProps_ruby r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8770,7 +8859,8 @@ ruby = createElement $ unsafeCreateDOMComponent "ruby"
 
 
 type OptProps_s r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8870,7 +8960,8 @@ s = createElement $ unsafeCreateDOMComponent "s"
 
 
 type OptProps_samp r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -8970,7 +9061,8 @@ samp = createElement $ unsafeCreateDOMComponent "samp"
 
 
 type OptProps_script r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9076,7 +9168,8 @@ script = createElement $ unsafeCreateDOMComponent "script"
 
 
 type OptProps_section r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9176,7 +9269,8 @@ section = createElement $ unsafeCreateDOMComponent "section"
 
 
 type OptProps_select r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9285,7 +9379,8 @@ select = createElement $ unsafeCreateDOMComponent "select"
 
 
 type OptProps_slot r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9386,7 +9481,8 @@ slot = createElement $ unsafeCreateDOMComponent "slot"
 
 
 type OptProps_small r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9486,7 +9582,8 @@ small = createElement $ unsafeCreateDOMComponent "small"
 
 
 type OptProps_source r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9590,7 +9687,8 @@ source = createElement' $ unsafeCreateDOMComponent "source"
 
 
 type OptProps_span r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9690,7 +9788,8 @@ span = createElement $ unsafeCreateDOMComponent "span"
 
 
 type OptProps_strong r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9790,7 +9889,8 @@ strong = createElement $ unsafeCreateDOMComponent "strong"
 
 
 type OptProps_style r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9894,7 +9994,8 @@ style = createElement $ unsafeCreateDOMComponent "style"
 
 
 type OptProps_sub r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -9994,7 +10095,8 @@ sub = createElement $ unsafeCreateDOMComponent "sub"
 
 
 type OptProps_summary r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -10094,7 +10196,8 @@ summary = createElement $ unsafeCreateDOMComponent "summary"
 
 
 type OptProps_sup r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -10194,7 +10297,8 @@ sup = createElement $ unsafeCreateDOMComponent "sup"
 
 
 type OptProps_svg r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , accentHeight :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10536,7 +10640,8 @@ svg = createElement $ unsafeCreateDOMComponent "svg"
 
 
 type OptProps_table r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -10638,7 +10743,8 @@ table = createElement $ unsafeCreateDOMComponent "table"
 
 
 type OptProps_tbody r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -10738,7 +10844,8 @@ tbody = createElement $ unsafeCreateDOMComponent "tbody"
 
 
 type OptProps_td r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -10842,7 +10949,8 @@ td = createElement $ unsafeCreateDOMComponent "td"
 
 
 type OptProps_template r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -10942,7 +11050,8 @@ template = createElement $ unsafeCreateDOMComponent "template"
 
 
 type OptProps_textarea r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11055,7 +11164,8 @@ textarea = createElement $ unsafeCreateDOMComponent "textarea"
 
 
 type OptProps_tfoot r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11155,7 +11265,8 @@ tfoot = createElement $ unsafeCreateDOMComponent "tfoot"
 
 
 type OptProps_th r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11259,7 +11370,8 @@ th = createElement $ unsafeCreateDOMComponent "th"
 
 
 type OptProps_thead r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11359,7 +11471,8 @@ thead = createElement $ unsafeCreateDOMComponent "thead"
 
 
 type OptProps_time r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11459,7 +11572,8 @@ time = createElement $ unsafeCreateDOMComponent "time"
 
 
 type OptProps_title r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11559,7 +11673,8 @@ title = createElement $ unsafeCreateDOMComponent "title"
 
 
 type OptProps_tr r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11659,7 +11774,8 @@ tr = createElement $ unsafeCreateDOMComponent "tr"
 
 
 type OptProps_track r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11763,7 +11879,8 @@ track = createElement' $ unsafeCreateDOMComponent "track"
 
 
 type OptProps_u r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11863,7 +11980,8 @@ u = createElement $ unsafeCreateDOMComponent "u"
 
 
 type OptProps_ul r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -11964,7 +12082,8 @@ ul = createElement $ unsafeCreateDOMComponent "ul"
 
 
 type OptProps_var r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -12064,7 +12183,8 @@ var = createElement $ unsafeCreateDOMComponent "var"
 
 
 type OptProps_video r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean
@@ -12173,7 +12293,8 @@ video = createElement $ unsafeCreateDOMComponent "video"
 
 
 type OptProps_wbr r =
-  ( about :: String
+  ( _data :: Object String
+  , about :: String
   , acceptCharset :: String
   , accessKey :: String
   , allowFullScreen :: Boolean

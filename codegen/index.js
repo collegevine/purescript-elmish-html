@@ -59,6 +59,9 @@ import Elmish.React.Import
   , ImportedReactComponentConstructorWithContent
   )
 
+import Foreign.Object (Object)
+
+
 `
 
 const propType = (e, p) => {
@@ -76,7 +79,8 @@ const propType = (e, p) => {
 const printRow = (e, elProps) =>
   elProps.length > 0
     ? `
-  ( ${elProps.map(p => `${p} :: ${propType(e, p)}`).join("\n  , ")}
+  ( _data :: Object String
+  , ${elProps.map(p => `${p} :: ${propType(e, p)}`).join("\n  , ")}
   | r
   )`
     : "( | r )"
