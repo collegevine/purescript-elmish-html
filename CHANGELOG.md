@@ -3,6 +3,7 @@
 ## 0.1.1 — February 28, 2020
 
 - Give `onXyz` events a parameter (where makes sense)
+- Add `onScroll` event, which was missing
 - Export a convenience `_data` function so that consumers don't have to import `Foreign.Object.fromHomogeneous`
 
 ## 0.1.0 — February 28, 2020
