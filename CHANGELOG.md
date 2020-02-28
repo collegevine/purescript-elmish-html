@@ -1,5 +1,10 @@
 # purescript-elmish-html
 
+## 0.1.1 — February 28, 2020
+
+- Give `onXyz` events a parameter (where makes sense)
+- Export a convenience `_data` function so that consumers don't have to import `Foreign.Object.fromHomogeneous`
+
 ## 0.1.0 — February 28, 2020
 
 - Add support for HTML `data-` attributes via special `_data :: Object String`
