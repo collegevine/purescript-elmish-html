@@ -1,6 +1,6 @@
 # purescript-elmish-html
 
-## 0.0.4 — February 28, 2020
+## 0.1.0 — February 28, 2020
 
 - Add support for HTML `data-` attributes via special `_data :: Object String`
   `props` on all HTML components.
