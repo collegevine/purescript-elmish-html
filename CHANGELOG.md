@@ -1,9 +1,11 @@
 # purescript-elmish-html
 
-## 0.1.0 — February 14, 2020
+## 0.0.4 — February 28, 2020
 
 - Add support for HTML `data-` attributes via special `_data :: Object String`
   `props` on all HTML components.
+- Add support for CSS frameworks in `Elmish.HTML.Styled`
+- Add a way to construct values of type `CSS`
 
 ## 0.0.3 – May 23, 2019
 
