@@ -6,4 +6,4 @@ module Elmish.HTML
 
 import Elmish.React.DOM (text) as ExportedDOM
 import Elmish.HTML.Generated as ExportedGen
-import Elmish.HTML.Internal (CSS, css) as ExportedInt
+import Elmish.HTML.Internal (CSS, css) as ExportedInternal
