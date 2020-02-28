@@ -1,7 +1,7 @@
 module Elmish.HTML
     ( module ExportedDOM
     , module ExportedGen
-    , module ExportedInt
+    , module ExportedInternal
     ) where
 
 import Elmish.React.DOM (text) as ExportedDOM

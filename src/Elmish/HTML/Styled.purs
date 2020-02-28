@@ -31,9 +31,9 @@
 module Elmish.HTML.Styled
     ( module ExportedDOM
     , module ExportedGen
-    , module ExportedInt
+    , module ExportedInternal
     ) where
 
 import Elmish.React.DOM (text) as ExportedDOM
 import Elmish.HTML.Styled.Generated as ExportedGen
-import Elmish.HTML.Internal (CSS, css) as ExportedInt
+import Elmish.HTML.Internal (CSS, css) as ExportedInternal
