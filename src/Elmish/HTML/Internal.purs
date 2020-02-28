@@ -8,7 +8,6 @@ import Elmish.React (class ReactChildren, class ValidReactProps)
 import Elmish.React.Import (class IsSubsetOf, CommonProps, ImportedReactComponent)
 import Record (merge)
 import Type.Row (type (+))
-import Type.Row.Homogeneous (class Homogeneous)
 import Unsafe.Coerce (unsafeCoerce)
 
 -- | The type of `style` props in React elements. Construct values of this type
@@ -21,14 +20,14 @@ instance jsCSS :: CanPassToJavaScript CSS
 
 
 -- | Construct a value of type `CSS`, which is the type of `style` props, out of
--- | a record with all `String` values. For example:
+-- | a record. For example:
 -- |
 -- |    div { style: css { height: "50px", width: "50px" } }
 -- |
 -- | There is currently no type safety regarding the specific fields admitted in
 -- | the style, or different types of those fields. This has been deemed "good
 -- | enough" for now.
-css :: forall r. Homogeneous r String => { | r } -> CSS
+css :: forall r. { | r } -> CSS
 css = unsafeCoerce
 
 
