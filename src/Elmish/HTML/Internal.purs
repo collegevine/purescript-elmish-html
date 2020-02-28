@@ -6,8 +6,10 @@ import Elmish (ReactElement, createElement, createElement')
 import Elmish.Foreign (class CanPassToJavaScript)
 import Elmish.React (class ReactChildren, class ValidReactProps)
 import Elmish.React.Import (class IsSubsetOf, CommonProps, ImportedReactComponent)
+import Foreign.Object as F
 import Record (merge)
 import Type.Row (type (+))
+import Type.Row.Homogeneous (class Homogeneous)
 import Unsafe.Coerce (unsafeCoerce)
 
 -- | The type of `style` props in React elements. Construct values of this type
@@ -29,6 +31,20 @@ instance jsCSS :: CanPassToJavaScript CSS
 -- | enough" for now.
 css :: forall r. { | r } -> CSS
 css = unsafeCoerce
+
+
+-- | A reexport of `Foreign.Object.fromHomogeneous`, provided here for
+-- | convenience to construct dictionaries for use as value of the special
+-- | `_data` prop. For example:
+-- |
+-- |    div_ "row" { _data: _data { "test-id": "foo", toggle: "autosize" } }
+-- |
+-- | This will correspond to the following HTML:
+-- |
+-- |    <div class="row" data-test-id: "foo" data-toggle: "autosize">
+-- |
+_data :: forall r. Homogeneous r String => { | r } -> F.Object String
+_data = F.fromHomogeneous
 
 
 -- | Retype a string as a React component, which is something that React
