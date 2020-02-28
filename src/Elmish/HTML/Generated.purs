@@ -87,6 +87,7 @@ type OptProps_a r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -192,6 +193,7 @@ type OptProps_abbr r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -294,6 +296,7 @@ type OptProps_address r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -399,6 +402,7 @@ type OptProps_area r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -504,6 +508,7 @@ type OptProps_article r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -605,6 +610,7 @@ type OptProps_aside r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -709,6 +715,7 @@ type OptProps_audio r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , preload :: String
   , property :: String
@@ -812,6 +819,7 @@ type OptProps_b r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -914,6 +922,7 @@ type OptProps_base r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1016,6 +1025,7 @@ type OptProps_bdi r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1118,6 +1128,7 @@ type OptProps_bdo r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1220,6 +1231,7 @@ type OptProps_blockquote r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1321,6 +1333,7 @@ type OptProps_body r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1422,6 +1435,7 @@ type OptProps_br r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1526,6 +1540,7 @@ type OptProps_button r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1630,6 +1645,7 @@ type OptProps_canvas r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1732,6 +1748,7 @@ type OptProps_caption r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1833,6 +1850,7 @@ type OptProps_cite r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1934,6 +1952,7 @@ type OptProps_code r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2035,6 +2054,7 @@ type OptProps_col r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2138,6 +2158,7 @@ type OptProps_colgroup r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2241,6 +2262,7 @@ type OptProps_data r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2343,6 +2365,7 @@ type OptProps_datalist r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2444,6 +2467,7 @@ type OptProps_dd r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2546,6 +2570,7 @@ type OptProps_del r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2647,6 +2672,7 @@ type OptProps_details r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2749,6 +2775,7 @@ type OptProps_dfn r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2851,6 +2878,7 @@ type OptProps_dialog r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2953,6 +2981,7 @@ type OptProps_div r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3054,6 +3083,7 @@ type OptProps_dl r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3155,6 +3185,7 @@ type OptProps_dt r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3256,6 +3287,7 @@ type OptProps_em r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3358,6 +3390,7 @@ type OptProps_embed r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3465,6 +3498,7 @@ type OptProps_fieldset r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3566,6 +3600,7 @@ type OptProps_figcaption r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3667,6 +3702,7 @@ type OptProps_figure r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3768,6 +3804,7 @@ type OptProps_footer r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3876,6 +3913,7 @@ type OptProps_form r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , onSubmit :: JsCallback0
   , prefix :: String
   , property :: String
@@ -3979,6 +4017,7 @@ type OptProps_h1 r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4080,6 +4119,7 @@ type OptProps_h2 r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4181,6 +4221,7 @@ type OptProps_h3 r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4282,6 +4323,7 @@ type OptProps_h4 r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4383,6 +4425,7 @@ type OptProps_h5 r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4484,6 +4527,7 @@ type OptProps_h6 r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4585,6 +4629,7 @@ type OptProps_head r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , profile :: String
   , property :: String
@@ -4687,6 +4732,7 @@ type OptProps_header r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4788,6 +4834,7 @@ type OptProps_hgroup r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4889,6 +4936,7 @@ type OptProps_hr r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4993,6 +5041,7 @@ type OptProps_html r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5094,6 +5143,7 @@ type OptProps_i r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5197,6 +5247,7 @@ type OptProps_iframe r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5305,6 +5356,7 @@ type OptProps_img r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5426,6 +5478,7 @@ type OptProps_input r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , pattern :: String
   , placeholder :: String
   , prefix :: String
@@ -5539,6 +5592,7 @@ type OptProps_ins r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5640,6 +5694,7 @@ type OptProps_kbd r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5745,6 +5800,7 @@ type OptProps_keygen r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5847,6 +5903,7 @@ type OptProps_label r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5948,6 +6005,7 @@ type OptProps_legend r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6049,6 +6107,7 @@ type OptProps_li r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6157,6 +6216,7 @@ type OptProps_link r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6264,6 +6324,7 @@ type OptProps_main r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6366,6 +6427,7 @@ type OptProps_map r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6467,6 +6529,7 @@ type OptProps_mark r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6568,6 +6631,7 @@ type OptProps_math r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6669,6 +6733,7 @@ type OptProps_menu r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6770,6 +6835,7 @@ type OptProps_menuitem r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6873,6 +6939,7 @@ type OptProps_meta r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6978,6 +7045,7 @@ type OptProps_meter r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , optimum :: String
   , prefix :: String
   , property :: String
@@ -7081,6 +7149,7 @@ type OptProps_nav r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7182,6 +7251,7 @@ type OptProps_noscript r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7287,6 +7357,7 @@ type OptProps_object r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7390,6 +7461,7 @@ type OptProps_ol r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7496,6 +7568,7 @@ type OptProps_optgroup r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7599,6 +7672,7 @@ type OptProps_option r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7704,6 +7778,7 @@ type OptProps_output r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7805,6 +7880,7 @@ type OptProps_p r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7907,6 +7983,7 @@ type OptProps_param r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8010,6 +8087,7 @@ type OptProps_picture r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8111,6 +8189,7 @@ type OptProps_pre r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8214,6 +8293,7 @@ type OptProps_progress r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8317,6 +8397,7 @@ type OptProps_q r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8418,6 +8499,7 @@ type OptProps_rb r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8519,6 +8601,7 @@ type OptProps_rp r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8620,6 +8703,7 @@ type OptProps_rt r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8721,6 +8805,7 @@ type OptProps_rtc r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8822,6 +8907,7 @@ type OptProps_ruby r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8923,6 +9009,7 @@ type OptProps_s r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9024,6 +9111,7 @@ type OptProps_samp r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9129,6 +9217,7 @@ type OptProps_script r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9232,6 +9321,7 @@ type OptProps_section r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9339,6 +9429,7 @@ type OptProps_select r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9444,6 +9535,7 @@ type OptProps_slot r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9545,6 +9637,7 @@ type OptProps_small r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9647,6 +9740,7 @@ type OptProps_source r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9751,6 +9845,7 @@ type OptProps_span r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9852,6 +9947,7 @@ type OptProps_strong r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9955,6 +10051,7 @@ type OptProps_style r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10058,6 +10155,7 @@ type OptProps_sub r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10159,6 +10257,7 @@ type OptProps_summary r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10260,6 +10359,7 @@ type OptProps_sup r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10480,6 +10580,7 @@ type OptProps_svg r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , opacity :: String
   , operator :: String
   , order :: String
@@ -10704,6 +10805,7 @@ type OptProps_table r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10807,6 +10909,7 @@ type OptProps_tbody r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10910,6 +11013,7 @@ type OptProps_td r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11013,6 +11117,7 @@ type OptProps_template r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11122,6 +11227,7 @@ type OptProps_textarea r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , placeholder :: String
   , prefix :: String
   , property :: String
@@ -11228,6 +11334,7 @@ type OptProps_tfoot r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11331,6 +11438,7 @@ type OptProps_th r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11434,6 +11542,7 @@ type OptProps_thead r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11535,6 +11644,7 @@ type OptProps_time r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11636,6 +11746,7 @@ type OptProps_title r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11737,6 +11848,7 @@ type OptProps_tr r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11841,6 +11953,7 @@ type OptProps_track r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11943,6 +12056,7 @@ type OptProps_u r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12044,6 +12158,7 @@ type OptProps_ul r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12146,6 +12261,7 @@ type OptProps_var r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12251,6 +12367,7 @@ type OptProps_video r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , playsInline :: Boolean
   , poster :: String
   , prefix :: String
@@ -12357,6 +12474,7 @@ type OptProps_wbr r =
   , onMouseOut :: JsCallback (Foreign -> Effect Unit)
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String

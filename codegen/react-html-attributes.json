@@ -67,6 +67,7 @@
     "onMouseOut",
     "onMouseOver",
     "onMouseUp",
+    "onScroll",
     "prefix",
     "property",
     "radioGroup",

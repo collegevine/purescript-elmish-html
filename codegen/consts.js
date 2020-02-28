@@ -124,6 +124,7 @@ module.exports.types = {
   onMouseOut: "JsCallback (Foreign -> Effect Unit)",
   onMouseOver: "JsCallback (Foreign -> Effect Unit)",
   onMouseUp: "JsCallback (Foreign -> Effect Unit)",
+  onScroll: "JsCallback (Foreign -> Effect Unit)",
   onSubmit: "JsCallback0",
   open: "Boolean",
   playsInline: "Boolean",
