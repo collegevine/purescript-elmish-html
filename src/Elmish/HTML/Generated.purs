@@ -6,15 +6,11 @@ module Elmish.HTML.Generated where
 
 import Prelude
 
-import Elmish (JsCallback0)
-import Elmish.React (ReactElement, createElement, createElement')
+import Effect (Effect)
+import Elmish (JsCallback, JsCallback0, ReactElement, createElement, createElement')
 import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
-import Elmish.React.Import
-  ( EmptyProps
-  , ImportedReactComponentConstructor
-  , ImportedReactComponentConstructorWithContent
-  )
-
+import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
+import Foreign (Foreign)
 import Foreign.Object (Object)
 
 
@@ -81,16 +77,17 @@ type OptProps_a r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -186,16 +183,17 @@ type OptProps_abbr r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -288,16 +286,17 @@ type OptProps_address r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -393,16 +392,17 @@ type OptProps_area r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -498,16 +498,17 @@ type OptProps_article r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -599,16 +600,17 @@ type OptProps_aside r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -703,16 +705,17 @@ type OptProps_audio r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , preload :: String
   , property :: String
@@ -806,16 +809,17 @@ type OptProps_b r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -908,16 +912,17 @@ type OptProps_base r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1010,16 +1015,17 @@ type OptProps_bdi r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1112,16 +1118,17 @@ type OptProps_bdo r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1214,16 +1221,17 @@ type OptProps_blockquote r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1315,16 +1323,17 @@ type OptProps_body r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1416,16 +1425,17 @@ type OptProps_br r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1520,16 +1530,17 @@ type OptProps_button r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1624,16 +1635,17 @@ type OptProps_canvas r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1726,16 +1738,17 @@ type OptProps_caption r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1827,16 +1840,17 @@ type OptProps_cite r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1928,16 +1942,17 @@ type OptProps_code r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2029,16 +2044,17 @@ type OptProps_col r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2132,16 +2148,17 @@ type OptProps_colgroup r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2235,16 +2252,17 @@ type OptProps_data r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2337,16 +2355,17 @@ type OptProps_datalist r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2438,16 +2457,17 @@ type OptProps_dd r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2540,16 +2560,17 @@ type OptProps_del r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2641,16 +2662,17 @@ type OptProps_details r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2743,16 +2765,17 @@ type OptProps_dfn r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2845,16 +2868,17 @@ type OptProps_dialog r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2947,16 +2971,17 @@ type OptProps_div r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3048,16 +3073,17 @@ type OptProps_dl r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3149,16 +3175,17 @@ type OptProps_dt r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3250,16 +3277,17 @@ type OptProps_em r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3352,16 +3380,17 @@ type OptProps_embed r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3459,16 +3488,17 @@ type OptProps_fieldset r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3560,16 +3590,17 @@ type OptProps_figcaption r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3661,16 +3692,17 @@ type OptProps_figure r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3762,16 +3794,17 @@ type OptProps_footer r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3865,21 +3898,22 @@ type OptProps_form r =
   , name :: String
   , noValidate :: Boolean
   , onBlur :: JsCallback0
-  , onChange :: JsCallback0
+  , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onInput :: JsCallback0
+  , onInput :: JsCallback (Foreign -> Effect Unit)
   , onInvalid :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , onSubmit :: JsCallback0
   , prefix :: String
   , property :: String
@@ -3973,16 +4007,17 @@ type OptProps_h1 r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4074,16 +4109,17 @@ type OptProps_h2 r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4175,16 +4211,17 @@ type OptProps_h3 r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4276,16 +4313,17 @@ type OptProps_h4 r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4377,16 +4415,17 @@ type OptProps_h5 r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4478,16 +4517,17 @@ type OptProps_h6 r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4579,16 +4619,17 @@ type OptProps_head r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , profile :: String
   , property :: String
@@ -4681,16 +4722,17 @@ type OptProps_header r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4782,16 +4824,17 @@ type OptProps_hgroup r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4883,16 +4926,17 @@ type OptProps_hr r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4987,16 +5031,17 @@ type OptProps_html r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5088,16 +5133,17 @@ type OptProps_i r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5191,16 +5237,17 @@ type OptProps_iframe r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5299,16 +5346,17 @@ type OptProps_img r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5417,19 +5465,20 @@ type OptProps_input r =
   , name :: String
   , noValidate :: Boolean
   , onBlur :: JsCallback0
-  , onChange :: JsCallback0
+  , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , pattern :: String
   , placeholder :: String
   , prefix :: String
@@ -5533,16 +5582,17 @@ type OptProps_ins r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5634,16 +5684,17 @@ type OptProps_kbd r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5739,16 +5790,17 @@ type OptProps_keygen r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5841,16 +5893,17 @@ type OptProps_label r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5942,16 +5995,17 @@ type OptProps_legend r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6043,16 +6097,17 @@ type OptProps_li r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6151,16 +6206,17 @@ type OptProps_link r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6258,16 +6314,17 @@ type OptProps_main r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6360,16 +6417,17 @@ type OptProps_map r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6461,16 +6519,17 @@ type OptProps_mark r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6562,16 +6621,17 @@ type OptProps_math r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6663,16 +6723,17 @@ type OptProps_menu r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6764,16 +6825,17 @@ type OptProps_menuitem r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6867,16 +6929,17 @@ type OptProps_meta r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6972,16 +7035,17 @@ type OptProps_meter r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , optimum :: String
   , prefix :: String
   , property :: String
@@ -7075,16 +7139,17 @@ type OptProps_nav r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7176,16 +7241,17 @@ type OptProps_noscript r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7281,16 +7347,17 @@ type OptProps_object r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7384,16 +7451,17 @@ type OptProps_ol r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7490,16 +7558,17 @@ type OptProps_optgroup r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7593,16 +7662,17 @@ type OptProps_option r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7698,16 +7768,17 @@ type OptProps_output r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7799,16 +7870,17 @@ type OptProps_p r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7901,16 +7973,17 @@ type OptProps_param r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8004,16 +8077,17 @@ type OptProps_picture r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8105,16 +8179,17 @@ type OptProps_pre r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8208,16 +8283,17 @@ type OptProps_progress r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8311,16 +8387,17 @@ type OptProps_q r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8412,16 +8489,17 @@ type OptProps_rb r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8513,16 +8591,17 @@ type OptProps_rp r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8614,16 +8693,17 @@ type OptProps_rt r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8715,16 +8795,17 @@ type OptProps_rtc r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8816,16 +8897,17 @@ type OptProps_ruby r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8917,16 +8999,17 @@ type OptProps_s r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9018,16 +9101,17 @@ type OptProps_samp r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9123,16 +9207,17 @@ type OptProps_script r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9226,16 +9311,17 @@ type OptProps_section r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9330,19 +9416,20 @@ type OptProps_select r =
   , name :: String
   , noValidate :: Boolean
   , onBlur :: JsCallback0
-  , onChange :: JsCallback0
+  , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9438,16 +9525,17 @@ type OptProps_slot r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9539,16 +9627,17 @@ type OptProps_small r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9641,16 +9730,17 @@ type OptProps_source r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9745,16 +9835,17 @@ type OptProps_span r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9846,16 +9937,17 @@ type OptProps_strong r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9949,16 +10041,17 @@ type OptProps_style r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10052,16 +10145,17 @@ type OptProps_sub r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10153,16 +10247,17 @@ type OptProps_summary r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10254,16 +10349,17 @@ type OptProps_sup r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10474,16 +10570,17 @@ type OptProps_svg r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , opacity :: String
   , operator :: String
   , order :: String
@@ -10698,16 +10795,17 @@ type OptProps_table r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10801,16 +10899,17 @@ type OptProps_tbody r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10904,16 +11003,17 @@ type OptProps_td r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11007,16 +11107,17 @@ type OptProps_template r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11113,19 +11214,20 @@ type OptProps_textarea r =
   , name :: String
   , noValidate :: Boolean
   , onBlur :: JsCallback0
-  , onChange :: JsCallback0
+  , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , placeholder :: String
   , prefix :: String
   , property :: String
@@ -11222,16 +11324,17 @@ type OptProps_tfoot r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11325,16 +11428,17 @@ type OptProps_th r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11428,16 +11532,17 @@ type OptProps_thead r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11529,16 +11634,17 @@ type OptProps_time r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11630,16 +11736,17 @@ type OptProps_title r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11731,16 +11838,17 @@ type OptProps_tr r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11835,16 +11943,17 @@ type OptProps_track r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11937,16 +12046,17 @@ type OptProps_u r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12038,16 +12148,17 @@ type OptProps_ul r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12140,16 +12251,17 @@ type OptProps_var r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12245,16 +12357,17 @@ type OptProps_video r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , playsInline :: Boolean
   , poster :: String
   , prefix :: String
@@ -12351,16 +12464,17 @@ type OptProps_wbr r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback0
-  , onKeyPress :: JsCallback0
-  , onKeyUp :: JsCallback0
-  , onMouseDown :: JsCallback0
-  , onMouseEnter :: JsCallback0
-  , onMouseLeave :: JsCallback0
-  , onMouseMove :: JsCallback0
-  , onMouseOut :: JsCallback0
-  , onMouseOver :: JsCallback0
-  , onMouseUp :: JsCallback0
+  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
+  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
+  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
+  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
+  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
+  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
+  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
+  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
+  , onScroll :: JsCallback (Foreign -> Effect Unit)
   , prefix :: String
   , property :: String
   , radioGroup :: String

@@ -13,15 +13,11 @@ module Elmish.HTML.Generated where
 
 import Prelude
 
-import Elmish (JsCallback0)
-import Elmish.React (ReactElement, createElement, createElement')
+import Effect (Effect)
+import Elmish (JsCallback, JsCallback0, ReactElement, createElement, createElement')
 import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
-import Elmish.React.Import
-  ( EmptyProps
-  , ImportedReactComponentConstructor
-  , ImportedReactComponentConstructorWithContent
-  )
-
+import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
+import Foreign (Foreign)
 import Foreign.Object (Object)
 
 
