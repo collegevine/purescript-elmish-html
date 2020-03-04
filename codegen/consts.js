@@ -111,6 +111,7 @@ module.exports.types = {
   onBlur: "JsCallback0",
   onChange: "JsCallback (Foreign -> Effect Unit)",
   onClick: "JsCallback0",
+  onError: "JsCallback0",
   onFocus: "JsCallback0",
   onInput: "JsCallback (Foreign -> Effect Unit)",
   onInvalid: "JsCallback0",

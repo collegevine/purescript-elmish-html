@@ -5345,6 +5345,7 @@ type OptProps_img r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onError :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
