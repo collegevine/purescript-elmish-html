@@ -140,7 +140,7 @@
   "hr": ["size", "width"],
   "html": ["manifest"],
   "iframe": ["height", "name", "sandbox", "scrolling", "src", "width"],
-  "img": ["alt", "height", "name", "sizes", "src", "width"],
+  "img": ["alt", "height", "name", "onError", "sizes", "src", "width"],
   "input": [
     "accept",
     "alt",

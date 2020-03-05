@@ -1,5 +1,9 @@
 # purescript-elmish-html
 
+## 0.1.2 — February 28, 2020
+
+- `img.onError` prop
+
 ## 0.1.1 — February 28, 2020
 
 - Give `onXyz` events a parameter (where makes sense)
