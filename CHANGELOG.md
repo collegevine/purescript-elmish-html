@@ -1,5 +1,9 @@
 # purescript-elmish-html
 
+## 0.1.3 — February 28, 2020
+
+- `onDoubleClick` prop for all elements
+
 ## 0.1.2 — February 28, 2020
 
 - `img.onError` prop

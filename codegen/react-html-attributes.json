@@ -56,6 +56,7 @@
     "noValidate",
     "onBlur",
     "onClick",
+    "onDoubleClick",
     "onFocus",
     "onKeyDown",
     "onKeyPress",
