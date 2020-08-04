@@ -76,6 +76,7 @@ type OptProps_a r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -182,6 +183,7 @@ type OptProps_abbr r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -285,6 +287,7 @@ type OptProps_address r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -391,6 +394,7 @@ type OptProps_area r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -497,6 +501,7 @@ type OptProps_article r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -599,6 +604,7 @@ type OptProps_aside r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -704,6 +710,7 @@ type OptProps_audio r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -808,6 +815,7 @@ type OptProps_b r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -911,6 +919,7 @@ type OptProps_base r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1014,6 +1023,7 @@ type OptProps_bdi r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1117,6 +1127,7 @@ type OptProps_bdo r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1220,6 +1231,7 @@ type OptProps_blockquote r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1322,6 +1334,7 @@ type OptProps_body r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1424,6 +1437,7 @@ type OptProps_br r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1529,6 +1543,7 @@ type OptProps_button r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1634,6 +1649,7 @@ type OptProps_canvas r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1737,6 +1753,7 @@ type OptProps_caption r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1839,6 +1856,7 @@ type OptProps_cite r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -1941,6 +1959,7 @@ type OptProps_code r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2043,6 +2062,7 @@ type OptProps_col r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2147,6 +2167,7 @@ type OptProps_colgroup r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2251,6 +2272,7 @@ type OptProps_data r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2354,6 +2376,7 @@ type OptProps_datalist r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2456,6 +2479,7 @@ type OptProps_dd r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2559,6 +2583,7 @@ type OptProps_del r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2661,6 +2686,7 @@ type OptProps_details r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2764,6 +2790,7 @@ type OptProps_dfn r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2867,6 +2894,7 @@ type OptProps_dialog r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -2970,6 +2998,7 @@ type OptProps_div r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3072,6 +3101,7 @@ type OptProps_dl r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3174,6 +3204,7 @@ type OptProps_dt r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3276,6 +3307,7 @@ type OptProps_em r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3379,6 +3411,7 @@ type OptProps_embed r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3487,6 +3520,7 @@ type OptProps_fieldset r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3589,6 +3623,7 @@ type OptProps_figcaption r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3691,6 +3726,7 @@ type OptProps_figure r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3793,6 +3829,7 @@ type OptProps_footer r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -3900,6 +3937,7 @@ type OptProps_form r =
   , onBlur :: JsCallback0
   , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onInput :: JsCallback (Foreign -> Effect Unit)
   , onInvalid :: JsCallback0
@@ -4006,6 +4044,7 @@ type OptProps_h1 r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4108,6 +4147,7 @@ type OptProps_h2 r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4210,6 +4250,7 @@ type OptProps_h3 r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4312,6 +4353,7 @@ type OptProps_h4 r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4414,6 +4456,7 @@ type OptProps_h5 r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4516,6 +4559,7 @@ type OptProps_h6 r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4618,6 +4662,7 @@ type OptProps_head r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4721,6 +4766,7 @@ type OptProps_header r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4823,6 +4869,7 @@ type OptProps_hgroup r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -4925,6 +4972,7 @@ type OptProps_hr r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5030,6 +5078,7 @@ type OptProps_html r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5132,6 +5181,7 @@ type OptProps_i r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5236,6 +5286,7 @@ type OptProps_iframe r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5345,6 +5396,7 @@ type OptProps_img r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onError :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
@@ -5468,6 +5520,7 @@ type OptProps_input r =
   , onBlur :: JsCallback0
   , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5582,6 +5635,7 @@ type OptProps_ins r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5684,6 +5738,7 @@ type OptProps_kbd r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5790,6 +5845,7 @@ type OptProps_keygen r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5893,6 +5949,7 @@ type OptProps_label r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -5995,6 +6052,7 @@ type OptProps_legend r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6097,6 +6155,7 @@ type OptProps_li r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6206,6 +6265,7 @@ type OptProps_link r =
   , nonce :: String
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6314,6 +6374,7 @@ type OptProps_main r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6417,6 +6478,7 @@ type OptProps_map r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6519,6 +6581,7 @@ type OptProps_mark r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6621,6 +6684,7 @@ type OptProps_math r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6723,6 +6787,7 @@ type OptProps_menu r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6825,6 +6890,7 @@ type OptProps_menuitem r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -6929,6 +6995,7 @@ type OptProps_meta r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7035,6 +7102,7 @@ type OptProps_meter r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7139,6 +7207,7 @@ type OptProps_nav r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7241,6 +7310,7 @@ type OptProps_noscript r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7347,6 +7417,7 @@ type OptProps_object r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7451,6 +7522,7 @@ type OptProps_ol r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7558,6 +7630,7 @@ type OptProps_optgroup r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7662,6 +7735,7 @@ type OptProps_option r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7768,6 +7842,7 @@ type OptProps_output r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7870,6 +7945,7 @@ type OptProps_p r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -7973,6 +8049,7 @@ type OptProps_param r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8077,6 +8154,7 @@ type OptProps_picture r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8179,6 +8257,7 @@ type OptProps_pre r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8283,6 +8362,7 @@ type OptProps_progress r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8387,6 +8467,7 @@ type OptProps_q r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8489,6 +8570,7 @@ type OptProps_rb r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8591,6 +8673,7 @@ type OptProps_rp r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8693,6 +8776,7 @@ type OptProps_rt r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8795,6 +8879,7 @@ type OptProps_rtc r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8897,6 +8982,7 @@ type OptProps_ruby r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -8999,6 +9085,7 @@ type OptProps_s r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9101,6 +9188,7 @@ type OptProps_samp r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9207,6 +9295,7 @@ type OptProps_script r =
   , nonce :: String
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9311,6 +9400,7 @@ type OptProps_section r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9419,6 +9509,7 @@ type OptProps_select r =
   , onBlur :: JsCallback0
   , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9525,6 +9616,7 @@ type OptProps_slot r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9627,6 +9719,7 @@ type OptProps_small r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9730,6 +9823,7 @@ type OptProps_source r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9835,6 +9929,7 @@ type OptProps_span r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -9937,6 +10032,7 @@ type OptProps_strong r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10041,6 +10137,7 @@ type OptProps_style r =
   , nonce :: String
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10145,6 +10242,7 @@ type OptProps_sub r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10247,6 +10345,7 @@ type OptProps_summary r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10349,6 +10448,7 @@ type OptProps_sup r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10570,6 +10670,7 @@ type OptProps_svg r =
   , offset :: String
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10795,6 +10896,7 @@ type OptProps_table r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -10899,6 +11001,7 @@ type OptProps_tbody r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11003,6 +11106,7 @@ type OptProps_td r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11107,6 +11211,7 @@ type OptProps_template r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11217,6 +11322,7 @@ type OptProps_textarea r =
   , onBlur :: JsCallback0
   , onChange :: JsCallback (Foreign -> Effect Unit)
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11324,6 +11430,7 @@ type OptProps_tfoot r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11428,6 +11535,7 @@ type OptProps_th r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11532,6 +11640,7 @@ type OptProps_thead r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11634,6 +11743,7 @@ type OptProps_time r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11736,6 +11846,7 @@ type OptProps_title r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11838,6 +11949,7 @@ type OptProps_tr r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -11943,6 +12055,7 @@ type OptProps_track r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -12046,6 +12159,7 @@ type OptProps_u r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -12148,6 +12262,7 @@ type OptProps_ul r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -12251,6 +12366,7 @@ type OptProps_var r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -12357,6 +12473,7 @@ type OptProps_video r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
@@ -12464,6 +12581,7 @@ type OptProps_wbr r =
   , noValidate :: Boolean
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
+  , onDoubleClick :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
