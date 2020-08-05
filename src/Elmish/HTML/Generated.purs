@@ -12474,10 +12474,13 @@ type OptProps_video r =
   , onBlur :: JsCallback0
   , onClick :: JsCallback0
   , onDoubleClick :: JsCallback0
+  , onEnded :: JsCallback (Foreign -> Effect Unit)
+  , onError :: JsCallback0
   , onFocus :: JsCallback0
   , onKeyDown :: JsCallback (Foreign -> Effect Unit)
   , onKeyPress :: JsCallback (Foreign -> Effect Unit)
   , onKeyUp :: JsCallback (Foreign -> Effect Unit)
+  , onLoadedMetadata :: JsCallback (Foreign -> Effect Unit)
   , onMouseDown :: JsCallback (Foreign -> Effect Unit)
   , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
   , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
@@ -12486,6 +12489,8 @@ type OptProps_video r =
   , onMouseOver :: JsCallback (Foreign -> Effect Unit)
   , onMouseUp :: JsCallback (Foreign -> Effect Unit)
   , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onTimeUpdate :: JsCallback (Foreign -> Effect Unit)
+  , onVolumeChange :: JsCallback (Foreign -> Effect Unit)
   , playsInline :: Boolean
   , poster :: String
   , prefix :: String
