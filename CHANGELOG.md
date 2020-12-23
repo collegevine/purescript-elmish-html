@@ -1,5 +1,11 @@
 # purescript-elmish-html
 
+## 0.2.0
+
+### Changed
+
+- migrated to Spago
+
 ## 0.1.4
 
 ### Added
