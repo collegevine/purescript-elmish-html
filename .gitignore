@@ -1,10 +1,11 @@
 # PureScript
 .psa*
 .psc*
-.pulp-cache
+/.pulp-cache
 .purs*
-generated-docs
-output
+/generated-docs/
+/output/
+/.spago/
 
 # Bower
 bower_components

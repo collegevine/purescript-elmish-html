@@ -3,6 +3,11 @@ let upstream =
 
 let overrides = {=}
 
-let additions = {=}
+let additions =
+      { elmish =
+          https://raw.githubusercontent.com/collegevine/purescript-elmish/master/spago.dhall sha256:79f4da7bb6e1fa837767e2532dee1e4b162ba660748ef4070f4ca404aa1dcd01
+        with repo = "https://github.com/collegevine/purescript-elmish"
+        with version = "v0.3.1"
+      }
 
 in  upstream // overrides // additions
