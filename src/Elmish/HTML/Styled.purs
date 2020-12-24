@@ -4,14 +4,14 @@
 -- | props completely. This lets us write:
 -- |
 -- |     div "row" $
--- |       div "col pl-5 border-right" $
--- |         "Hellow Bootstrap!"
+-- |       div "col pl-5 border-right"
+-- |         "Hello Bootstrap!"
 -- |
 -- | Instead of:
 -- |
 -- |     div { className: "row" } $
--- |       div { className: "col pl-5 border-right" } $
--- |         "Hellow Bootstrap!"
+-- |       div { className: "col pl-5 border-right" }
+-- |         "Hello Bootstrap!"
 -- |
 -- | The improvement may seem marginal, but it makes a big difference in the
 -- | day-to-day UI authoring.
@@ -22,10 +22,12 @@
 -- | because, in practice, most elements don't have any props besides
 -- | `className`, so it makes the code that much less noisy. For example:
 -- |
--- |     div_ "row" { onClick: click } $
--- |       div "col pl-5 border-right" $
--- |         [ img_ "img-fluid" { src: "/logo.png" }
--- |         , DOM.text "Hello Elmish!"
+-- |     import Elmish.HTML.Styled as H
+-- |
+-- |     H.div_ "row" { onClick: click } $
+-- |       H.div "col pl-5 border-right"
+-- |         [ H.img_ "img-fluid" { src: "/logo.png" }
+-- |         , H.text "Hello Elmish!"
 -- |         ]
 -- |
 module Elmish.HTML.Styled
