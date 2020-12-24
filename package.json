@@ -2,11 +2,17 @@
   "name": "purescript-elmish-html",
   "description": "Render HTML elements in Elmish",
   "version": "0.2.0",
-  "private": true,
-  "author": "Canopy Education, Inc.",
+  "author": {
+    "name": "Daniel Gasienica",
+    "email": "daniel@gasienica.ch",
+    "url": "https://www.gasi.ch"
+  },
   "contributors": [
-    "Daniel Gasienica <daniel@gasienica.ch>",
-    "Fyodor Soikin <fyodor@collegevine.com>"
+    {
+      "name": "Fyodor Soikin",
+      "email": "fyodor@collegevine.com",
+      "url": "https://github.com/fsoikin"
+    }
   ],
   "scripts": {
     "postinstall": "spago install",
