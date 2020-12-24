@@ -15,7 +15,7 @@ import Unsafe.Coerce (unsafeCoerce)
 -- | The type of `style` props in React elements. Construct values of this type
 -- | via the `css` function. For example:
 -- |
--- |    div { style: css { height: "50px", width: "50px" } }
+-- |     div { style: css { height: "50px", width: "50px" } }
 -- |
 foreign import data CSS :: Type
 instance jsCSS :: CanPassToJavaScript CSS
@@ -24,7 +24,7 @@ instance jsCSS :: CanPassToJavaScript CSS
 -- | Construct a value of type `CSS`, which is the type of `style` props, out of
 -- | a record. For example:
 -- |
--- |    div { style: css { height: "50px", width: "50px" } }
+-- |     div { style: css { height: "50px", width: "50px" } }
 -- |
 -- | There is currently no type safety regarding the specific fields admitted in
 -- | the style, or different types of those fields. This has been deemed "good
@@ -37,11 +37,11 @@ css = unsafeCoerce
 -- | convenience to construct dictionaries for use as value of the special
 -- | `_data` prop. For example:
 -- |
--- |    div_ "row" { _data: _data { "test-id": "foo", toggle: "autosize" } }
+-- |     div_ "row" { _data: _data { "test-id": "foo", toggle: "autosize" } }
 -- |
 -- | This will correspond to the following HTML:
 -- |
--- |    <div class="row" data-test-id: "foo" data-toggle: "autosize">
+-- |     <div class="row" data-test-id: "foo" data-toggle: "autosize">
 -- |
 _data :: forall r. Homogeneous r String => { | r } -> F.Object String
 _data = F.fromHomogeneous

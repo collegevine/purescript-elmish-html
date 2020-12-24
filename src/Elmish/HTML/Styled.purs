@@ -19,13 +19,13 @@
 -- | Each tag comes in two flavors: without any props besides the class, and
 -- | with other props. The former is named after the element (e.g. `div`), and
 -- | the latter has an extra underscore at the end (e.g. `div_`). This is done
--- | because, in practice, most elements don't have any props besides `div`, so
--- | it makes the code that much less noisy. For example:
+-- | because, in practice, most elements don't have any props besides
+-- | `className`, so it makes the code that much less noisy. For example:
 -- |
 -- |     div_ "row" { onClick: click } $
 -- |       div "col pl-5 border-right" $
 -- |         [ img_ "img-fluid" { src: "/logo.png" }
--- |         , DOM.text "Hellow Elmish!"
+-- |         , DOM.text "Hello Elmish!"
 -- |         ]
 -- |
 module Elmish.HTML.Styled
