@@ -1,5 +1,5 @@
 # purescript-elmish-html
-[![CircleCI](https://circleci.com/gh/collegevine/purescript-elmish-html.svg?style=svg)](https://circleci.com/gh/collegevine/purescript-elmish-html)
+![build](https://github.com/collegevine/purescript-elmish-html/workflows/build/badge.svg?branch=master)
 
 Render HTML elements in Elmish.
 
