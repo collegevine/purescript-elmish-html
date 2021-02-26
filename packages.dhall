@@ -1,8 +1,23 @@
 let upstream =
-      https://github.com/purescript/package-sets/releases/download/psc-0.13.8-20201223/packages.dhall sha256:a1a8b096175f841c4fef64c9b605fb0d691229241fd2233f6cf46e213de8a185
+      https://raw.githubusercontent.com/purescript/package-sets/prepare-0.14/src/packages.dhall sha256:65b7bbc0f4d1cfeab0216f69b773c0f319f79a2fc56cb57215c6f26bfc4b817d
 
-let overrides = {=}
-
-let additions = {=}
-
-in  upstream // overrides // additions
+in  upstream
+  with elmish =
+    { repo = "https://github.com/collegevine/purescript-elmish.git"
+    , version = "ps-14"
+    , dependencies =
+      [ "aff"
+      , "argonaut-core"
+      , "console"
+      , "debug"
+      , "either"
+      , "foreign-object"
+      , "functions"
+      , "maybe"
+      , "prelude"
+      , "record"
+      , "tuples"
+      , "typelevel-prelude"
+      , "web-html"
+      ]
+    }
