@@ -14,7 +14,10 @@
         "output"
     ],
     "dependencies": {
-        "purescript-elmish": "^v0.3.1",
-        "purescript-foreign-object": "^v2.0.3"
+        "purescript-elmish": "^v0.5.0",
+        "purescript-foreign-object": "^v3.0.0"
+    },
+    "devDependencies": {
+        "purescript-debug": "^v5.0.0"
     }
 }
