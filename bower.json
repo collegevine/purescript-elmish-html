@@ -16,8 +16,5 @@
     "dependencies": {
         "purescript-elmish": "^v0.5.0",
         "purescript-foreign-object": "^v3.0.0"
-    },
-    "devDependencies": {
-        "purescript-debug": "^v5.0.0"
     }
 }
