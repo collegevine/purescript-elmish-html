@@ -1,5 +1,12 @@
 # purescript-elmish-html
 
+## 0.3.0
+
+### Changed
+
+- migrated to PureScript 0.14
+- migrated to Elmish 0.5.0 (`JsCallback`s are gone, replaced by `EffectFn`s)
+
 ## 0.2.1
 
 ### Changed

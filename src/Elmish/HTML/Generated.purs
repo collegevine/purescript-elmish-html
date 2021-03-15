@@ -7,7 +7,7 @@ module Elmish.HTML.Generated where
 import Prelude
 
 import Effect (Effect)
-import Elmish (JsCallback, JsCallback0, ReactElement, createElement, createElement')
+import Elmish (EffectFn1, ReactElement, createElement, createElement')
 import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
 import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
 import Foreign (Foreign)
@@ -74,21 +74,21 @@ type OptProps_a r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -181,21 +181,21 @@ type OptProps_abbr r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -285,21 +285,21 @@ type OptProps_address r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -392,21 +392,21 @@ type OptProps_area r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -499,21 +499,21 @@ type OptProps_article r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -602,21 +602,21 @@ type OptProps_aside r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -708,21 +708,21 @@ type OptProps_audio r =
   , minLength :: Int
   , muted :: Boolean
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , preload :: String
   , property :: String
@@ -813,21 +813,21 @@ type OptProps_b r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -917,21 +917,21 @@ type OptProps_base r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1021,21 +1021,21 @@ type OptProps_bdi r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1125,21 +1125,21 @@ type OptProps_bdo r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1229,21 +1229,21 @@ type OptProps_blockquote r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1332,21 +1332,21 @@ type OptProps_body r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1435,21 +1435,21 @@ type OptProps_br r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1541,21 +1541,21 @@ type OptProps_button r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1647,21 +1647,21 @@ type OptProps_canvas r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1751,21 +1751,21 @@ type OptProps_caption r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1854,21 +1854,21 @@ type OptProps_cite r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1957,21 +1957,21 @@ type OptProps_code r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2060,21 +2060,21 @@ type OptProps_col r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2165,21 +2165,21 @@ type OptProps_colgroup r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2270,21 +2270,21 @@ type OptProps_data r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2374,21 +2374,21 @@ type OptProps_datalist r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2477,21 +2477,21 @@ type OptProps_dd r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2581,21 +2581,21 @@ type OptProps_del r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2684,21 +2684,21 @@ type OptProps_details r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2788,21 +2788,21 @@ type OptProps_dfn r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2892,21 +2892,21 @@ type OptProps_dialog r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2996,21 +2996,21 @@ type OptProps_div r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3099,21 +3099,21 @@ type OptProps_dl r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3202,21 +3202,21 @@ type OptProps_dt r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3305,21 +3305,21 @@ type OptProps_em r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3409,21 +3409,21 @@ type OptProps_embed r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3518,21 +3518,21 @@ type OptProps_fieldset r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3621,21 +3621,21 @@ type OptProps_figcaption r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3724,21 +3724,21 @@ type OptProps_figure r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3827,21 +3827,21 @@ type OptProps_footer r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3934,25 +3934,25 @@ type OptProps_form r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onChange :: JsCallback (Foreign -> Effect Unit)
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onInput :: JsCallback (Foreign -> Effect Unit)
-  , onInvalid :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
-  , onSubmit :: JsCallback0
+  , onBlur :: Effect Unit
+  , onChange :: EffectFn1 Foreign Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onInput :: EffectFn1 Foreign Unit
+  , onInvalid :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
+  , onSubmit :: Effect Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4042,21 +4042,21 @@ type OptProps_h1 r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4145,21 +4145,21 @@ type OptProps_h2 r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4248,21 +4248,21 @@ type OptProps_h3 r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4351,21 +4351,21 @@ type OptProps_h4 r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4454,21 +4454,21 @@ type OptProps_h5 r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4557,21 +4557,21 @@ type OptProps_h6 r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4660,21 +4660,21 @@ type OptProps_head r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , profile :: String
   , property :: String
@@ -4764,21 +4764,21 @@ type OptProps_header r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4867,21 +4867,21 @@ type OptProps_hgroup r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4970,21 +4970,21 @@ type OptProps_hr r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5076,21 +5076,21 @@ type OptProps_html r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5179,21 +5179,21 @@ type OptProps_i r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5284,21 +5284,21 @@ type OptProps_iframe r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5394,22 +5394,22 @@ type OptProps_img r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onError :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onError :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5517,22 +5517,22 @@ type OptProps_input r =
   , multiple :: Boolean
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onChange :: JsCallback (Foreign -> Effect Unit)
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onChange :: EffectFn1 Foreign Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , pattern :: String
   , placeholder :: String
   , prefix :: String
@@ -5633,21 +5633,21 @@ type OptProps_ins r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5736,21 +5736,21 @@ type OptProps_kbd r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5843,21 +5843,21 @@ type OptProps_keygen r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5947,21 +5947,21 @@ type OptProps_label r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6050,21 +6050,21 @@ type OptProps_legend r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6153,21 +6153,21 @@ type OptProps_li r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6263,21 +6263,21 @@ type OptProps_link r =
   , minLength :: Int
   , noValidate :: Boolean
   , nonce :: String
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6372,21 +6372,21 @@ type OptProps_main r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6476,21 +6476,21 @@ type OptProps_map r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6579,21 +6579,21 @@ type OptProps_mark r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6682,21 +6682,21 @@ type OptProps_math r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6785,21 +6785,21 @@ type OptProps_menu r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6888,21 +6888,21 @@ type OptProps_menuitem r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6993,21 +6993,21 @@ type OptProps_meta r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7100,21 +7100,21 @@ type OptProps_meter r =
   , min :: Number
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , optimum :: String
   , prefix :: String
   , property :: String
@@ -7205,21 +7205,21 @@ type OptProps_nav r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7308,21 +7308,21 @@ type OptProps_noscript r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7415,21 +7415,21 @@ type OptProps_object r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7520,21 +7520,21 @@ type OptProps_ol r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7628,21 +7628,21 @@ type OptProps_optgroup r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7733,21 +7733,21 @@ type OptProps_option r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7840,21 +7840,21 @@ type OptProps_output r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7943,21 +7943,21 @@ type OptProps_p r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8047,21 +8047,21 @@ type OptProps_param r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8152,21 +8152,21 @@ type OptProps_picture r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8255,21 +8255,21 @@ type OptProps_pre r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8360,21 +8360,21 @@ type OptProps_progress r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8465,21 +8465,21 @@ type OptProps_q r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8568,21 +8568,21 @@ type OptProps_rb r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8671,21 +8671,21 @@ type OptProps_rp r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8774,21 +8774,21 @@ type OptProps_rt r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8877,21 +8877,21 @@ type OptProps_rtc r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8980,21 +8980,21 @@ type OptProps_ruby r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9083,21 +9083,21 @@ type OptProps_s r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9186,21 +9186,21 @@ type OptProps_samp r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9293,21 +9293,21 @@ type OptProps_script r =
   , minLength :: Int
   , noValidate :: Boolean
   , nonce :: String
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9398,21 +9398,21 @@ type OptProps_section r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9506,22 +9506,22 @@ type OptProps_select r =
   , multiple :: Boolean
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onChange :: JsCallback (Foreign -> Effect Unit)
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onChange :: EffectFn1 Foreign Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9614,21 +9614,21 @@ type OptProps_slot r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9717,21 +9717,21 @@ type OptProps_small r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9821,21 +9821,21 @@ type OptProps_source r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9927,21 +9927,21 @@ type OptProps_span r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10030,21 +10030,21 @@ type OptProps_strong r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10135,21 +10135,21 @@ type OptProps_style r =
   , minLength :: Int
   , noValidate :: Boolean
   , nonce :: String
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10240,21 +10240,21 @@ type OptProps_sub r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10343,21 +10343,21 @@ type OptProps_summary r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10446,21 +10446,21 @@ type OptProps_sup r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10668,21 +10668,21 @@ type OptProps_svg r =
   , noValidate :: Boolean
   , numOctaves :: String
   , offset :: String
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , opacity :: String
   , operator :: String
   , order :: String
@@ -10894,21 +10894,21 @@ type OptProps_table r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10999,21 +10999,21 @@ type OptProps_tbody r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11104,21 +11104,21 @@ type OptProps_td r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11209,21 +11209,21 @@ type OptProps_template r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11319,22 +11319,22 @@ type OptProps_textarea r =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onChange :: JsCallback (Foreign -> Effect Unit)
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onChange :: EffectFn1 Foreign Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , placeholder :: String
   , prefix :: String
   , property :: String
@@ -11428,21 +11428,21 @@ type OptProps_tfoot r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11533,21 +11533,21 @@ type OptProps_th r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11638,21 +11638,21 @@ type OptProps_thead r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11741,21 +11741,21 @@ type OptProps_time r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11844,21 +11844,21 @@ type OptProps_title r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11947,21 +11947,21 @@ type OptProps_tr r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12053,21 +12053,21 @@ type OptProps_track r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12157,21 +12157,21 @@ type OptProps_u r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12260,21 +12260,21 @@ type OptProps_ul r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12364,21 +12364,21 @@ type OptProps_var r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12471,26 +12471,26 @@ type OptProps_video r =
   , minLength :: Int
   , muted :: Boolean
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onEnded :: JsCallback (Foreign -> Effect Unit)
-  , onError :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onLoadedMetadata :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
-  , onTimeUpdate :: JsCallback (Foreign -> Effect Unit)
-  , onVolumeChange :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onEnded :: EffectFn1 Foreign Unit
+  , onError :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onLoadedMetadata :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
+  , onTimeUpdate :: EffectFn1 Foreign Unit
+  , onVolumeChange :: EffectFn1 Foreign Unit
   , playsInline :: Boolean
   , poster :: String
   , prefix :: String
@@ -12584,21 +12584,21 @@ type OptProps_wbr r =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: JsCallback0
-  , onClick :: JsCallback0
-  , onDoubleClick :: JsCallback0
-  , onFocus :: JsCallback0
-  , onKeyDown :: JsCallback (Foreign -> Effect Unit)
-  , onKeyPress :: JsCallback (Foreign -> Effect Unit)
-  , onKeyUp :: JsCallback (Foreign -> Effect Unit)
-  , onMouseDown :: JsCallback (Foreign -> Effect Unit)
-  , onMouseEnter :: JsCallback (Foreign -> Effect Unit)
-  , onMouseLeave :: JsCallback (Foreign -> Effect Unit)
-  , onMouseMove :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOut :: JsCallback (Foreign -> Effect Unit)
-  , onMouseOver :: JsCallback (Foreign -> Effect Unit)
-  , onMouseUp :: JsCallback (Foreign -> Effect Unit)
-  , onScroll :: JsCallback (Foreign -> Effect Unit)
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
   , prefix :: String
   , property :: String
   , radioGroup :: String

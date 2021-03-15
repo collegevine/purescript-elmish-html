@@ -14,14 +14,14 @@ For example:
 ```purescript
 import Elmish.HTML as H
 
-view :: State -> DispatchMsgFn Message -> ReactElement
+view :: State -> Dispatch Message -> ReactElement
 view state dispatch =
   H.div {}
     [ H.h1 {} "Counter"
     , H.text ("Count: " <> show state.count)
     , H.br {}
-    , H.button { type: "button", onClick: handle dispatch Inc } "Inc"
-    , H.button { type: "button", onClick: handle dispatch Dec } "Dec"
+    , H.button { type: "button", onClick: dispatch Inc } "Inc"
+    , H.button { type: "button", onClick: dispatch Dec } "Dec"
     ]
 ```
 
