@@ -14,9 +14,8 @@ module Elmish.HTML.Generated where
 import Prelude
 
 import Effect (Effect)
-import Elmish (EffectFn1, ReactElement, createElement, createElement')
-import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
-import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
+import Elmish (EffectFn1, ReactElement)
+import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
 import Web.HTML as WH
@@ -41,9 +40,8 @@ const printRow = (e, elProps) =>
     ? `
   ( _data :: Object String
   , ${elProps.map(p => `${p} :: ${propType(e, p)}`).join("\n  , ")}
-  | r
   )`
-    : "( | r )"
+    : "()"
 
 const domTypes = () =>
   props.elements.html
@@ -51,21 +49,15 @@ const domTypes = () =>
       const hasChildren = !voids.includes(e)
       const symbol = reserved.includes(e) ? `${e}'` : e
       return `
-    type OptProps_${e} r =${printRow(
+    type Props_${e} =${printRow(
         e,
         [].concat(props[e] || [], props["*"] || []).sort()
       )}
 
     ${
       hasChildren
-        ? `
-    ${symbol} :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_${e}
-    ${symbol} = createElement $ unsafeCreateDOMComponent "${e}"
-    `
-        : `
-    ${symbol} :: ImportedReactComponentConstructor EmptyProps OptProps_${e}
-    ${symbol} = createElement' $ unsafeCreateDOMComponent "${e}"
-    `
+        ? `${symbol} = tag "${e}" :: Tag Props_${e}`
+        : `${symbol} = tagNoContent "${e}" :: TagNoContent Props_${e}`
     }
 `
     })

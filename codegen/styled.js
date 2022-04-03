@@ -24,7 +24,7 @@ const content = () =>
       const symbol = reserved.includes(e) ? `${e}'` : e
       return `
     ${symbol} = I.styledTag${noContent} "${e}" :: I.StyledTag${noContent}
-    ${symbol}_ = I.styledTag${noContent}_ "${e}" :: I.StyledTag${noContent}_ H.OptProps_${e}
+    ${symbol}_ = I.styledTag${noContent}_ "${e}" :: I.StyledTag${noContent}_ H.Props_${e}
     `
     })
     .map(x => x.replace(/^\n\ {4}/, "").replace(/\n\ {4}/g, "\n"))
