@@ -19,6 +19,7 @@ import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
 import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
+import Web.HTML (HTMLElement)
 
 
 `

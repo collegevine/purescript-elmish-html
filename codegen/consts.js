@@ -107,7 +107,6 @@ module.exports.types = {
   multiple: "Boolean",
   muted: "Boolean",
   noValidate: "Boolean",
-  // TODO: Replace `JsCallback`s with better representations:
   onBlur: "Effect Unit",
   onChange: "EffectFn1 Foreign Unit",
   onClick: "Effect Unit",
@@ -135,8 +134,7 @@ module.exports.types = {
   open: "Boolean",
   playsInline: "Boolean",
   readOnly: "Boolean",
-  // TODO: Implement `ref` if needed:
-  // ref: "Ref (Nullable Node)",
+  ref: "EffectFn1 HTMLElement Unit",
   required: "Boolean",
   reversed: "Boolean",
   rowSpan: "Int",
