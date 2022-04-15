@@ -12,7 +12,7 @@ import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
 import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
-import Web.HTML (HTMLElement)
+import Web.HTML as WH
 
 
 type OptProps_a r =
@@ -94,7 +94,7 @@ type OptProps_a r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLAnchorElement Unit
   , rel :: String
   , resource :: String
   , role :: String
@@ -201,7 +201,7 @@ type OptProps_abbr r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -305,7 +305,7 @@ type OptProps_address r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -412,7 +412,7 @@ type OptProps_area r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLAreaElement Unit
   , rel :: String
   , resource :: String
   , role :: String
@@ -519,7 +519,7 @@ type OptProps_article r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -622,7 +622,7 @@ type OptProps_aside r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -729,7 +729,7 @@ type OptProps_audio r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLAudioElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -833,7 +833,7 @@ type OptProps_b r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -937,7 +937,7 @@ type OptProps_base r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLBaseElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1041,7 +1041,7 @@ type OptProps_bdi r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1145,7 +1145,7 @@ type OptProps_bdo r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1249,7 +1249,7 @@ type OptProps_blockquote r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1352,7 +1352,7 @@ type OptProps_body r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLBodyElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1455,7 +1455,7 @@ type OptProps_br r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLBRElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1561,7 +1561,7 @@ type OptProps_button r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLButtonElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1667,7 +1667,7 @@ type OptProps_canvas r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLCanvasElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1771,7 +1771,7 @@ type OptProps_caption r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1874,7 +1874,7 @@ type OptProps_cite r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1977,7 +1977,7 @@ type OptProps_code r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2080,7 +2080,7 @@ type OptProps_col r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2185,7 +2185,7 @@ type OptProps_colgroup r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2290,7 +2290,7 @@ type OptProps_data r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLDataElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2394,7 +2394,7 @@ type OptProps_datalist r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLDataListElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2497,7 +2497,7 @@ type OptProps_dd r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2601,7 +2601,7 @@ type OptProps_del r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2705,7 +2705,7 @@ type OptProps_details r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2808,7 +2808,7 @@ type OptProps_dfn r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2913,7 +2913,7 @@ type OptProps_dialog r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3016,7 +3016,7 @@ type OptProps_div r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLDivElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3119,7 +3119,7 @@ type OptProps_dl r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLDListElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3222,7 +3222,7 @@ type OptProps_dt r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3325,7 +3325,7 @@ type OptProps_em r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3429,7 +3429,7 @@ type OptProps_embed r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLEmbedElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3538,7 +3538,7 @@ type OptProps_fieldset r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLFieldSetElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3641,7 +3641,7 @@ type OptProps_figcaption r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3744,7 +3744,7 @@ type OptProps_figure r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3847,7 +3847,7 @@ type OptProps_footer r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3958,7 +3958,7 @@ type OptProps_form r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLFormElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4062,7 +4062,7 @@ type OptProps_h1 r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4165,7 +4165,7 @@ type OptProps_h2 r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4268,7 +4268,7 @@ type OptProps_h3 r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4371,7 +4371,7 @@ type OptProps_h4 r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4474,7 +4474,7 @@ type OptProps_h5 r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4577,7 +4577,7 @@ type OptProps_h6 r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4681,7 +4681,7 @@ type OptProps_head r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHeadElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4784,7 +4784,7 @@ type OptProps_header r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4887,7 +4887,7 @@ type OptProps_hgroup r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4990,7 +4990,7 @@ type OptProps_hr r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLHRElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5096,7 +5096,7 @@ type OptProps_html r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5199,7 +5199,7 @@ type OptProps_i r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5304,7 +5304,7 @@ type OptProps_iframe r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLIFrameElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5415,7 +5415,7 @@ type OptProps_img r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLImageElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5540,7 +5540,7 @@ type OptProps_input r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLInputElement Unit
   , required :: Boolean
   , resource :: String
   , results :: String
@@ -5653,7 +5653,7 @@ type OptProps_ins r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5756,7 +5756,7 @@ type OptProps_kbd r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5863,7 +5863,7 @@ type OptProps_keygen r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLKeygenElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5967,7 +5967,7 @@ type OptProps_label r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLLabelElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6070,7 +6070,7 @@ type OptProps_legend r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLLegendElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6173,7 +6173,7 @@ type OptProps_li r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLLIElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6283,7 +6283,7 @@ type OptProps_link r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLLinkElement Unit
   , rel :: String
   , resource :: String
   , role :: String
@@ -6392,7 +6392,7 @@ type OptProps_main r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6496,7 +6496,7 @@ type OptProps_map r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLMapElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6599,7 +6599,7 @@ type OptProps_mark r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6702,7 +6702,7 @@ type OptProps_math r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6805,7 +6805,7 @@ type OptProps_menu r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6908,7 +6908,7 @@ type OptProps_menuitem r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7013,7 +7013,7 @@ type OptProps_meta r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLMetaElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7121,7 +7121,7 @@ type OptProps_meter r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLMeterElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7225,7 +7225,7 @@ type OptProps_nav r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7328,7 +7328,7 @@ type OptProps_noscript r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7435,7 +7435,7 @@ type OptProps_object r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLObjectElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7540,7 +7540,7 @@ type OptProps_ol r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLOListElement Unit
   , resource :: String
   , reversed :: Boolean
   , role :: String
@@ -7648,7 +7648,7 @@ type OptProps_optgroup r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLOptGroupElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7753,7 +7753,7 @@ type OptProps_option r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLOptionElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7860,7 +7860,7 @@ type OptProps_output r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLOutputElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7963,7 +7963,7 @@ type OptProps_p r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLParagraphElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8067,7 +8067,7 @@ type OptProps_param r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLParamElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8172,7 +8172,7 @@ type OptProps_picture r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8275,7 +8275,7 @@ type OptProps_pre r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLPreElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8380,7 +8380,7 @@ type OptProps_progress r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLProgressElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8485,7 +8485,7 @@ type OptProps_q r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLQuoteElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8588,7 +8588,7 @@ type OptProps_rb r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8691,7 +8691,7 @@ type OptProps_rp r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8794,7 +8794,7 @@ type OptProps_rt r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8897,7 +8897,7 @@ type OptProps_rtc r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9000,7 +9000,7 @@ type OptProps_ruby r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9103,7 +9103,7 @@ type OptProps_s r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9206,7 +9206,7 @@ type OptProps_samp r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9313,7 +9313,7 @@ type OptProps_script r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLScriptElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9418,7 +9418,7 @@ type OptProps_section r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9527,7 +9527,7 @@ type OptProps_select r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLSelectElement Unit
   , required :: Boolean
   , resource :: String
   , role :: String
@@ -9634,7 +9634,7 @@ type OptProps_slot r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9737,7 +9737,7 @@ type OptProps_small r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9841,7 +9841,7 @@ type OptProps_source r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLSourceElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9947,7 +9947,7 @@ type OptProps_span r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLSpanElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10050,7 +10050,7 @@ type OptProps_strong r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10155,7 +10155,7 @@ type OptProps_style r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLStyleElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10260,7 +10260,7 @@ type OptProps_sub r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10363,7 +10363,7 @@ type OptProps_summary r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10466,7 +10466,7 @@ type OptProps_sup r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10713,7 +10713,7 @@ type OptProps_svg r =
   , radioGroup :: String
   , radius :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , refX :: String
   , refY :: String
   , renderingIntent :: String
@@ -10914,7 +10914,7 @@ type OptProps_table r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTableElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11019,7 +11019,7 @@ type OptProps_tbody r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11124,7 +11124,7 @@ type OptProps_td r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTableDataCellElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11229,7 +11229,7 @@ type OptProps_template r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTemplateElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11341,7 +11341,7 @@ type OptProps_textarea r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTextAreaElement Unit
   , required :: Boolean
   , resource :: String
   , role :: String
@@ -11448,7 +11448,7 @@ type OptProps_tfoot r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11553,7 +11553,7 @@ type OptProps_th r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTableHeaderCellElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11658,7 +11658,7 @@ type OptProps_thead r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11761,7 +11761,7 @@ type OptProps_time r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTimeElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11864,7 +11864,7 @@ type OptProps_title r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTitleElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11967,7 +11967,7 @@ type OptProps_tr r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTableRowElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12073,7 +12073,7 @@ type OptProps_track r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLTrackElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12177,7 +12177,7 @@ type OptProps_u r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12280,7 +12280,7 @@ type OptProps_ul r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLUListElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12384,7 +12384,7 @@ type OptProps_var r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12499,7 +12499,7 @@ type OptProps_video r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLVideoElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12604,7 +12604,7 @@ type OptProps_wbr r =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 HTMLElement Unit
+  , ref :: EffectFn1 WH.HTMLElement Unit
   , resource :: String
   , role :: String
   , rowSpan :: Int
