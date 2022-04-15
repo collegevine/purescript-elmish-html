@@ -323,8 +323,8 @@ td_ = I.styledTag_ "td" :: I.StyledTag_ H.OptProps_td
 template = I.styledTag "template" :: I.StyledTag
 template_ = I.styledTag_ "template" :: I.StyledTag_ H.OptProps_template
 
-textarea = I.styledTag "textarea" :: I.StyledTag
-textarea_ = I.styledTag_ "textarea" :: I.StyledTag_ H.OptProps_textarea
+textarea = I.styledTagNoContent "textarea" :: I.StyledTagNoContent
+textarea_ = I.styledTagNoContent_ "textarea" :: I.StyledTagNoContent_ H.OptProps_textarea
 
 tfoot = I.styledTag "tfoot" :: I.StyledTag
 tfoot_ = I.styledTag_ "tfoot" :: I.StyledTag_ H.OptProps_tfoot

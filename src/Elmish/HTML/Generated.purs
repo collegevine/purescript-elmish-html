@@ -11368,8 +11368,8 @@ type OptProps_textarea r =
   )
 
 
-textarea :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_textarea
-textarea = createElement $ unsafeCreateDOMComponent "textarea"
+textarea :: ImportedReactComponentConstructor EmptyProps OptProps_textarea
+textarea = createElement' $ unsafeCreateDOMComponent "textarea"
 
 
 type OptProps_tfoot r =

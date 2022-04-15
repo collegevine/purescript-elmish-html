@@ -54,6 +54,7 @@ module.exports.voids = [
   "meta",
   "param",
   "source",
+  "textarea",
   "track",
   "wbr",
 ]
