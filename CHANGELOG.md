@@ -1,5 +1,9 @@
 # purescript-elmish-html
 
+## 0.4.0
+
+- **Breaking**: Changed `ref` props from `String` to `EffectFn1 elem Unit`
+
 ## 0.3.0
 
 ### Changed
