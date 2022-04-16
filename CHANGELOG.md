@@ -1,6 +1,14 @@
 # purescript-elmish-html
 
+## 0.5.0
+
+### Changed
+
+- **Breaking**: The `textarea` element no longer allows children. React differs from Html by using the `value` prop instead of a text element child to set the input state. https://reactjs.org/docs/forms.html#the-textarea-tag
+
 ## 0.4.0
+
+### Changed
 
 - **Breaking**: Changed `ref` props from `String` to `EffectFn1 elem Unit`
 
