@@ -18,7 +18,7 @@ import Elmish (EffectFn1, ReactElement)
 import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
-import Web.HTML as WH
+import Elmish.React.ReactRef (ReactRef)
 
 
 `
