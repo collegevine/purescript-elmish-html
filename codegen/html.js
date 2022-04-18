@@ -14,11 +14,11 @@ module Elmish.HTML.Generated where
 import Prelude
 
 import Effect (Effect)
-import Elmish (EffectFn1, ReactElement)
+import Elmish (EffectFn1, ReactElement, Ref)
 import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
-import Elmish.React.ReactRef (ReactRef)
+import Web.HTML as WH
 
 
 `

@@ -5,7 +5,7 @@
 ### Changed
 
 - **Breaking**: The `textarea` element no longer allows children. React differs from Html by using the `value` prop instead of a text element child to set the input state. https://reactjs.org/docs/forms.html#the-textarea-tag
-- **Breaking**: Changed `ref` props from `String` to `ReactRef`
+- **Breaking**: Changed `ref` props from `String` to `Elmish.React.Ref`
 
 ## 0.3.0
 
