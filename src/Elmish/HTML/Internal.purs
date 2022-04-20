@@ -5,10 +5,10 @@ import Prelude
 import Elmish (ReactElement, createElement, createElement')
 import Elmish.Foreign (class CanPassToJavaScript)
 import Elmish.React (class ReactChildren, class ValidReactProps)
-import Elmish.React.Import (class IsSubsetOf, CommonProps, ImportedReactComponent)
+import Elmish.React.Import (ImportedReactComponent)
 import Foreign.Object as F
+import Prim.Row (class Union)
 import Record (merge)
-import Type.Row (type (+))
 import Type.Row.Homogeneous (class Homogeneous)
 import Unsafe.Coerce (unsafeCoerce)
 
@@ -29,7 +29,7 @@ instance jsCSS :: CanPassToJavaScript CSS
 -- | There is currently no type safety regarding the specific fields admitted in
 -- | the style, or different types of those fields. This has been deemed "good
 -- | enough" for now.
-css :: forall r. { | r } -> CSS
+css :: ∀ r. { | r } -> CSS
 css = unsafeCoerce
 
 
@@ -41,9 +41,9 @@ css = unsafeCoerce
 -- |
 -- | This will correspond to the following HTML:
 -- |
--- |     <div class="row" data-test-id: "foo" data-toggle: "autosize">
+-- |     <div class="row" data-test-id="foo" data-toggle="autosize">
 -- |
-_data :: forall r. Homogeneous r String => { | r } -> F.Object String
+_data :: ∀ r. Homogeneous r String => { | r } -> F.Object String
 _data = F.fromHomogeneous
 
 
@@ -53,16 +53,32 @@ _data = F.fromHomogeneous
 unsafeCreateDOMComponent :: String -> ImportedReactComponent
 unsafeCreateDOMComponent = unsafeCoerce
 
+-- | A tag-creating function with props and content (aka children).
+-- | `allowedProps` is a row of all possible props for this tag.
+type Tag allowedProps =
+  ∀ props content
+   . ReactChildren content
+  => IsSubsetOf props allowedProps
+  => ValidReactProps { | props }
+  => { | props } -> content -> ReactElement
 
--- | A CSS-framework-friendly tag-creating function with props. The `reqProps`
--- | type parameter is a row of optional props for this tag. The point of
+-- | A tag-creating function with props and without content (aka children).
+-- | `allowedProps` is a row of all possible props for this tag.
+type TagNoContent allowedProps =
+  ∀ props
+   . IsSubsetOf props allowedProps
+  => ValidReactProps { | props }
+  => { | props } -> ReactElement
+
+-- | A CSS-framework-friendly tag-creating function with props. `allowedProps`
+-- | is a row of all possible props for this tag. The point of
 -- | CSS-framework-friendliness is that the `className` prop is given as first
 -- | parameter rather than being part of the other props, so we can write `div_
 -- | "row" {}` rather than `div { className: "row" }`
-type StyledTag_ optProps =
-  forall props content
+type StyledTag_ allowedProps =
+  ∀ props content
    . ReactChildren content
-  => IsSubsetOf props (optProps + CommonProps)
+  => IsSubsetOf props allowedProps
   => ValidReactProps { | props }
   => String -> { | props } -> content -> ReactElement
 
@@ -71,35 +87,42 @@ type StyledTag_ optProps =
 -- | parameter rather than being part of the other props, so we can write `div
 -- | "row"` rather than `div { className: "row" }`
 type StyledTag =
-  forall content. ReactChildren content => String -> content -> ReactElement
+  ∀ content. ReactChildren content => String -> content -> ReactElement
 
 -- | See comments on `StyledTag`
 type StyledTagNoContent = String -> ReactElement
 
 -- | See comments on `StyledTag_`
-type StyledTagNoContent_ optProps =
-  forall props
-   . IsSubsetOf props (optProps + CommonProps)
+type StyledTagNoContent_ allowedProps =
+  ∀ props
+   . IsSubsetOf props allowedProps
   => ValidReactProps { | props }
   => String -> { | props } -> ReactElement
 
-styledTag_ :: forall props content
-   . ReactChildren content
-  => ValidReactProps props
-  => String -> String -> props -> content -> ReactElement
-styledTag_ tag cls props =
-  createElement (unsafeCreateDOMComponent tag) $ (unsafeCoerce props :: {}) `merge` { className: cls }
+tag :: ∀ props content. ReactChildren content => String -> { | props } -> content -> ReactElement
+tag tagName props =
+  createElement (unsafeCreateDOMComponent tagName) (unsafeCoerce props :: {})
+
+tagNoContent :: ∀ props. String -> { | props } -> ReactElement
+tagNoContent tagName props =
+  createElement' (unsafeCreateDOMComponent tagName) (unsafeCoerce props :: {})
+
+styledTag_ :: ∀ props content. ReactChildren content => String -> String -> { | props } -> content -> ReactElement
+styledTag_ tagName cls props =
+  createElement (unsafeCreateDOMComponent tagName) $ (unsafeCoerce props :: {}) `merge` { className: cls }
 
 styledTag :: String -> StyledTag
-styledTag tag cls content =
-  createElement (unsafeCreateDOMComponent tag) { className: cls } content
+styledTag tagName cls content =
+  createElement (unsafeCreateDOMComponent tagName) { className: cls } content
 
 styledTagNoContent :: String -> StyledTagNoContent
-styledTagNoContent tag cls =
-  createElement' (unsafeCreateDOMComponent tag) { className: cls }
+styledTagNoContent tagName cls =
+  createElement' (unsafeCreateDOMComponent tagName) { className: cls }
 
-styledTagNoContent_ :: forall props
-   . ValidReactProps props
-  => String -> String -> props -> ReactElement
-styledTagNoContent_ tag cls props =
-  createElement' (unsafeCreateDOMComponent tag) $ (unsafeCoerce props :: {}) `merge` { className: cls }
+styledTagNoContent_ :: ∀ props. String -> String -> { | props } -> ReactElement
+styledTagNoContent_ tagName cls props =
+  createElement' (unsafeCreateDOMComponent tagName) $ (unsafeCoerce props :: {}) `merge` { className: cls }
+
+-- Asserts that one type row is a (non-strict) subset of the other type row
+class IsSubsetOf (subset :: Row Type) (superset :: Row Type)
+instance Union subset r superset => IsSubsetOf subset superset

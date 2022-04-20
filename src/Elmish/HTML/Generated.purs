@@ -7,15 +7,14 @@ module Elmish.HTML.Generated where
 import Prelude
 
 import Effect (Effect)
-import Elmish (EffectFn1, ReactElement, createElement, createElement')
-import Elmish.HTML.Internal (CSS, unsafeCreateDOMComponent)
-import Elmish.React.Import (EmptyProps, ImportedReactComponentConstructor, ImportedReactComponentConstructorWithContent)
+import Elmish (EffectFn1, ReactElement)
+import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
 import Web.HTML as WH
 
 
-type OptProps_a r =
+type Props_a =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -118,15 +117,11 @@ type OptProps_a r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+a = tag "a" :: Tag Props_a
 
-a :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_a
-a = createElement $ unsafeCreateDOMComponent "a"
-
-
-type OptProps_abbr r =
+type Props_abbr =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -222,15 +217,11 @@ type OptProps_abbr r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+abbr = tag "abbr" :: Tag Props_abbr
 
-abbr :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_abbr
-abbr = createElement $ unsafeCreateDOMComponent "abbr"
-
-
-type OptProps_address r =
+type Props_address =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -325,15 +316,11 @@ type OptProps_address r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+address = tag "address" :: Tag Props_address
 
-address :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_address
-address = createElement $ unsafeCreateDOMComponent "address"
-
-
-type OptProps_area r =
+type Props_area =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -436,15 +423,11 @@ type OptProps_area r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+area = tagNoContent "area" :: TagNoContent Props_area
 
-area :: ImportedReactComponentConstructor EmptyProps OptProps_area
-area = createElement' $ unsafeCreateDOMComponent "area"
-
-
-type OptProps_article r =
+type Props_article =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -539,15 +522,11 @@ type OptProps_article r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+article = tag "article" :: Tag Props_article
 
-article :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_article
-article = createElement $ unsafeCreateDOMComponent "article"
-
-
-type OptProps_aside r =
+type Props_aside =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -642,15 +621,11 @@ type OptProps_aside r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+aside = tag "aside" :: Tag Props_aside
 
-aside :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_aside
-aside = createElement $ unsafeCreateDOMComponent "aside"
-
-
-type OptProps_audio r =
+type Props_audio =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -750,15 +725,11 @@ type OptProps_audio r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+audio = tag "audio" :: Tag Props_audio
 
-audio :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_audio
-audio = createElement $ unsafeCreateDOMComponent "audio"
-
-
-type OptProps_b r =
+type Props_b =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -853,15 +824,11 @@ type OptProps_b r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+b = tag "b" :: Tag Props_b
 
-b :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_b
-b = createElement $ unsafeCreateDOMComponent "b"
-
-
-type OptProps_base r =
+type Props_base =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -958,15 +925,11 @@ type OptProps_base r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+base = tagNoContent "base" :: TagNoContent Props_base
 
-base :: ImportedReactComponentConstructor EmptyProps OptProps_base
-base = createElement' $ unsafeCreateDOMComponent "base"
-
-
-type OptProps_bdi r =
+type Props_bdi =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1061,15 +1024,11 @@ type OptProps_bdi r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+bdi = tag "bdi" :: Tag Props_bdi
 
-bdi :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_bdi
-bdi = createElement $ unsafeCreateDOMComponent "bdi"
-
-
-type OptProps_bdo r =
+type Props_bdo =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1165,15 +1124,11 @@ type OptProps_bdo r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+bdo = tag "bdo" :: Tag Props_bdo
 
-bdo :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_bdo
-bdo = createElement $ unsafeCreateDOMComponent "bdo"
-
-
-type OptProps_blockquote r =
+type Props_blockquote =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1269,15 +1224,11 @@ type OptProps_blockquote r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+blockquote = tag "blockquote" :: Tag Props_blockquote
 
-blockquote :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_blockquote
-blockquote = createElement $ unsafeCreateDOMComponent "blockquote"
-
-
-type OptProps_body r =
+type Props_body =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1372,15 +1323,11 @@ type OptProps_body r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+body = tag "body" :: Tag Props_body
 
-body :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_body
-body = createElement $ unsafeCreateDOMComponent "body"
-
-
-type OptProps_br r =
+type Props_br =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1475,15 +1422,11 @@ type OptProps_br r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+br = tagNoContent "br" :: TagNoContent Props_br
 
-br :: ImportedReactComponentConstructor EmptyProps OptProps_br
-br = createElement' $ unsafeCreateDOMComponent "br"
-
-
-type OptProps_button r =
+type Props_button =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1583,15 +1526,11 @@ type OptProps_button r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+button = tag "button" :: Tag Props_button
 
-button :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_button
-button = createElement $ unsafeCreateDOMComponent "button"
-
-
-type OptProps_canvas r =
+type Props_canvas =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1688,15 +1627,11 @@ type OptProps_canvas r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+canvas = tag "canvas" :: Tag Props_canvas
 
-canvas :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_canvas
-canvas = createElement $ unsafeCreateDOMComponent "canvas"
-
-
-type OptProps_caption r =
+type Props_caption =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1791,15 +1726,11 @@ type OptProps_caption r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+caption = tag "caption" :: Tag Props_caption
 
-caption :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_caption
-caption = createElement $ unsafeCreateDOMComponent "caption"
-
-
-type OptProps_cite r =
+type Props_cite =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1894,15 +1825,11 @@ type OptProps_cite r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+cite = tag "cite" :: Tag Props_cite
 
-cite :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_cite
-cite = createElement $ unsafeCreateDOMComponent "cite"
-
-
-type OptProps_code r =
+type Props_code =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -1997,120 +1924,11 @@ type OptProps_code r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+code = tag "code" :: Tag Props_code
 
-code :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_code
-code = createElement $ unsafeCreateDOMComponent "code"
-
-
-type OptProps_col r =
-  ( _data :: Object String
-  , about :: String
-  , acceptCharset :: String
-  , accessKey :: String
-  , allowFullScreen :: Boolean
-  , allowTransparency :: Boolean
-  , autoComplete :: Boolean
-  , autoFocus :: Boolean
-  , autoPlay :: Boolean
-  , capture :: Boolean
-  , cellPadding :: String
-  , cellSpacing :: String
-  , charSet :: String
-  , classID :: String
-  , className :: String
-  , colSpan :: Int
-  , contentEditable :: Boolean
-  , contextMenu :: String
-  , crossOrigin :: String
-  , dangerouslySetInnerHTML :: { __html :: String }
-  , datatype :: String
-  , dateTime :: String
-  , dir :: String
-  , draggable :: Boolean
-  , encType :: String
-  , formAction :: String
-  , formEncType :: String
-  , formMethod :: String
-  , formNoValidate :: Boolean
-  , formTarget :: String
-  , frameBorder :: String
-  , hidden :: Boolean
-  , hrefLang :: String
-  , htmlFor :: String
-  , httpEquiv :: String
-  , icon :: String
-  , id :: String
-  , inlist :: String
-  , inputMode :: String
-  , is :: String
-  , itemID :: String
-  , itemProp :: String
-  , itemRef :: String
-  , itemScope :: Boolean
-  , itemType :: String
-  , key :: String
-  , keyParams :: String
-  , keyType :: String
-  , lang :: String
-  , marginHeight :: String
-  , marginWidth :: String
-  , maxLength :: Int
-  , mediaGroup :: String
-  , minLength :: Int
-  , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
-  , prefix :: String
-  , property :: String
-  , radioGroup :: String
-  , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
-  , resource :: String
-  , role :: String
-  , rowSpan :: Int
-  , scoped :: Boolean
-  , seamless :: Boolean
-  , security :: String
-  , span :: Int
-  , spellCheck :: Boolean
-  , srcDoc :: ReactElement
-  , srcLang :: String
-  , srcSet :: String
-  , style :: CSS
-  , suppressContentEditableWarning :: Boolean
-  , tabIndex :: Int
-  , title :: String
-  , typeof :: String
-  , unselectable :: Boolean
-  , useMap :: String
-  , vocab :: String
-  , width :: String
-  , wmode :: String
-  | r
-  )
-
-
-col :: ImportedReactComponentConstructor EmptyProps OptProps_col
-col = createElement' $ unsafeCreateDOMComponent "col"
-
-
-type OptProps_colgroup r =
+type Props_col =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2207,15 +2025,112 @@ type OptProps_colgroup r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+col = tagNoContent "col" :: TagNoContent Props_col
 
-colgroup :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_colgroup
-colgroup = createElement $ unsafeCreateDOMComponent "colgroup"
+type Props_colgroup =
+  ( _data :: Object String
+  , about :: String
+  , acceptCharset :: String
+  , accessKey :: String
+  , allowFullScreen :: Boolean
+  , allowTransparency :: Boolean
+  , autoComplete :: Boolean
+  , autoFocus :: Boolean
+  , autoPlay :: Boolean
+  , capture :: Boolean
+  , cellPadding :: String
+  , cellSpacing :: String
+  , charSet :: String
+  , classID :: String
+  , className :: String
+  , colSpan :: Int
+  , contentEditable :: Boolean
+  , contextMenu :: String
+  , crossOrigin :: String
+  , dangerouslySetInnerHTML :: { __html :: String }
+  , datatype :: String
+  , dateTime :: String
+  , dir :: String
+  , draggable :: Boolean
+  , encType :: String
+  , formAction :: String
+  , formEncType :: String
+  , formMethod :: String
+  , formNoValidate :: Boolean
+  , formTarget :: String
+  , frameBorder :: String
+  , hidden :: Boolean
+  , hrefLang :: String
+  , htmlFor :: String
+  , httpEquiv :: String
+  , icon :: String
+  , id :: String
+  , inlist :: String
+  , inputMode :: String
+  , is :: String
+  , itemID :: String
+  , itemProp :: String
+  , itemRef :: String
+  , itemScope :: Boolean
+  , itemType :: String
+  , key :: String
+  , keyParams :: String
+  , keyType :: String
+  , lang :: String
+  , marginHeight :: String
+  , marginWidth :: String
+  , maxLength :: Int
+  , mediaGroup :: String
+  , minLength :: Int
+  , noValidate :: Boolean
+  , onBlur :: Effect Unit
+  , onClick :: Effect Unit
+  , onDoubleClick :: Effect Unit
+  , onFocus :: Effect Unit
+  , onKeyDown :: EffectFn1 Foreign Unit
+  , onKeyPress :: EffectFn1 Foreign Unit
+  , onKeyUp :: EffectFn1 Foreign Unit
+  , onMouseDown :: EffectFn1 Foreign Unit
+  , onMouseEnter :: EffectFn1 Foreign Unit
+  , onMouseLeave :: EffectFn1 Foreign Unit
+  , onMouseMove :: EffectFn1 Foreign Unit
+  , onMouseOut :: EffectFn1 Foreign Unit
+  , onMouseOver :: EffectFn1 Foreign Unit
+  , onMouseUp :: EffectFn1 Foreign Unit
+  , onScroll :: EffectFn1 Foreign Unit
+  , prefix :: String
+  , property :: String
+  , radioGroup :: String
+  , readOnly :: Boolean
+  , ref :: EffectFn1 WH.HTMLElement Unit
+  , resource :: String
+  , role :: String
+  , rowSpan :: Int
+  , scoped :: Boolean
+  , seamless :: Boolean
+  , security :: String
+  , span :: Int
+  , spellCheck :: Boolean
+  , srcDoc :: ReactElement
+  , srcLang :: String
+  , srcSet :: String
+  , style :: CSS
+  , suppressContentEditableWarning :: Boolean
+  , tabIndex :: Int
+  , title :: String
+  , typeof :: String
+  , unselectable :: Boolean
+  , useMap :: String
+  , vocab :: String
+  , width :: String
+  , wmode :: String
+  )
 
+colgroup = tag "colgroup" :: Tag Props_colgroup
 
-type OptProps_data r =
+type Props_data =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2311,15 +2226,11 @@ type OptProps_data r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+data' = tag "data" :: Tag Props_data
 
-data' :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_data
-data' = createElement $ unsafeCreateDOMComponent "data"
-
-
-type OptProps_datalist r =
+type Props_datalist =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2414,15 +2325,11 @@ type OptProps_datalist r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+datalist = tag "datalist" :: Tag Props_datalist
 
-datalist :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_datalist
-datalist = createElement $ unsafeCreateDOMComponent "datalist"
-
-
-type OptProps_dd r =
+type Props_dd =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2517,15 +2424,11 @@ type OptProps_dd r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+dd = tag "dd" :: Tag Props_dd
 
-dd :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_dd
-dd = createElement $ unsafeCreateDOMComponent "dd"
-
-
-type OptProps_del r =
+type Props_del =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2621,15 +2524,11 @@ type OptProps_del r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+del = tag "del" :: Tag Props_del
 
-del :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_del
-del = createElement $ unsafeCreateDOMComponent "del"
-
-
-type OptProps_details r =
+type Props_details =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2725,15 +2624,11 @@ type OptProps_details r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+details = tag "details" :: Tag Props_details
 
-details :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_details
-details = createElement $ unsafeCreateDOMComponent "details"
-
-
-type OptProps_dfn r =
+type Props_dfn =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2829,15 +2724,11 @@ type OptProps_dfn r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+dfn = tag "dfn" :: Tag Props_dfn
 
-dfn :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_dfn
-dfn = createElement $ unsafeCreateDOMComponent "dfn"
-
-
-type OptProps_dialog r =
+type Props_dialog =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -2933,15 +2824,11 @@ type OptProps_dialog r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+dialog = tag "dialog" :: Tag Props_dialog
 
-dialog :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_dialog
-dialog = createElement $ unsafeCreateDOMComponent "dialog"
-
-
-type OptProps_div r =
+type Props_div =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3036,15 +2923,11 @@ type OptProps_div r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+div = tag "div" :: Tag Props_div
 
-div :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_div
-div = createElement $ unsafeCreateDOMComponent "div"
-
-
-type OptProps_dl r =
+type Props_dl =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3139,15 +3022,11 @@ type OptProps_dl r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+dl = tag "dl" :: Tag Props_dl
 
-dl :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_dl
-dl = createElement $ unsafeCreateDOMComponent "dl"
-
-
-type OptProps_dt r =
+type Props_dt =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3242,15 +3121,11 @@ type OptProps_dt r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+dt = tag "dt" :: Tag Props_dt
 
-dt :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_dt
-dt = createElement $ unsafeCreateDOMComponent "dt"
-
-
-type OptProps_em r =
+type Props_em =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3345,15 +3220,11 @@ type OptProps_em r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+em = tag "em" :: Tag Props_em
 
-em :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_em
-em = createElement $ unsafeCreateDOMComponent "em"
-
-
-type OptProps_embed r =
+type Props_embed =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3452,15 +3323,11 @@ type OptProps_embed r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+embed = tagNoContent "embed" :: TagNoContent Props_embed
 
-embed :: ImportedReactComponentConstructor EmptyProps OptProps_embed
-embed = createElement' $ unsafeCreateDOMComponent "embed"
-
-
-type OptProps_fieldset r =
+type Props_fieldset =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3558,15 +3425,11 @@ type OptProps_fieldset r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+fieldset = tag "fieldset" :: Tag Props_fieldset
 
-fieldset :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_fieldset
-fieldset = createElement $ unsafeCreateDOMComponent "fieldset"
-
-
-type OptProps_figcaption r =
+type Props_figcaption =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3661,15 +3524,11 @@ type OptProps_figcaption r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+figcaption = tag "figcaption" :: Tag Props_figcaption
 
-figcaption :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_figcaption
-figcaption = createElement $ unsafeCreateDOMComponent "figcaption"
-
-
-type OptProps_figure r =
+type Props_figure =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3764,15 +3623,11 @@ type OptProps_figure r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+figure = tag "figure" :: Tag Props_figure
 
-figure :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_figure
-figure = createElement $ unsafeCreateDOMComponent "figure"
-
-
-type OptProps_footer r =
+type Props_footer =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -3867,15 +3722,11 @@ type OptProps_footer r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+footer = tag "footer" :: Tag Props_footer
 
-footer :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_footer
-footer = createElement $ unsafeCreateDOMComponent "footer"
-
-
-type OptProps_form r =
+type Props_form =
   ( _data :: Object String
   , about :: String
   , accept :: String
@@ -3979,15 +3830,11 @@ type OptProps_form r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+form = tag "form" :: Tag Props_form
 
-form :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_form
-form = createElement $ unsafeCreateDOMComponent "form"
-
-
-type OptProps_h1 r =
+type Props_h1 =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4082,15 +3929,11 @@ type OptProps_h1 r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+h1 = tag "h1" :: Tag Props_h1
 
-h1 :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_h1
-h1 = createElement $ unsafeCreateDOMComponent "h1"
-
-
-type OptProps_h2 r =
+type Props_h2 =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4185,15 +4028,11 @@ type OptProps_h2 r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+h2 = tag "h2" :: Tag Props_h2
 
-h2 :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_h2
-h2 = createElement $ unsafeCreateDOMComponent "h2"
-
-
-type OptProps_h3 r =
+type Props_h3 =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4288,15 +4127,11 @@ type OptProps_h3 r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+h3 = tag "h3" :: Tag Props_h3
 
-h3 :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_h3
-h3 = createElement $ unsafeCreateDOMComponent "h3"
-
-
-type OptProps_h4 r =
+type Props_h4 =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4391,15 +4226,11 @@ type OptProps_h4 r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+h4 = tag "h4" :: Tag Props_h4
 
-h4 :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_h4
-h4 = createElement $ unsafeCreateDOMComponent "h4"
-
-
-type OptProps_h5 r =
+type Props_h5 =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4494,15 +4325,11 @@ type OptProps_h5 r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+h5 = tag "h5" :: Tag Props_h5
 
-h5 :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_h5
-h5 = createElement $ unsafeCreateDOMComponent "h5"
-
-
-type OptProps_h6 r =
+type Props_h6 =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4597,15 +4424,11 @@ type OptProps_h6 r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+h6 = tag "h6" :: Tag Props_h6
 
-h6 :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_h6
-h6 = createElement $ unsafeCreateDOMComponent "h6"
-
-
-type OptProps_head r =
+type Props_head =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4701,15 +4524,11 @@ type OptProps_head r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+head = tag "head" :: Tag Props_head
 
-head :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_head
-head = createElement $ unsafeCreateDOMComponent "head"
-
-
-type OptProps_header r =
+type Props_header =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4804,15 +4623,11 @@ type OptProps_header r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+header = tag "header" :: Tag Props_header
 
-header :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_header
-header = createElement $ unsafeCreateDOMComponent "header"
-
-
-type OptProps_hgroup r =
+type Props_hgroup =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -4907,15 +4722,11 @@ type OptProps_hgroup r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+hgroup = tag "hgroup" :: Tag Props_hgroup
 
-hgroup :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_hgroup
-hgroup = createElement $ unsafeCreateDOMComponent "hgroup"
-
-
-type OptProps_hr r =
+type Props_hr =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5012,15 +4823,11 @@ type OptProps_hr r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+hr = tagNoContent "hr" :: TagNoContent Props_hr
 
-hr :: ImportedReactComponentConstructor EmptyProps OptProps_hr
-hr = createElement' $ unsafeCreateDOMComponent "hr"
-
-
-type OptProps_html r =
+type Props_html =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5116,15 +4923,11 @@ type OptProps_html r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+html = tag "html" :: Tag Props_html
 
-html :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_html
-html = createElement $ unsafeCreateDOMComponent "html"
-
-
-type OptProps_i r =
+type Props_i =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5219,15 +5022,11 @@ type OptProps_i r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+i = tag "i" :: Tag Props_i
 
-i :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_i
-i = createElement $ unsafeCreateDOMComponent "i"
-
-
-type OptProps_iframe r =
+type Props_iframe =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5328,15 +5127,11 @@ type OptProps_iframe r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+iframe = tag "iframe" :: Tag Props_iframe
 
-iframe :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_iframe
-iframe = createElement $ unsafeCreateDOMComponent "iframe"
-
-
-type OptProps_img r =
+type Props_img =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5438,15 +5233,11 @@ type OptProps_img r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+img = tagNoContent "img" :: TagNoContent Props_img
 
-img :: ImportedReactComponentConstructor EmptyProps OptProps_img
-img = createElement' $ unsafeCreateDOMComponent "img"
-
-
-type OptProps_input r =
+type Props_input =
   ( _data :: Object String
   , about :: String
   , accept :: String
@@ -5569,15 +5360,11 @@ type OptProps_input r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+input = tagNoContent "input" :: TagNoContent Props_input
 
-input :: ImportedReactComponentConstructor EmptyProps OptProps_input
-input = createElement' $ unsafeCreateDOMComponent "input"
-
-
-type OptProps_ins r =
+type Props_ins =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5673,15 +5460,11 @@ type OptProps_ins r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+ins = tag "ins" :: Tag Props_ins
 
-ins :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_ins
-ins = createElement $ unsafeCreateDOMComponent "ins"
-
-
-type OptProps_kbd r =
+type Props_kbd =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5776,15 +5559,11 @@ type OptProps_kbd r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+kbd = tag "kbd" :: Tag Props_kbd
 
-kbd :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_kbd
-kbd = createElement $ unsafeCreateDOMComponent "kbd"
-
-
-type OptProps_keygen r =
+type Props_keygen =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5883,15 +5662,11 @@ type OptProps_keygen r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+keygen = tag "keygen" :: Tag Props_keygen
 
-keygen :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_keygen
-keygen = createElement $ unsafeCreateDOMComponent "keygen"
-
-
-type OptProps_label r =
+type Props_label =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -5987,15 +5762,11 @@ type OptProps_label r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+label = tag "label" :: Tag Props_label
 
-label :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_label
-label = createElement $ unsafeCreateDOMComponent "label"
-
-
-type OptProps_legend r =
+type Props_legend =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6090,15 +5861,11 @@ type OptProps_legend r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+legend = tag "legend" :: Tag Props_legend
 
-legend :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_legend
-legend = createElement $ unsafeCreateDOMComponent "legend"
-
-
-type OptProps_li r =
+type Props_li =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6195,15 +5962,11 @@ type OptProps_li r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+li = tag "li" :: Tag Props_li
 
-li :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_li
-li = createElement $ unsafeCreateDOMComponent "li"
-
-
-type OptProps_link r =
+type Props_link =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6309,15 +6072,11 @@ type OptProps_link r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+link = tagNoContent "link" :: TagNoContent Props_link
 
-link :: ImportedReactComponentConstructor EmptyProps OptProps_link
-link = createElement' $ unsafeCreateDOMComponent "link"
-
-
-type OptProps_main r =
+type Props_main =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6412,15 +6171,11 @@ type OptProps_main r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+main = tag "main" :: Tag Props_main
 
-main :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_main
-main = createElement $ unsafeCreateDOMComponent "main"
-
-
-type OptProps_map r =
+type Props_map =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6516,15 +6271,11 @@ type OptProps_map r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+map = tag "map" :: Tag Props_map
 
-map :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_map
-map = createElement $ unsafeCreateDOMComponent "map"
-
-
-type OptProps_mark r =
+type Props_mark =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6619,15 +6370,11 @@ type OptProps_mark r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+mark = tag "mark" :: Tag Props_mark
 
-mark :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_mark
-mark = createElement $ unsafeCreateDOMComponent "mark"
-
-
-type OptProps_math r =
+type Props_math =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6722,15 +6469,11 @@ type OptProps_math r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+math = tag "math" :: Tag Props_math
 
-math :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_math
-math = createElement $ unsafeCreateDOMComponent "math"
-
-
-type OptProps_menu r =
+type Props_menu =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6825,15 +6568,11 @@ type OptProps_menu r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+menu = tag "menu" :: Tag Props_menu
 
-menu :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_menu
-menu = createElement $ unsafeCreateDOMComponent "menu"
-
-
-type OptProps_menuitem r =
+type Props_menuitem =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -6928,15 +6667,11 @@ type OptProps_menuitem r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+menuitem = tag "menuitem" :: Tag Props_menuitem
 
-menuitem :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_menuitem
-menuitem = createElement $ unsafeCreateDOMComponent "menuitem"
-
-
-type OptProps_meta r =
+type Props_meta =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7033,15 +6768,11 @@ type OptProps_meta r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+meta = tagNoContent "meta" :: TagNoContent Props_meta
 
-meta :: ImportedReactComponentConstructor EmptyProps OptProps_meta
-meta = createElement' $ unsafeCreateDOMComponent "meta"
-
-
-type OptProps_meter r =
+type Props_meter =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7142,15 +6873,11 @@ type OptProps_meter r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+meter = tag "meter" :: Tag Props_meter
 
-meter :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_meter
-meter = createElement $ unsafeCreateDOMComponent "meter"
-
-
-type OptProps_nav r =
+type Props_nav =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7245,15 +6972,11 @@ type OptProps_nav r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+nav = tag "nav" :: Tag Props_nav
 
-nav :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_nav
-nav = createElement $ unsafeCreateDOMComponent "nav"
-
-
-type OptProps_noscript r =
+type Props_noscript =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7348,15 +7071,11 @@ type OptProps_noscript r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+noscript = tag "noscript" :: Tag Props_noscript
 
-noscript :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_noscript
-noscript = createElement $ unsafeCreateDOMComponent "noscript"
-
-
-type OptProps_object r =
+type Props_object =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7457,15 +7176,11 @@ type OptProps_object r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+object = tag "object" :: Tag Props_object
 
-object :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_object
-object = createElement $ unsafeCreateDOMComponent "object"
-
-
-type OptProps_ol r =
+type Props_ol =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7563,15 +7278,11 @@ type OptProps_ol r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+ol = tag "ol" :: Tag Props_ol
 
-ol :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_ol
-ol = createElement $ unsafeCreateDOMComponent "ol"
-
-
-type OptProps_optgroup r =
+type Props_optgroup =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7668,15 +7379,11 @@ type OptProps_optgroup r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+optgroup = tag "optgroup" :: Tag Props_optgroup
 
-optgroup :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_optgroup
-optgroup = createElement $ unsafeCreateDOMComponent "optgroup"
-
-
-type OptProps_option r =
+type Props_option =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7775,15 +7482,11 @@ type OptProps_option r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+option = tag "option" :: Tag Props_option
 
-option :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_option
-option = createElement $ unsafeCreateDOMComponent "option"
-
-
-type OptProps_output r =
+type Props_output =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7880,15 +7583,11 @@ type OptProps_output r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+output = tag "output" :: Tag Props_output
 
-output :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_output
-output = createElement $ unsafeCreateDOMComponent "output"
-
-
-type OptProps_p r =
+type Props_p =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -7983,15 +7682,11 @@ type OptProps_p r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+p = tag "p" :: Tag Props_p
 
-p :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_p
-p = createElement $ unsafeCreateDOMComponent "p"
-
-
-type OptProps_param r =
+type Props_param =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8089,15 +7784,11 @@ type OptProps_param r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+param = tagNoContent "param" :: TagNoContent Props_param
 
-param :: ImportedReactComponentConstructor EmptyProps OptProps_param
-param = createElement' $ unsafeCreateDOMComponent "param"
-
-
-type OptProps_picture r =
+type Props_picture =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8192,15 +7883,11 @@ type OptProps_picture r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+picture = tag "picture" :: Tag Props_picture
 
-picture :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_picture
-picture = createElement $ unsafeCreateDOMComponent "picture"
-
-
-type OptProps_pre r =
+type Props_pre =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8296,15 +7983,11 @@ type OptProps_pre r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+pre = tag "pre" :: Tag Props_pre
 
-pre :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_pre
-pre = createElement $ unsafeCreateDOMComponent "pre"
-
-
-type OptProps_progress r =
+type Props_progress =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8401,15 +8084,11 @@ type OptProps_progress r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+progress = tag "progress" :: Tag Props_progress
 
-progress :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_progress
-progress = createElement $ unsafeCreateDOMComponent "progress"
-
-
-type OptProps_q r =
+type Props_q =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8505,15 +8184,11 @@ type OptProps_q r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+q = tag "q" :: Tag Props_q
 
-q :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_q
-q = createElement $ unsafeCreateDOMComponent "q"
-
-
-type OptProps_rb r =
+type Props_rb =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8608,15 +8283,11 @@ type OptProps_rb r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+rb = tag "rb" :: Tag Props_rb
 
-rb :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_rb
-rb = createElement $ unsafeCreateDOMComponent "rb"
-
-
-type OptProps_rp r =
+type Props_rp =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8711,15 +8382,11 @@ type OptProps_rp r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+rp = tag "rp" :: Tag Props_rp
 
-rp :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_rp
-rp = createElement $ unsafeCreateDOMComponent "rp"
-
-
-type OptProps_rt r =
+type Props_rt =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8814,15 +8481,11 @@ type OptProps_rt r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+rt = tag "rt" :: Tag Props_rt
 
-rt :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_rt
-rt = createElement $ unsafeCreateDOMComponent "rt"
-
-
-type OptProps_rtc r =
+type Props_rtc =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -8917,15 +8580,11 @@ type OptProps_rtc r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+rtc = tag "rtc" :: Tag Props_rtc
 
-rtc :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_rtc
-rtc = createElement $ unsafeCreateDOMComponent "rtc"
-
-
-type OptProps_ruby r =
+type Props_ruby =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9020,15 +8679,11 @@ type OptProps_ruby r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+ruby = tag "ruby" :: Tag Props_ruby
 
-ruby :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_ruby
-ruby = createElement $ unsafeCreateDOMComponent "ruby"
-
-
-type OptProps_s r =
+type Props_s =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9123,15 +8778,11 @@ type OptProps_s r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+s = tag "s" :: Tag Props_s
 
-s :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_s
-s = createElement $ unsafeCreateDOMComponent "s"
-
-
-type OptProps_samp r =
+type Props_samp =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9226,15 +8877,11 @@ type OptProps_samp r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+samp = tag "samp" :: Tag Props_samp
 
-samp :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_samp
-samp = createElement $ unsafeCreateDOMComponent "samp"
-
-
-type OptProps_script r =
+type Props_script =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9335,15 +8982,11 @@ type OptProps_script r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+script = tag "script" :: Tag Props_script
 
-script :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_script
-script = createElement $ unsafeCreateDOMComponent "script"
-
-
-type OptProps_section r =
+type Props_section =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9438,15 +9081,11 @@ type OptProps_section r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+section = tag "section" :: Tag Props_section
 
-section :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_section
-section = createElement $ unsafeCreateDOMComponent "section"
-
-
-type OptProps_select r =
+type Props_select =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9550,15 +9189,11 @@ type OptProps_select r =
   , value :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+select = tag "select" :: Tag Props_select
 
-select :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_select
-select = createElement $ unsafeCreateDOMComponent "select"
-
-
-type OptProps_slot r =
+type Props_slot =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9654,15 +9289,11 @@ type OptProps_slot r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+slot = tag "slot" :: Tag Props_slot
 
-slot :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_slot
-slot = createElement $ unsafeCreateDOMComponent "slot"
-
-
-type OptProps_small r =
+type Props_small =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9757,15 +9388,11 @@ type OptProps_small r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+small = tag "small" :: Tag Props_small
 
-small :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_small
-small = createElement $ unsafeCreateDOMComponent "small"
-
-
-type OptProps_source r =
+type Props_source =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9864,15 +9491,11 @@ type OptProps_source r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+source = tagNoContent "source" :: TagNoContent Props_source
 
-source :: ImportedReactComponentConstructor EmptyProps OptProps_source
-source = createElement' $ unsafeCreateDOMComponent "source"
-
-
-type OptProps_span r =
+type Props_span =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -9967,15 +9590,11 @@ type OptProps_span r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+span = tag "span" :: Tag Props_span
 
-span :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_span
-span = createElement $ unsafeCreateDOMComponent "span"
-
-
-type OptProps_strong r =
+type Props_strong =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -10070,15 +9689,11 @@ type OptProps_strong r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+strong = tag "strong" :: Tag Props_strong
 
-strong :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_strong
-strong = createElement $ unsafeCreateDOMComponent "strong"
-
-
-type OptProps_style r =
+type Props_style =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -10177,15 +9792,11 @@ type OptProps_style r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+style = tag "style" :: Tag Props_style
 
-style :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_style
-style = createElement $ unsafeCreateDOMComponent "style"
-
-
-type OptProps_sub r =
+type Props_sub =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -10280,15 +9891,11 @@ type OptProps_sub r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+sub = tag "sub" :: Tag Props_sub
 
-sub :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_sub
-sub = createElement $ unsafeCreateDOMComponent "sub"
-
-
-type OptProps_summary r =
+type Props_summary =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -10383,15 +9990,11 @@ type OptProps_summary r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+summary = tag "summary" :: Tag Props_summary
 
-summary :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_summary
-summary = createElement $ unsafeCreateDOMComponent "summary"
-
-
-type OptProps_sup r =
+type Props_sup =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -10486,15 +10089,11 @@ type OptProps_sup r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+sup = tag "sup" :: Tag Props_sup
 
-sup :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_sup
-sup = createElement $ unsafeCreateDOMComponent "sup"
-
-
-type OptProps_svg r =
+type Props_svg =
   ( _data :: Object String
   , about :: String
   , accentHeight :: String
@@ -10831,15 +10430,11 @@ type OptProps_svg r =
   , yChannelSelector :: String
   , z :: String
   , zoomAndPan :: String
-  | r
   )
 
+svg = tag "svg" :: Tag Props_svg
 
-svg :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_svg
-svg = createElement $ unsafeCreateDOMComponent "svg"
-
-
-type OptProps_table r =
+type Props_table =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -10936,15 +10531,11 @@ type OptProps_table r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+table = tag "table" :: Tag Props_table
 
-table :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_table
-table = createElement $ unsafeCreateDOMComponent "table"
-
-
-type OptProps_tbody r =
+type Props_tbody =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11039,15 +10630,11 @@ type OptProps_tbody r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+tbody = tag "tbody" :: Tag Props_tbody
 
-tbody :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_tbody
-tbody = createElement $ unsafeCreateDOMComponent "tbody"
-
-
-type OptProps_td r =
+type Props_td =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11146,15 +10733,11 @@ type OptProps_td r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+td = tag "td" :: Tag Props_td
 
-td :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_td
-td = createElement $ unsafeCreateDOMComponent "td"
-
-
-type OptProps_template r =
+type Props_template =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11249,15 +10832,11 @@ type OptProps_template r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+template = tag "template" :: Tag Props_template
 
-template :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_template
-template = createElement $ unsafeCreateDOMComponent "template"
-
-
-type OptProps_textarea r =
+type Props_textarea =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11365,15 +10944,11 @@ type OptProps_textarea r =
   , vocab :: String
   , wmode :: String
   , wrap :: String
-  | r
   )
 
+textarea = tagNoContent "textarea" :: TagNoContent Props_textarea
 
-textarea :: ImportedReactComponentConstructor EmptyProps OptProps_textarea
-textarea = createElement' $ unsafeCreateDOMComponent "textarea"
-
-
-type OptProps_tfoot r =
+type Props_tfoot =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11468,15 +11043,11 @@ type OptProps_tfoot r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+tfoot = tag "tfoot" :: Tag Props_tfoot
 
-tfoot :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_tfoot
-tfoot = createElement $ unsafeCreateDOMComponent "tfoot"
-
-
-type OptProps_th r =
+type Props_th =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11575,15 +11146,11 @@ type OptProps_th r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+th = tag "th" :: Tag Props_th
 
-th :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_th
-th = createElement $ unsafeCreateDOMComponent "th"
-
-
-type OptProps_thead r =
+type Props_thead =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11678,15 +11245,11 @@ type OptProps_thead r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+thead = tag "thead" :: Tag Props_thead
 
-thead :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_thead
-thead = createElement $ unsafeCreateDOMComponent "thead"
-
-
-type OptProps_time r =
+type Props_time =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11781,15 +11344,11 @@ type OptProps_time r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+time = tag "time" :: Tag Props_time
 
-time :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_time
-time = createElement $ unsafeCreateDOMComponent "time"
-
-
-type OptProps_title r =
+type Props_title =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11884,15 +11443,11 @@ type OptProps_title r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+title = tag "title" :: Tag Props_title
 
-title :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_title
-title = createElement $ unsafeCreateDOMComponent "title"
-
-
-type OptProps_tr r =
+type Props_tr =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -11987,15 +11542,11 @@ type OptProps_tr r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+tr = tag "tr" :: Tag Props_tr
 
-tr :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_tr
-tr = createElement $ unsafeCreateDOMComponent "tr"
-
-
-type OptProps_track r =
+type Props_track =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -12094,15 +11645,11 @@ type OptProps_track r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+track = tagNoContent "track" :: TagNoContent Props_track
 
-track :: ImportedReactComponentConstructor EmptyProps OptProps_track
-track = createElement' $ unsafeCreateDOMComponent "track"
-
-
-type OptProps_u r =
+type Props_u =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -12197,15 +11744,11 @@ type OptProps_u r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+u = tag "u" :: Tag Props_u
 
-u :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_u
-u = createElement $ unsafeCreateDOMComponent "u"
-
-
-type OptProps_ul r =
+type Props_ul =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -12301,15 +11844,11 @@ type OptProps_ul r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+ul = tag "ul" :: Tag Props_ul
 
-ul :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_ul
-ul = createElement $ unsafeCreateDOMComponent "ul"
-
-
-type OptProps_var r =
+type Props_var =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -12404,15 +11943,11 @@ type OptProps_var r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
+var = tag "var" :: Tag Props_var
 
-var :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_var
-var = createElement $ unsafeCreateDOMComponent "var"
-
-
-type OptProps_video r =
+type Props_video =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -12521,15 +12056,11 @@ type OptProps_video r =
   , vocab :: String
   , width :: String
   , wmode :: String
-  | r
   )
 
+video = tag "video" :: Tag Props_video
 
-video :: ImportedReactComponentConstructorWithContent EmptyProps OptProps_video
-video = createElement $ unsafeCreateDOMComponent "video"
-
-
-type OptProps_wbr r =
+type Props_wbr =
   ( _data :: Object String
   , about :: String
   , acceptCharset :: String
@@ -12624,10 +12155,6 @@ type OptProps_wbr r =
   , useMap :: String
   , vocab :: String
   , wmode :: String
-  | r
   )
 
-
-wbr :: ImportedReactComponentConstructor EmptyProps OptProps_wbr
-wbr = createElement' $ unsafeCreateDOMComponent "wbr"
-
+wbr = tagNoContent "wbr" :: TagNoContent Props_wbr
