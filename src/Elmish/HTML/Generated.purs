@@ -7,7 +7,7 @@ module Elmish.HTML.Generated where
 import Prelude
 
 import Effect (Effect)
-import Elmish (EffectFn1, ReactElement)
+import Elmish (EffectFn1, ReactElement, Ref)
 import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
 import Foreign (Foreign)
 import Foreign.Object (Object)
@@ -93,7 +93,7 @@ type Props_a =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLAnchorElement Unit
+  , ref :: Ref WH.HTMLAnchorElement
   , rel :: String
   , resource :: String
   , role :: String
@@ -196,7 +196,7 @@ type Props_abbr =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -296,7 +296,7 @@ type Props_address =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -399,7 +399,7 @@ type Props_area =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLAreaElement Unit
+  , ref :: Ref WH.HTMLAreaElement
   , rel :: String
   , resource :: String
   , role :: String
@@ -502,7 +502,7 @@ type Props_article =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -601,7 +601,7 @@ type Props_aside =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -704,7 +704,7 @@ type Props_audio =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLAudioElement Unit
+  , ref :: Ref WH.HTMLAudioElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -804,7 +804,7 @@ type Props_b =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -904,7 +904,7 @@ type Props_base =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLBaseElement Unit
+  , ref :: Ref WH.HTMLBaseElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1004,7 +1004,7 @@ type Props_bdi =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1104,7 +1104,7 @@ type Props_bdo =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1204,7 +1204,7 @@ type Props_blockquote =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1303,7 +1303,7 @@ type Props_body =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLBodyElement Unit
+  , ref :: Ref WH.HTMLBodyElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1402,7 +1402,7 @@ type Props_br =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLBRElement Unit
+  , ref :: Ref WH.HTMLBRElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1504,7 +1504,7 @@ type Props_button =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLButtonElement Unit
+  , ref :: Ref WH.HTMLButtonElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1606,7 +1606,7 @@ type Props_canvas =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLCanvasElement Unit
+  , ref :: Ref WH.HTMLCanvasElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1706,7 +1706,7 @@ type Props_caption =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1805,7 +1805,7 @@ type Props_cite =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -1904,7 +1904,7 @@ type Props_code =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2003,7 +2003,7 @@ type Props_col =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2104,7 +2104,7 @@ type Props_colgroup =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2205,7 +2205,7 @@ type Props_data =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLDataElement Unit
+  , ref :: Ref WH.HTMLDataElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2305,7 +2305,7 @@ type Props_datalist =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLDataListElement Unit
+  , ref :: Ref WH.HTMLDataListElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2404,7 +2404,7 @@ type Props_dd =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2504,7 +2504,7 @@ type Props_del =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2604,7 +2604,7 @@ type Props_details =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2703,7 +2703,7 @@ type Props_dfn =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2804,7 +2804,7 @@ type Props_dialog =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -2903,7 +2903,7 @@ type Props_div =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLDivElement Unit
+  , ref :: Ref WH.HTMLDivElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3002,7 +3002,7 @@ type Props_dl =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLDListElement Unit
+  , ref :: Ref WH.HTMLDListElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3101,7 +3101,7 @@ type Props_dt =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3200,7 +3200,7 @@ type Props_em =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3300,7 +3300,7 @@ type Props_embed =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLEmbedElement Unit
+  , ref :: Ref WH.HTMLEmbedElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3405,7 +3405,7 @@ type Props_fieldset =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLFieldSetElement Unit
+  , ref :: Ref WH.HTMLFieldSetElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3504,7 +3504,7 @@ type Props_figcaption =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3603,7 +3603,7 @@ type Props_figure =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3702,7 +3702,7 @@ type Props_footer =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3809,7 +3809,7 @@ type Props_form =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLFormElement Unit
+  , ref :: Ref WH.HTMLFormElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -3909,7 +3909,7 @@ type Props_h1 =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
+  , ref :: Ref WH.HTMLHeadingElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4008,7 +4008,7 @@ type Props_h2 =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
+  , ref :: Ref WH.HTMLHeadingElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4107,7 +4107,7 @@ type Props_h3 =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
+  , ref :: Ref WH.HTMLHeadingElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4206,7 +4206,7 @@ type Props_h4 =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
+  , ref :: Ref WH.HTMLHeadingElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4305,7 +4305,7 @@ type Props_h5 =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
+  , ref :: Ref WH.HTMLHeadingElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4404,7 +4404,7 @@ type Props_h6 =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadingElement Unit
+  , ref :: Ref WH.HTMLHeadingElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4504,7 +4504,7 @@ type Props_head =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHeadElement Unit
+  , ref :: Ref WH.HTMLHeadElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4603,7 +4603,7 @@ type Props_header =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4702,7 +4702,7 @@ type Props_hgroup =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4801,7 +4801,7 @@ type Props_hr =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLHRElement Unit
+  , ref :: Ref WH.HTMLHRElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -4903,7 +4903,7 @@ type Props_html =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5002,7 +5002,7 @@ type Props_i =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5103,7 +5103,7 @@ type Props_iframe =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLIFrameElement Unit
+  , ref :: Ref WH.HTMLIFrameElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5210,7 +5210,7 @@ type Props_img =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLImageElement Unit
+  , ref :: Ref WH.HTMLImageElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5331,7 +5331,7 @@ type Props_input =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLInputElement Unit
+  , ref :: Ref WH.HTMLInputElement
   , required :: Boolean
   , resource :: String
   , results :: String
@@ -5440,7 +5440,7 @@ type Props_ins =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5539,7 +5539,7 @@ type Props_kbd =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5642,7 +5642,7 @@ type Props_keygen =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLKeygenElement Unit
+  , ref :: Ref WH.HTMLKeygenElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5742,7 +5742,7 @@ type Props_label =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLLabelElement Unit
+  , ref :: Ref WH.HTMLLabelElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5841,7 +5841,7 @@ type Props_legend =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLLegendElement Unit
+  , ref :: Ref WH.HTMLLegendElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -5940,7 +5940,7 @@ type Props_li =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLLIElement Unit
+  , ref :: Ref WH.HTMLLIElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6046,7 +6046,7 @@ type Props_link =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLLinkElement Unit
+  , ref :: Ref WH.HTMLLinkElement
   , rel :: String
   , resource :: String
   , role :: String
@@ -6151,7 +6151,7 @@ type Props_main =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6251,7 +6251,7 @@ type Props_map =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLMapElement Unit
+  , ref :: Ref WH.HTMLMapElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6350,7 +6350,7 @@ type Props_mark =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6449,7 +6449,7 @@ type Props_math =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6548,7 +6548,7 @@ type Props_menu =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6647,7 +6647,7 @@ type Props_menuitem =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6748,7 +6748,7 @@ type Props_meta =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLMetaElement Unit
+  , ref :: Ref WH.HTMLMetaElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6852,7 +6852,7 @@ type Props_meter =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLMeterElement Unit
+  , ref :: Ref WH.HTMLMeterElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -6952,7 +6952,7 @@ type Props_nav =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7051,7 +7051,7 @@ type Props_noscript =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7154,7 +7154,7 @@ type Props_object =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLObjectElement Unit
+  , ref :: Ref WH.HTMLObjectElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7255,7 +7255,7 @@ type Props_ol =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLOListElement Unit
+  , ref :: Ref WH.HTMLOListElement
   , resource :: String
   , reversed :: Boolean
   , role :: String
@@ -7359,7 +7359,7 @@ type Props_optgroup =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLOptGroupElement Unit
+  , ref :: Ref WH.HTMLOptGroupElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7460,7 +7460,7 @@ type Props_option =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLOptionElement Unit
+  , ref :: Ref WH.HTMLOptionElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7563,7 +7563,7 @@ type Props_output =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLOutputElement Unit
+  , ref :: Ref WH.HTMLOutputElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7662,7 +7662,7 @@ type Props_p =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLParagraphElement Unit
+  , ref :: Ref WH.HTMLParagraphElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7762,7 +7762,7 @@ type Props_param =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLParamElement Unit
+  , ref :: Ref WH.HTMLParamElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7863,7 +7863,7 @@ type Props_picture =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -7962,7 +7962,7 @@ type Props_pre =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLPreElement Unit
+  , ref :: Ref WH.HTMLPreElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8063,7 +8063,7 @@ type Props_progress =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLProgressElement Unit
+  , ref :: Ref WH.HTMLProgressElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8164,7 +8164,7 @@ type Props_q =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLQuoteElement Unit
+  , ref :: Ref WH.HTMLQuoteElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8263,7 +8263,7 @@ type Props_rb =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8362,7 +8362,7 @@ type Props_rp =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8461,7 +8461,7 @@ type Props_rt =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8560,7 +8560,7 @@ type Props_rtc =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8659,7 +8659,7 @@ type Props_ruby =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8758,7 +8758,7 @@ type Props_s =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8857,7 +8857,7 @@ type Props_samp =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -8960,7 +8960,7 @@ type Props_script =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLScriptElement Unit
+  , ref :: Ref WH.HTMLScriptElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9061,7 +9061,7 @@ type Props_section =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9166,7 +9166,7 @@ type Props_select =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLSelectElement Unit
+  , ref :: Ref WH.HTMLSelectElement
   , required :: Boolean
   , resource :: String
   , role :: String
@@ -9269,7 +9269,7 @@ type Props_slot =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9368,7 +9368,7 @@ type Props_small =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9468,7 +9468,7 @@ type Props_source =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLSourceElement Unit
+  , ref :: Ref WH.HTMLSourceElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9570,7 +9570,7 @@ type Props_span =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLSpanElement Unit
+  , ref :: Ref WH.HTMLSpanElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9669,7 +9669,7 @@ type Props_strong =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9770,7 +9770,7 @@ type Props_style =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLStyleElement Unit
+  , ref :: Ref WH.HTMLStyleElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9871,7 +9871,7 @@ type Props_sub =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -9970,7 +9970,7 @@ type Props_summary =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10069,7 +10069,7 @@ type Props_sup =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10312,7 +10312,7 @@ type Props_svg =
   , radioGroup :: String
   , radius :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , refX :: String
   , refY :: String
   , renderingIntent :: String
@@ -10509,7 +10509,7 @@ type Props_table =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTableElement Unit
+  , ref :: Ref WH.HTMLTableElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10610,7 +10610,7 @@ type Props_tbody =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10711,7 +10711,7 @@ type Props_td =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTableDataCellElement Unit
+  , ref :: Ref WH.HTMLTableDataCellElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10812,7 +10812,7 @@ type Props_template =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTemplateElement Unit
+  , ref :: Ref WH.HTMLTemplateElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -10920,7 +10920,7 @@ type Props_textarea =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTextAreaElement Unit
+  , ref :: Ref WH.HTMLTextAreaElement
   , required :: Boolean
   , resource :: String
   , role :: String
@@ -11023,7 +11023,7 @@ type Props_tfoot =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11124,7 +11124,7 @@ type Props_th =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTableHeaderCellElement Unit
+  , ref :: Ref WH.HTMLTableHeaderCellElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11225,7 +11225,7 @@ type Props_thead =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11324,7 +11324,7 @@ type Props_time =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTimeElement Unit
+  , ref :: Ref WH.HTMLTimeElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11423,7 +11423,7 @@ type Props_title =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTitleElement Unit
+  , ref :: Ref WH.HTMLTitleElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11522,7 +11522,7 @@ type Props_tr =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTableRowElement Unit
+  , ref :: Ref WH.HTMLTableRowElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11624,7 +11624,7 @@ type Props_track =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLTrackElement Unit
+  , ref :: Ref WH.HTMLTrackElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11724,7 +11724,7 @@ type Props_u =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11823,7 +11823,7 @@ type Props_ul =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLUListElement Unit
+  , ref :: Ref WH.HTMLUListElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -11923,7 +11923,7 @@ type Props_var =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12034,7 +12034,7 @@ type Props_video =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLVideoElement Unit
+  , ref :: Ref WH.HTMLVideoElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
@@ -12135,7 +12135,7 @@ type Props_wbr =
   , property :: String
   , radioGroup :: String
   , readOnly :: Boolean
-  , ref :: EffectFn1 WH.HTMLElement Unit
+  , ref :: Ref WH.HTMLElement
   , resource :: String
   , role :: String
   , rowSpan :: Int
