@@ -14,7 +14,14 @@
         "output"
     ],
     "dependencies": {
-        "purescript-elmish": "^v0.5.0",
-        "purescript-foreign-object": "^v3.0.0"
+        "purescript-effect": "^v3.0.0",
+        "purescript-elmish": "^v0.7.0",
+        "purescript-foreign": "^v6.0.1",
+        "purescript-foreign-object": "^v3.0.0",
+        "purescript-prelude": "^v5.0.1",
+        "purescript-record": "^v3.0.0",
+        "purescript-typelevel-prelude": "^v6.0.0",
+        "purescript-unsafe-coerce": "^v5.0.0",
+        "purescript-web-html": "^v3.2.0"
     }
 }
