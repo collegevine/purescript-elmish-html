@@ -4,9 +4,8 @@ let upstream =
 
 in  upstream
   with elmish =
-    { repo =
-        "https://github.com/working-group-purescript-es/purescript-elmish.git"
-    , version = "v0.15.0-update"
+    { repo = "https://github.com/collegevine/purescript-elmish.git"
+    , version = "v0.8.0"
     , dependencies =
       [ "aff"
       , "argonaut-core"
@@ -37,8 +36,8 @@ in  upstream
     }
   with undefined-is-not-a-problem =
     { repo =
-        "https://github.com/working-group-purescript-es/purescript-undefined-is-not-a-problem.git"
-    , version = "v0.15.0-update"
+        "https://github.com/fsoikin/purescript-undefined-is-not-a-problem.git"
+    , version = "dd812f4ea152ad663d5760e7c1d73bdd85989ccc"
     , dependencies =
       [ "assert"
       , "effect"
@@ -50,10 +49,4 @@ in  upstream
       , "tuples"
       , "unsafe-coerce"
       ]
-    }
-  with debug =
-    { dependencies = [ "prelude", "functions" ]
-    , repo =
-        "https://github.com/working-group-purescript-es/purescript-debug.git"
-    , version = "es-modules"
     }
