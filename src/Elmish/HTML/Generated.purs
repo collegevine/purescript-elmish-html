@@ -5286,6 +5286,7 @@ type Props_input =
   , httpEquiv :: String
   , icon :: String
   , id :: String
+  , indeterminate :: String
   , inlist :: String
   , inputMode :: String
   , is :: String
