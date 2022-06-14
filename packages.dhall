@@ -1,6 +1,6 @@
 let upstream =
-      https://raw.githubusercontent.com/purescript/package-sets/psc-0.15.0-20220505/src/packages.dhall
-        sha256:ba57c25c86fd54c2b672cda3a6836bbbdff4b1bbf946bceaabb64e5a10285638
+      https://raw.githubusercontent.com/purescript/package-sets/psc-0.15.2-20220613/src/packages.dhall
+        sha256:99f976d547980055179de2245e428f00212e36acd55d74144eab8ad8bf8570d8
 
 in  upstream
   with elmish =
@@ -32,21 +32,5 @@ in  upstream
       , "undefined-is-not-a-problem"
       , "web-dom"
       , "web-html"
-      ]
-    }
-  with undefined-is-not-a-problem =
-    { repo =
-        "https://github.com/fsoikin/purescript-undefined-is-not-a-problem.git"
-    , version = "dd812f4ea152ad663d5760e7c1d73bdd85989ccc"
-    , dependencies =
-      [ "assert"
-      , "effect"
-      , "either"
-      , "foreign"
-      , "maybe"
-      , "prelude"
-      , "random"
-      , "tuples"
-      , "unsafe-coerce"
       ]
     }
