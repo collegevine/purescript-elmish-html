@@ -3,11 +3,12 @@ module Elmish.HTML.Events
   , InputChangeEvent(..)
   , KeyboardEvent(..)
   , MouseEvent(..)
+  , SelectedValueChanged(..)
   , SyntheticEvent(..)
   , TextAreaChangeEvent(..)
   , TextChanged(..)
-  , module MethodsReexport
   , module HandleReexport
+  , module MethodsReexport
   )
   where
 
@@ -45,6 +46,10 @@ newtype TextAreaChangeEvent = TextAreaChangeEvent RSyntheticEvent
 instance CanReceiveFromJavaScript TextAreaChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
 instance IsSyntheticEvent TextAreaChangeEvent
 
+newtype SelectChangeEvent = SelectChangeEvent RSyntheticEvent
+instance CanReceiveFromJavaScript SelectChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance IsSyntheticEvent SelectChangeEvent
+
 newtype TextChanged = TextChanged String
 instance SpecializedEvent InputChangeEvent TextChanged where
   specializeEvent (InputChangeEvent e) = TextChanged $ fromMaybe "" do
@@ -60,3 +65,9 @@ instance SpecializedEvent InputChangeEvent CheckedChanged where
   specializeEvent (InputChangeEvent e) = CheckedChanged $ fromMaybe false do
     r :: { checked :: _ } <- readForeign (unsafeToForeign e.target)
     pure r.checked
+
+newtype SelectedValueChanged = SelectedValueChanged String
+instance SpecializedEvent SelectChangeEvent SelectedValueChanged where
+  specializeEvent (SelectChangeEvent e) = SelectedValueChanged $ fromMaybe "" do
+    r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
+    pure r.value
