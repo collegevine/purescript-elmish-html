@@ -4,10 +4,13 @@
     , "elmish"
     , "foreign-object"
     , "foreign"
+    , "maybe"
     , "prelude"
     , "record"
     , "typelevel-prelude"
     , "unsafe-coerce"
+    , "web-dom"
+    , "web-events"
     , "web-html"
     ]
 , license = "MIT"

@@ -7,6 +7,7 @@ module Elmish.HTML.Events
   , TextAreaChangeEvent(..)
   , TextChanged(..)
   , module MethodsReexport
+  , module HandleReexport
   )
   where
 
@@ -14,6 +15,7 @@ import Prelude
 
 import Data.Maybe (fromMaybe)
 import Elmish.Dispatch (class SpecializedEvent)
+import Elmish.Dispatch (handleEffect) as HandleReexport
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RSyntheticEvent, RMouseEvent)
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
