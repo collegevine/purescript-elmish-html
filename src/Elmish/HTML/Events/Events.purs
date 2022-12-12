@@ -1,22 +1,22 @@
 module Elmish.HTML.Events
-  ( CheckedChanged(..)
-  , InputChangeEvent(..)
+  ( InputChangeEvent(..)
   , KeyboardEvent(..)
   , MouseEvent(..)
   , SelectChangeEvent(..)
-  , SelectedValueChanged(..)
   , SyntheticEvent(..)
   , TextAreaChangeEvent(..)
-  , TextChanged(..)
+  , inputChecked
+  , inputText
   , module HandleReexport
   , module MethodsReexport
+  , selectSelectedValue
+  , textareaText
   )
   where
 
 import Prelude
 
 import Data.Maybe (fromMaybe)
-import Elmish.Dispatch (class SpecializedEvent)
 import Elmish.Dispatch (handleEffect) as HandleReexport
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RSyntheticEvent, RMouseEvent)
@@ -51,24 +51,22 @@ newtype SelectChangeEvent = SelectChangeEvent RSyntheticEvent
 instance CanReceiveFromJavaScript SelectChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
 instance IsSyntheticEvent SelectChangeEvent
 
-newtype TextChanged = TextChanged String
-instance SpecializedEvent InputChangeEvent TextChanged where
-  specializeEvent (InputChangeEvent e) = TextChanged $ fromMaybe "" do
-    r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
-    pure r.value
-instance SpecializedEvent TextAreaChangeEvent TextChanged where
-  specializeEvent (TextAreaChangeEvent e) = TextChanged $ fromMaybe "" do
-    r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
-    pure r.value
+inputText :: InputChangeEvent -> String
+inputText (InputChangeEvent e) = fromMaybe "" do
+  r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
+  pure r.value
 
-newtype CheckedChanged = CheckedChanged Boolean
-instance SpecializedEvent InputChangeEvent CheckedChanged where
-  specializeEvent (InputChangeEvent e) = CheckedChanged $ fromMaybe false do
-    r :: { checked :: _ } <- readForeign (unsafeToForeign e.target)
-    pure r.checked
+textareaText :: TextAreaChangeEvent -> String
+textareaText (TextAreaChangeEvent e) = fromMaybe "" do
+  r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
+  pure r.value
 
-newtype SelectedValueChanged = SelectedValueChanged String
-instance SpecializedEvent SelectChangeEvent SelectedValueChanged where
-  specializeEvent (SelectChangeEvent e) = SelectedValueChanged $ fromMaybe "" do
-    r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
-    pure r.value
+inputChecked :: InputChangeEvent -> Boolean
+inputChecked (InputChangeEvent e) = fromMaybe false do
+  r :: { checked :: _ } <- readForeign (unsafeToForeign e.target)
+  pure r.checked
+
+selectSelectedValue :: SelectChangeEvent -> String
+selectSelectedValue (SelectChangeEvent e) = fromMaybe "" do
+  r :: { value :: _ } <- readForeign (unsafeToForeign e.target)
+  pure r.value
