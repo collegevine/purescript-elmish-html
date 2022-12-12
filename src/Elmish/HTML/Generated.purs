@@ -9147,7 +9147,7 @@ type Props_select =
   , name :: String
   , noValidate :: Boolean
   , onBlur :: EffectFn1 E.SyntheticEvent Unit
-  , onChange :: EffectFn1 E.SyntheticEvent Unit
+  , onChange :: EffectFn1 E.SelectChangeEvent Unit
   , onClick :: EffectFn1 E.SyntheticEvent Unit
   , onDoubleClick :: EffectFn1 E.SyntheticEvent Unit
   , onFocus :: EffectFn1 E.SyntheticEvent Unit

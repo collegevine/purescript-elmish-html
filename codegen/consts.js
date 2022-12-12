@@ -76,7 +76,7 @@ module.exports.typesByElement = {
   onChange: {
     "*": "EffectFn1 E.SyntheticEvent Unit",
     "input": "EffectFn1 E.InputChangeEvent Unit",
-    "select": "EffectFn1 E.SelectChangeEvent Unit"
+    "select": "EffectFn1 E.SelectChangeEvent Unit",
     "textarea": "EffectFn1 E.TextAreaChangeEvent Unit",
   },
   ref: {
