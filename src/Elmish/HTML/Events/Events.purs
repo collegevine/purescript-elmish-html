@@ -3,6 +3,7 @@ module Elmish.HTML.Events
   , InputChangeEvent(..)
   , KeyboardEvent(..)
   , MouseEvent(..)
+  , SelectChangeEvent(..)
   , SelectedValueChanged(..)
   , SyntheticEvent(..)
   , TextAreaChangeEvent(..)
