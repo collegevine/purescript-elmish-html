@@ -17,7 +17,7 @@ module Elmish.HTML.Events
 import Prelude
 
 import Data.Maybe (fromMaybe)
-import Elmish.Dispatch (handleEffect, handleEffect') as HandleReexport
+import Elmish.Dispatch (handleEffect) as HandleReexport
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RSyntheticEvent, RMouseEvent)
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
