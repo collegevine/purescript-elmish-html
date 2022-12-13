@@ -1,5 +1,6 @@
 module Elmish.HTML.Events
-  ( InputChangeEvent(..)
+  ( EventHandler
+  , InputChangeEvent(..)
   , KeyboardEvent(..)
   , MouseEvent(..)
   , SelectChangeEvent(..)
@@ -17,6 +18,7 @@ module Elmish.HTML.Events
 import Prelude
 
 import Data.Maybe (fromMaybe)
+import Effect.Uncurried (EffectFn1)
 import Elmish.Dispatch (handleEffect) as HandleReexport
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RSyntheticEvent, RMouseEvent)
@@ -24,6 +26,8 @@ import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSynthet
 import Elmish.HTML.Events.Methods (preventDefault, stopPropagation, isPropagationStopped, getModifierState) as MethodsReexport
 import Foreign (unsafeToForeign)
 import Type.Proxy (Proxy(..))
+
+type EventHandler a = EffectFn1 a Unit
 
 newtype SyntheticEvent = SyntheticEvent RSyntheticEvent
 instance CanReceiveFromJavaScript SyntheticEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
