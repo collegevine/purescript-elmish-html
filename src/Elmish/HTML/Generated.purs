@@ -5384,6 +5384,7 @@ type Props_img =
   , keyParams :: String
   , keyType :: String
   , lang :: String
+  , loading :: String
   , marginHeight :: String
   , marginWidth :: String
   , maxLength :: Int
