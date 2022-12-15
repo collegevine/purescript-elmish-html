@@ -6,6 +6,7 @@ module Elmish.HTML.Events
   , SelectChangeEvent(..)
   , SyntheticEvent(..)
   , TextAreaChangeEvent(..)
+  , TouchEvent(..)
   , inputChecked
   , inputText
   , module HandleReexport
@@ -21,7 +22,7 @@ import Data.Maybe (fromMaybe)
 import Effect.Uncurried (EffectFn1)
 import Elmish.Dispatch (handleEffect) as HandleReexport
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
-import Elmish.HTML.Events.Internal (RKeyboardEvent, RSyntheticEvent, RMouseEvent)
+import Elmish.HTML.Events.Internal (RKeyboardEvent, RMouseEvent, RSyntheticEvent, RTouchEvent)
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
 import Elmish.HTML.Events.Methods (preventDefault, stopPropagation, isPropagationStopped, getModifierState) as MethodsReexport
 import Foreign (unsafeToForeign)
@@ -42,6 +43,11 @@ newtype MouseEvent = MouseEvent RMouseEvent
 instance CanReceiveFromJavaScript MouseEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
 instance IsSyntheticEvent MouseEvent
 instance IsKeyboardOrMouseEvent MouseEvent
+
+newtype TouchEvent = TouchEvent RTouchEvent
+instance CanReceiveFromJavaScript TouchEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance IsSyntheticEvent TouchEvent
+instance IsKeyboardOrMouseEvent TouchEvent
 
 newtype InputChangeEvent = InputChangeEvent RSyntheticEvent
 instance CanReceiveFromJavaScript InputChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})

@@ -86,6 +86,10 @@ type Props_a =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -189,6 +193,10 @@ type Props_abbr =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -289,6 +297,10 @@ type Props_address =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -392,6 +404,10 @@ type Props_area =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -495,6 +511,10 @@ type Props_article =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -594,6 +614,10 @@ type Props_aside =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -696,6 +720,10 @@ type Props_audio =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , preload :: String
   , property :: String
@@ -797,6 +825,10 @@ type Props_b =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -897,6 +929,10 @@ type Props_base =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -997,6 +1033,10 @@ type Props_bdi =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1097,6 +1137,10 @@ type Props_bdo =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1197,6 +1241,10 @@ type Props_blockquote =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1296,6 +1344,10 @@ type Props_body =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1395,6 +1447,10 @@ type Props_br =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1497,6 +1553,10 @@ type Props_button =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1599,6 +1659,10 @@ type Props_canvas =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1699,6 +1763,10 @@ type Props_caption =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1798,6 +1866,10 @@ type Props_cite =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1897,6 +1969,10 @@ type Props_code =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1996,6 +2072,10 @@ type Props_col =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2097,6 +2177,10 @@ type Props_colgroup =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2198,6 +2282,10 @@ type Props_data =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2298,6 +2386,10 @@ type Props_datalist =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2397,6 +2489,10 @@ type Props_dd =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2497,6 +2593,10 @@ type Props_del =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2596,6 +2696,10 @@ type Props_details =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2696,6 +2800,10 @@ type Props_dfn =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2796,6 +2904,10 @@ type Props_dialog =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2896,6 +3008,10 @@ type Props_div =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2995,6 +3111,10 @@ type Props_dl =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3094,6 +3214,10 @@ type Props_dt =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3193,6 +3317,10 @@ type Props_em =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3293,6 +3421,10 @@ type Props_embed =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3398,6 +3530,10 @@ type Props_fieldset =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3497,6 +3633,10 @@ type Props_figcaption =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3596,6 +3736,10 @@ type Props_figure =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3695,6 +3839,10 @@ type Props_footer =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3802,6 +3950,10 @@ type Props_form =
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
   , onSubmit :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3902,6 +4054,10 @@ type Props_h1 =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4001,6 +4157,10 @@ type Props_h2 =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4100,6 +4260,10 @@ type Props_h3 =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4199,6 +4363,10 @@ type Props_h4 =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4298,6 +4466,10 @@ type Props_h5 =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4397,6 +4569,10 @@ type Props_h6 =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4496,6 +4672,10 @@ type Props_head =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , profile :: String
   , property :: String
@@ -4596,6 +4776,10 @@ type Props_header =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4695,6 +4879,10 @@ type Props_hgroup =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4794,6 +4982,10 @@ type Props_hr =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4896,6 +5088,10 @@ type Props_html =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4995,6 +5191,10 @@ type Props_i =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5096,6 +5296,10 @@ type Props_iframe =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5203,6 +5407,10 @@ type Props_img =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5322,6 +5530,10 @@ type Props_input =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , pattern :: String
   , placeholder :: String
   , prefix :: String
@@ -5433,6 +5645,10 @@ type Props_ins =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5532,6 +5748,10 @@ type Props_kbd =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5635,6 +5855,10 @@ type Props_keygen =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5735,6 +5959,10 @@ type Props_label =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5834,6 +6062,10 @@ type Props_legend =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5933,6 +6165,10 @@ type Props_li =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6039,6 +6275,10 @@ type Props_link =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6144,6 +6384,10 @@ type Props_main =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6244,6 +6488,10 @@ type Props_map =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6343,6 +6591,10 @@ type Props_mark =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6442,6 +6694,10 @@ type Props_math =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6541,6 +6797,10 @@ type Props_menu =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6640,6 +6900,10 @@ type Props_menuitem =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6741,6 +7005,10 @@ type Props_meta =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6844,6 +7112,10 @@ type Props_meter =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , optimum :: String
   , prefix :: String
   , property :: String
@@ -6945,6 +7217,10 @@ type Props_nav =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7044,6 +7320,10 @@ type Props_noscript =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7147,6 +7427,10 @@ type Props_object =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7248,6 +7532,10 @@ type Props_ol =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7352,6 +7640,10 @@ type Props_optgroup =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7453,6 +7745,10 @@ type Props_option =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7556,6 +7852,10 @@ type Props_output =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7655,6 +7955,10 @@ type Props_p =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7755,6 +8059,10 @@ type Props_param =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7856,6 +8164,10 @@ type Props_picture =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7955,6 +8267,10 @@ type Props_pre =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8056,6 +8372,10 @@ type Props_progress =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8157,6 +8477,10 @@ type Props_q =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8256,6 +8580,10 @@ type Props_rb =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8355,6 +8683,10 @@ type Props_rp =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8454,6 +8786,10 @@ type Props_rt =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8553,6 +8889,10 @@ type Props_rtc =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8652,6 +8992,10 @@ type Props_ruby =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8751,6 +9095,10 @@ type Props_s =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8850,6 +9198,10 @@ type Props_samp =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8953,6 +9305,10 @@ type Props_script =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9054,6 +9410,10 @@ type Props_section =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9159,6 +9519,10 @@ type Props_select =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9262,6 +9626,10 @@ type Props_slot =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9361,6 +9729,10 @@ type Props_small =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9461,6 +9833,10 @@ type Props_source =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9563,6 +9939,10 @@ type Props_span =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9662,6 +10042,10 @@ type Props_strong =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9763,6 +10147,10 @@ type Props_style =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9864,6 +10252,10 @@ type Props_sub =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9963,6 +10355,10 @@ type Props_summary =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10062,6 +10458,10 @@ type Props_sup =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10280,6 +10680,10 @@ type Props_svg =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , opacity :: String
   , operator :: String
   , order :: String
@@ -10502,6 +10906,10 @@ type Props_table =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10603,6 +11011,10 @@ type Props_tbody =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10704,6 +11116,10 @@ type Props_td =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10805,6 +11221,10 @@ type Props_template =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10912,6 +11332,10 @@ type Props_textarea =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , placeholder :: String
   , prefix :: String
   , property :: String
@@ -11016,6 +11440,10 @@ type Props_tfoot =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11117,6 +11545,10 @@ type Props_th =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11218,6 +11650,10 @@ type Props_thead =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11317,6 +11753,10 @@ type Props_time =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11416,6 +11856,10 @@ type Props_title =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11515,6 +11959,10 @@ type Props_tr =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11617,6 +12065,10 @@ type Props_track =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11717,6 +12169,10 @@ type Props_u =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11816,6 +12272,10 @@ type Props_ul =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11916,6 +12376,10 @@ type Props_var =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12021,8 +12485,14 @@ type Props_video =
   , onMouseOut :: E.EventHandler E.MouseEvent
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
+  , onPause :: E.EventHandler E.SyntheticEvent
+  , onPlay :: E.EventHandler E.SyntheticEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
   , onTimeUpdate :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , onVolumeChange :: E.EventHandler E.SyntheticEvent
   , playsInline :: Boolean
   , poster :: String
@@ -12128,6 +12598,10 @@ type Props_wbr =
   , onMouseOver :: E.EventHandler E.MouseEvent
   , onMouseUp :: E.EventHandler E.MouseEvent
   , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String

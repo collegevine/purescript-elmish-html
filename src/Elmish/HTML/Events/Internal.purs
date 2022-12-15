@@ -4,6 +4,7 @@ module Elmish.HTML.Events.Internal
   , RModifierKeys
   , RMouseEvent
   , RSyntheticEvent
+  , RTouchEvent
   )
   where
 
@@ -35,6 +36,10 @@ type RMouseEvent =
   , screenX :: Int
   , screenY :: Int
   | RModifierKeys + REventBase + ()
+  }
+
+type RTouchEvent =
+  { | RModifierKeys + REventBase + ()
   }
 
 type REventBase r =
