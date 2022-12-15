@@ -28,13 +28,13 @@ type RKeyboardEvent =
 type RMouseEvent =
   { button :: Int
   , buttons :: Int
-  , clientX :: Int
-  , clientY :: Int
-  , pageX :: Int
-  , pageY :: Int
+  , clientX :: Number
+  , clientY :: Number
+  , pageX :: Number
+  , pageY :: Number
   , relatedTarget :: Element
-  , screenX :: Int
-  , screenY :: Int
+  , screenX :: Number
+  , screenY :: Number
   | RModifierKeys + REventBase + ()
   }
 
