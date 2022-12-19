@@ -5,6 +5,9 @@
 ### Added
 
 - `Elmish.HTML.Events` module with strongly typed events.
+- `onTouchXyz` events.
+- `img.loading` property.
+- `video.onPlay` and `video.onPause` properties.
 
 ### Changed
 

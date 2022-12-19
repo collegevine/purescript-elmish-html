@@ -1,3 +1,5 @@
+-- | This module defines types that are used as event objects in React built-in
+-- | events, as well as some convenience functions on them.
 module Elmish.HTML.Events
   ( EventHandler
   , InputChangeEvent(..)
@@ -24,7 +26,7 @@ import Elmish.Dispatch (handleEffect) as HandleReexport
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RMouseEvent, RSyntheticEvent, RTouchEvent)
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
-import Elmish.HTML.Events.Methods (preventDefault, stopPropagation, isPropagationStopped, getModifierState) as MethodsReexport
+import Elmish.HTML.Events.Methods (preventDefault, stopPropagation, getModifierState) as MethodsReexport
 import Foreign (unsafeToForeign)
 import Type.Proxy (Proxy(..))
 

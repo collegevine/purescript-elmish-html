@@ -1,3 +1,4 @@
+-- | Internal implementation details. See comments on `Elmish.HTML.Events` instead.
 module Elmish.HTML.Events.Internal
   ( REventBase
   , RKeyboardEvent
