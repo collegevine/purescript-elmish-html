@@ -4,15 +4,16 @@
 
 ### Added
 
-- `Elmish.HTML.Events` module with strongly typed events.
+- `Elmish.HTML.Events` module with more precisely typed events.
 - `onTouchXyz` events.
 - `img.loading` property.
 - `video.onPlay` and `video.onPause` properties.
 
 ### Changed
 
-- **Breaking**: All event properties `onXyz` are now strongly typed allowing for
-  event handling without resorting to `unsafeCoerce` and/or `readForeign`.
+- **Breaking**: All event properties `onXyz` are now typed more precisely than
+  just `Foreign`, allowing for event handling without resorting to
+  `unsafeCoerce` and/or `readForeign`.
 
 ## 0.6.0
 
