@@ -1,5 +1,16 @@
 # purescript-elmish-html
 
+## 0.7.0
+
+### Added
+
+- `Elmish.HTML.Events` module with strongly typed events.
+
+### Changed
+
+- **Breaking**: All event properties `onXyz` are now strongly typed allowing for
+  event handling without resorting to `unsafeCoerce` and/or `readForeign`.
+
 ## 0.6.0
 
 ### Changed
