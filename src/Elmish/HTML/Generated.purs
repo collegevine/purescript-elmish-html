@@ -4,12 +4,9 @@
 
 module Elmish.HTML.Generated where
 
-import Prelude
-
-import Effect (Effect)
-import Elmish (EffectFn1, ReactElement, Ref)
+import Elmish (ReactElement, Ref)
+import Elmish.HTML.Events as E
 import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
-import Foreign (Foreign)
 import Foreign.Object (Object)
 import Web.HTML as WH
 
@@ -74,21 +71,25 @@ type Props_a =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -177,21 +178,25 @@ type Props_abbr =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -277,21 +282,25 @@ type Props_address =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -380,21 +389,25 @@ type Props_area =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -483,21 +496,25 @@ type Props_article =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -582,21 +599,25 @@ type Props_aside =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -684,21 +705,25 @@ type Props_audio =
   , minLength :: Int
   , muted :: Boolean
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , preload :: String
   , property :: String
@@ -785,21 +810,25 @@ type Props_b =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -885,21 +914,25 @@ type Props_base =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -985,21 +1018,25 @@ type Props_bdi =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1085,21 +1122,25 @@ type Props_bdo =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1185,21 +1226,25 @@ type Props_blockquote =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1284,21 +1329,25 @@ type Props_body =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1383,21 +1432,25 @@ type Props_br =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1485,21 +1538,25 @@ type Props_button =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1587,21 +1644,25 @@ type Props_canvas =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1687,21 +1748,25 @@ type Props_caption =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1786,21 +1851,25 @@ type Props_cite =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1885,21 +1954,25 @@ type Props_code =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -1984,21 +2057,25 @@ type Props_col =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2085,21 +2162,25 @@ type Props_colgroup =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2186,21 +2267,25 @@ type Props_data =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2286,21 +2371,25 @@ type Props_datalist =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2385,21 +2474,25 @@ type Props_dd =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2485,21 +2578,25 @@ type Props_del =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2584,21 +2681,25 @@ type Props_details =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2684,21 +2785,25 @@ type Props_dfn =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2784,21 +2889,25 @@ type Props_dialog =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , open :: Boolean
   , prefix :: String
   , property :: String
@@ -2884,21 +2993,25 @@ type Props_div =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -2983,21 +3096,25 @@ type Props_dl =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3082,21 +3199,25 @@ type Props_dt =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3181,21 +3302,25 @@ type Props_em =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3281,21 +3406,25 @@ type Props_embed =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3386,21 +3515,25 @@ type Props_fieldset =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3485,21 +3618,25 @@ type Props_figcaption =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3584,21 +3721,25 @@ type Props_figure =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3683,21 +3824,25 @@ type Props_footer =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3786,25 +3931,29 @@ type Props_form =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onChange :: EffectFn1 Foreign Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onInput :: EffectFn1 Foreign Unit
-  , onInvalid :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
-  , onSubmit :: Effect Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onChange :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onInput :: E.EventHandler E.SyntheticEvent
+  , onInvalid :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onSubmit :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3890,21 +4039,25 @@ type Props_h1 =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -3989,21 +4142,25 @@ type Props_h2 =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4088,21 +4245,25 @@ type Props_h3 =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4187,21 +4348,25 @@ type Props_h4 =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4286,21 +4451,25 @@ type Props_h5 =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4385,21 +4554,25 @@ type Props_h6 =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4484,21 +4657,25 @@ type Props_head =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , profile :: String
   , property :: String
@@ -4584,21 +4761,25 @@ type Props_header =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4683,21 +4864,25 @@ type Props_hgroup =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4782,21 +4967,25 @@ type Props_hr =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4884,21 +5073,25 @@ type Props_html =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -4983,21 +5176,25 @@ type Props_i =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5084,21 +5281,25 @@ type Props_iframe =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5183,6 +5384,7 @@ type Props_img =
   , keyParams :: String
   , keyType :: String
   , lang :: String
+  , loading :: String
   , marginHeight :: String
   , marginWidth :: String
   , maxLength :: Int
@@ -5190,22 +5392,26 @@ type Props_img =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onError :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onError :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5309,22 +5515,26 @@ type Props_input =
   , multiple :: Boolean
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onChange :: EffectFn1 Foreign Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onChange :: E.EventHandler E.InputChangeEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , pattern :: String
   , placeholder :: String
   , prefix :: String
@@ -5421,21 +5631,25 @@ type Props_ins =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5520,21 +5734,25 @@ type Props_kbd =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5623,21 +5841,25 @@ type Props_keygen =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5723,21 +5945,25 @@ type Props_label =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5822,21 +6048,25 @@ type Props_legend =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -5921,21 +6151,25 @@ type Props_li =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6027,21 +6261,25 @@ type Props_link =
   , minLength :: Int
   , noValidate :: Boolean
   , nonce :: String
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6132,21 +6370,25 @@ type Props_main =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6232,21 +6474,25 @@ type Props_map =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6331,21 +6577,25 @@ type Props_mark =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6430,21 +6680,25 @@ type Props_math =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6529,21 +6783,25 @@ type Props_menu =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6628,21 +6886,25 @@ type Props_menuitem =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6729,21 +6991,25 @@ type Props_meta =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -6832,21 +7098,25 @@ type Props_meter =
   , min :: Number
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , optimum :: String
   , prefix :: String
   , property :: String
@@ -6933,21 +7203,25 @@ type Props_nav =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7032,21 +7306,25 @@ type Props_noscript =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7135,21 +7413,25 @@ type Props_object =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7236,21 +7518,25 @@ type Props_ol =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7340,21 +7626,25 @@ type Props_optgroup =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7441,21 +7731,25 @@ type Props_option =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7544,21 +7838,25 @@ type Props_output =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7643,21 +7941,25 @@ type Props_p =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7743,21 +8045,25 @@ type Props_param =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7844,21 +8150,25 @@ type Props_picture =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -7943,21 +8253,25 @@ type Props_pre =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8044,21 +8358,25 @@ type Props_progress =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8145,21 +8463,25 @@ type Props_q =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8244,21 +8566,25 @@ type Props_rb =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8343,21 +8669,25 @@ type Props_rp =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8442,21 +8772,25 @@ type Props_rt =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8541,21 +8875,25 @@ type Props_rtc =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8640,21 +8978,25 @@ type Props_ruby =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8739,21 +9081,25 @@ type Props_s =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8838,21 +9184,25 @@ type Props_samp =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -8941,21 +9291,25 @@ type Props_script =
   , minLength :: Int
   , noValidate :: Boolean
   , nonce :: String
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9042,21 +9396,25 @@ type Props_section =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9146,22 +9504,26 @@ type Props_select =
   , multiple :: Boolean
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onChange :: EffectFn1 Foreign Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onChange :: E.EventHandler E.SelectChangeEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9250,21 +9612,25 @@ type Props_slot =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9349,21 +9715,25 @@ type Props_small =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9449,21 +9819,25 @@ type Props_source =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9551,21 +9925,25 @@ type Props_span =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9650,21 +10028,25 @@ type Props_strong =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9751,21 +10133,25 @@ type Props_style =
   , minLength :: Int
   , noValidate :: Boolean
   , nonce :: String
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9852,21 +10238,25 @@ type Props_sub =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -9951,21 +10341,25 @@ type Props_summary =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10050,21 +10444,25 @@ type Props_sup =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10268,21 +10666,25 @@ type Props_svg =
   , noValidate :: Boolean
   , numOctaves :: String
   , offset :: String
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , opacity :: String
   , operator :: String
   , order :: String
@@ -10490,21 +10892,25 @@ type Props_table =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10591,21 +10997,25 @@ type Props_tbody =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10692,21 +11102,25 @@ type Props_td =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10793,21 +11207,25 @@ type Props_template =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -10899,22 +11317,26 @@ type Props_textarea =
   , minLength :: Int
   , name :: String
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onChange :: EffectFn1 Foreign Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onChange :: E.EventHandler E.TextAreaChangeEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , placeholder :: String
   , prefix :: String
   , property :: String
@@ -11004,21 +11426,25 @@ type Props_tfoot =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11105,21 +11531,25 @@ type Props_th =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11206,21 +11636,25 @@ type Props_thead =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11305,21 +11739,25 @@ type Props_time =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11404,21 +11842,25 @@ type Props_title =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11503,21 +11945,25 @@ type Props_tr =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11605,21 +12051,25 @@ type Props_track =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11705,21 +12155,25 @@ type Props_u =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11804,21 +12258,25 @@ type Props_ul =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -11904,21 +12362,25 @@ type Props_var =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String
@@ -12007,26 +12469,32 @@ type Props_video =
   , minLength :: Int
   , muted :: Boolean
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onEnded :: EffectFn1 Foreign Unit
-  , onError :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onLoadedMetadata :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
-  , onTimeUpdate :: EffectFn1 Foreign Unit
-  , onVolumeChange :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onEnded :: E.EventHandler E.SyntheticEvent
+  , onError :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onLoadedMetadata :: E.EventHandler E.SyntheticEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onPause :: E.EventHandler E.SyntheticEvent
+  , onPlay :: E.EventHandler E.SyntheticEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTimeUpdate :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
+  , onVolumeChange :: E.EventHandler E.SyntheticEvent
   , playsInline :: Boolean
   , poster :: String
   , prefix :: String
@@ -12116,21 +12584,25 @@ type Props_wbr =
   , mediaGroup :: String
   , minLength :: Int
   , noValidate :: Boolean
-  , onBlur :: Effect Unit
-  , onClick :: Effect Unit
-  , onDoubleClick :: Effect Unit
-  , onFocus :: Effect Unit
-  , onKeyDown :: EffectFn1 Foreign Unit
-  , onKeyPress :: EffectFn1 Foreign Unit
-  , onKeyUp :: EffectFn1 Foreign Unit
-  , onMouseDown :: EffectFn1 Foreign Unit
-  , onMouseEnter :: EffectFn1 Foreign Unit
-  , onMouseLeave :: EffectFn1 Foreign Unit
-  , onMouseMove :: EffectFn1 Foreign Unit
-  , onMouseOut :: EffectFn1 Foreign Unit
-  , onMouseOver :: EffectFn1 Foreign Unit
-  , onMouseUp :: EffectFn1 Foreign Unit
-  , onScroll :: EffectFn1 Foreign Unit
+  , onBlur :: E.EventHandler E.SyntheticEvent
+  , onClick :: E.EventHandler E.SyntheticEvent
+  , onDoubleClick :: E.EventHandler E.SyntheticEvent
+  , onFocus :: E.EventHandler E.SyntheticEvent
+  , onKeyDown :: E.EventHandler E.KeyboardEvent
+  , onKeyPress :: E.EventHandler E.KeyboardEvent
+  , onKeyUp :: E.EventHandler E.KeyboardEvent
+  , onMouseDown :: E.EventHandler E.MouseEvent
+  , onMouseEnter :: E.EventHandler E.MouseEvent
+  , onMouseLeave :: E.EventHandler E.MouseEvent
+  , onMouseMove :: E.EventHandler E.MouseEvent
+  , onMouseOut :: E.EventHandler E.MouseEvent
+  , onMouseOver :: E.EventHandler E.MouseEvent
+  , onMouseUp :: E.EventHandler E.MouseEvent
+  , onScroll :: E.EventHandler E.SyntheticEvent
+  , onTouchCancel :: E.EventHandler E.TouchEvent
+  , onTouchEnd :: E.EventHandler E.TouchEvent
+  , onTouchMove :: E.EventHandler E.TouchEvent
+  , onTouchStart :: E.EventHandler E.TouchEvent
   , prefix :: String
   , property :: String
   , radioGroup :: String

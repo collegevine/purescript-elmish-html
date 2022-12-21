@@ -11,12 +11,9 @@ const header = `-- | -----------------------------------------------------------
 
 module Elmish.HTML.Generated where
 
-import Prelude
-
-import Effect (Effect)
-import Elmish (EffectFn1, ReactElement, Ref)
+import Elmish (ReactElement, Ref)
+import Elmish.HTML.Events as E
 import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
-import Foreign (Foreign)
 import Foreign.Object (Object)
 import Web.HTML as WH
 
