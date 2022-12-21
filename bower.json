@@ -15,13 +15,16 @@
     ],
     "dependencies": {
         "purescript-effect": "^v4.0.0",
-        "purescript-elmish": "^v0.8.1",
+        "purescript-elmish": "^v0.9.0",
         "purescript-foreign": "^v7.0.0",
         "purescript-foreign-object": "^v4.0.0",
+        "purescript-maybe": "^v6.0.0",
         "purescript-prelude": "^v6.0.0",
         "purescript-record": "^v4.0.0",
         "purescript-typelevel-prelude": "^v7.0.0",
         "purescript-unsafe-coerce": "^v6.0.0",
+        "purescript-web-dom": "^v6.0.0",
+        "purescript-web-events": "^v4.0.0",
         "purescript-web-html": "^v4.0.0"
     }
 }
