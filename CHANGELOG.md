@@ -1,5 +1,11 @@
 # purescript-elmish-html
 
+## 0.7.1
+
+### Changed
+
+- Upgraded to PureScript 0.15.13
+
 ## 0.7.0
 
 ### Added
