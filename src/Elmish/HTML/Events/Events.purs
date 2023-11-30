@@ -28,7 +28,6 @@ import Elmish.HTML.Events.Internal (RKeyboardEvent, RMouseEvent, RSyntheticEvent
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
 import Elmish.HTML.Events.Methods (preventDefault, stopPropagation, getModifierState) as MethodsReexport
 import Foreign (unsafeToForeign)
-import Type.Proxy (Proxy(..))
 
 -- | Type of every `onXyz` property on every HTML tag in this library. This is
 -- | the standard shape of all event handlers on React's built-in components
@@ -38,27 +37,27 @@ type EventHandler a = EffectFn1 a Unit
 -- | The most generic event object from React, for events that don't have any
 -- | special properties. This type follows React docs at https://reactjs.org/docs/events.html
 newtype SyntheticEvent = SyntheticEvent RSyntheticEvent
-instance CanReceiveFromJavaScript SyntheticEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript SyntheticEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent SyntheticEvent
 
 -- | Event object for keyboard-related events such as `onKeyDown` or `onKeyPress`. This
 -- | type follows React docs at https://reactjs.org/docs/events.html#keyboard-events
 newtype KeyboardEvent = KeyboardEvent RKeyboardEvent
-instance CanReceiveFromJavaScript KeyboardEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript KeyboardEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent KeyboardEvent
 instance IsKeyboardOrMouseEvent KeyboardEvent
 
 -- | Event object for mouse-related events such as `onMouseDown` or `onMouseMove`. This
 -- | type follows React docs at https://reactjs.org/docs/events.html#mouse-events
 newtype MouseEvent = MouseEvent RMouseEvent
-instance CanReceiveFromJavaScript MouseEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript MouseEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent MouseEvent
 instance IsKeyboardOrMouseEvent MouseEvent
 
 -- | Event object for touch-related events such as `onTouchStart` or
 -- | `onTouchMove`. This type follows React docs at https://reactjs.org/docs/events.html#touch-events
 newtype TouchEvent = TouchEvent RTouchEvent
-instance CanReceiveFromJavaScript TouchEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript TouchEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent TouchEvent
 instance IsKeyboardOrMouseEvent TouchEvent
 
@@ -73,7 +72,7 @@ instance IsKeyboardOrMouseEvent TouchEvent
 -- |     input { type: "checkbox", onChange: dispatch <| MyCheckboxChanged <<< E.inputChecked }
 -- |
 newtype InputChangeEvent = InputChangeEvent RSyntheticEvent
-instance CanReceiveFromJavaScript InputChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript InputChangeEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent InputChangeEvent
 
 -- | Event object specifically for the `onChange` event of the `<textarea>` tag.
@@ -84,7 +83,7 @@ instance IsSyntheticEvent InputChangeEvent
 -- |     textarea { onChange: dispatch <| MyTextareaChanged <<< E.textareaText }
 -- |
 newtype TextAreaChangeEvent = TextAreaChangeEvent RSyntheticEvent
-instance CanReceiveFromJavaScript TextAreaChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript TextAreaChangeEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent TextAreaChangeEvent
 
 -- | Event object specifically for the `onChange` event of the `<select>` tag.
@@ -96,7 +95,7 @@ instance IsSyntheticEvent TextAreaChangeEvent
 -- |     select { onChange: dispatch <| MyInputChanged <<< E.selectSelectedValue }
 -- |
 newtype SelectChangeEvent = SelectChangeEvent RSyntheticEvent
-instance CanReceiveFromJavaScript SelectChangeEvent where validateForeignType _ = validateForeignType (Proxy :: _ {})
+instance CanReceiveFromJavaScript SelectChangeEvent where validateForeignType = validateForeignType @{}
 instance IsSyntheticEvent SelectChangeEvent
 
 -- | Convenience accessor for extracting the value of an `<input type=text>` tag
