@@ -37,7 +37,7 @@ const printRow = (e, elProps) =>
     ? `
   ( _data :: Object String
   -- ARIA
-  , ${ariaProps.map(p => `${p} :: String`).join("\n  , ")}
+  , ${ariaProps.map(p => `"${p}" :: String`).join("\n  , ")}
   -- Props
   , ${elProps.map(p => `${p} :: ${propType(e, p)}`).join("\n  , ")}
   )`
