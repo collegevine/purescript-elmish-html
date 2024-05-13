@@ -13,6 +13,57 @@ import Web.HTML as WH
 
 type Props_a =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -124,6 +175,57 @@ a = tag "a" :: Tag Props_a
 
 type Props_abbr =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -228,6 +330,57 @@ abbr = tag "abbr" :: Tag Props_abbr
 
 type Props_address =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -331,6 +484,57 @@ address = tag "address" :: Tag Props_address
 
 type Props_area =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -442,6 +646,57 @@ area = tagNoContent "area" :: TagNoContent Props_area
 
 type Props_article =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -545,6 +800,57 @@ article = tag "article" :: Tag Props_article
 
 type Props_aside =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -648,6 +954,57 @@ aside = tag "aside" :: Tag Props_aside
 
 type Props_audio =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -756,6 +1113,57 @@ audio = tag "audio" :: Tag Props_audio
 
 type Props_b =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -859,6 +1267,57 @@ b = tag "b" :: Tag Props_b
 
 type Props_base =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -964,6 +1423,57 @@ base = tagNoContent "base" :: TagNoContent Props_base
 
 type Props_bdi =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1067,6 +1577,57 @@ bdi = tag "bdi" :: Tag Props_bdi
 
 type Props_bdo =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1171,6 +1732,57 @@ bdo = tag "bdo" :: Tag Props_bdo
 
 type Props_blockquote =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1275,6 +1887,57 @@ blockquote = tag "blockquote" :: Tag Props_blockquote
 
 type Props_body =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1378,6 +2041,57 @@ body = tag "body" :: Tag Props_body
 
 type Props_br =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1481,6 +2195,57 @@ br = tagNoContent "br" :: TagNoContent Props_br
 
 type Props_button =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1589,6 +2354,57 @@ button = tag "button" :: Tag Props_button
 
 type Props_canvas =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1694,6 +2510,57 @@ canvas = tag "canvas" :: Tag Props_canvas
 
 type Props_caption =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1797,6 +2664,57 @@ caption = tag "caption" :: Tag Props_caption
 
 type Props_cite =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -1900,6 +2818,57 @@ cite = tag "cite" :: Tag Props_cite
 
 type Props_code =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2003,6 +2972,57 @@ code = tag "code" :: Tag Props_code
 
 type Props_col =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2108,6 +3128,57 @@ col = tagNoContent "col" :: TagNoContent Props_col
 
 type Props_colgroup =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2213,6 +3284,57 @@ colgroup = tag "colgroup" :: Tag Props_colgroup
 
 type Props_data =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2317,6 +3439,57 @@ data' = tag "data" :: Tag Props_data
 
 type Props_datalist =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2420,6 +3593,57 @@ datalist = tag "datalist" :: Tag Props_datalist
 
 type Props_dd =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2523,6 +3747,57 @@ dd = tag "dd" :: Tag Props_dd
 
 type Props_del =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2627,6 +3902,57 @@ del = tag "del" :: Tag Props_del
 
 type Props_details =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2731,6 +4057,57 @@ details = tag "details" :: Tag Props_details
 
 type Props_dfn =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2835,6 +4212,57 @@ dfn = tag "dfn" :: Tag Props_dfn
 
 type Props_dialog =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -2939,6 +4367,57 @@ dialog = tag "dialog" :: Tag Props_dialog
 
 type Props_div =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3042,6 +4521,57 @@ div = tag "div" :: Tag Props_div
 
 type Props_dl =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3145,6 +4675,57 @@ dl = tag "dl" :: Tag Props_dl
 
 type Props_dt =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3248,6 +4829,57 @@ dt = tag "dt" :: Tag Props_dt
 
 type Props_em =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3351,6 +4983,57 @@ em = tag "em" :: Tag Props_em
 
 type Props_embed =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3458,6 +5141,57 @@ embed = tagNoContent "embed" :: TagNoContent Props_embed
 
 type Props_fieldset =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3564,6 +5298,57 @@ fieldset = tag "fieldset" :: Tag Props_fieldset
 
 type Props_figcaption =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3667,6 +5452,57 @@ figcaption = tag "figcaption" :: Tag Props_figcaption
 
 type Props_figure =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3770,6 +5606,57 @@ figure = tag "figure" :: Tag Props_figure
 
 type Props_footer =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -3873,6 +5760,57 @@ footer = tag "footer" :: Tag Props_footer
 
 type Props_form =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , accept :: String
   , acceptCharset :: String
@@ -3985,6 +5923,57 @@ form = tag "form" :: Tag Props_form
 
 type Props_h1 =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4088,6 +6077,57 @@ h1 = tag "h1" :: Tag Props_h1
 
 type Props_h2 =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4191,6 +6231,57 @@ h2 = tag "h2" :: Tag Props_h2
 
 type Props_h3 =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4294,6 +6385,57 @@ h3 = tag "h3" :: Tag Props_h3
 
 type Props_h4 =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4397,6 +6539,57 @@ h4 = tag "h4" :: Tag Props_h4
 
 type Props_h5 =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4500,6 +6693,57 @@ h5 = tag "h5" :: Tag Props_h5
 
 type Props_h6 =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4603,6 +6847,57 @@ h6 = tag "h6" :: Tag Props_h6
 
 type Props_head =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4707,6 +7002,57 @@ head = tag "head" :: Tag Props_head
 
 type Props_header =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4810,6 +7156,57 @@ header = tag "header" :: Tag Props_header
 
 type Props_hgroup =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -4913,6 +7310,57 @@ hgroup = tag "hgroup" :: Tag Props_hgroup
 
 type Props_hr =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5018,6 +7466,57 @@ hr = tagNoContent "hr" :: TagNoContent Props_hr
 
 type Props_html =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5122,6 +7621,57 @@ html = tag "html" :: Tag Props_html
 
 type Props_i =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5225,6 +7775,57 @@ i = tag "i" :: Tag Props_i
 
 type Props_iframe =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5334,6 +7935,57 @@ iframe = tag "iframe" :: Tag Props_iframe
 
 type Props_img =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5445,6 +8097,57 @@ img = tagNoContent "img" :: TagNoContent Props_img
 
 type Props_input =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , accept :: String
   , acceptCharset :: String
@@ -5576,6 +8279,57 @@ input = tagNoContent "input" :: TagNoContent Props_input
 
 type Props_ins =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5680,6 +8434,57 @@ ins = tag "ins" :: Tag Props_ins
 
 type Props_kbd =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5783,6 +8588,57 @@ kbd = tag "kbd" :: Tag Props_kbd
 
 type Props_keygen =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5890,6 +8746,57 @@ keygen = tag "keygen" :: Tag Props_keygen
 
 type Props_label =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -5994,6 +8901,57 @@ label = tag "label" :: Tag Props_label
 
 type Props_legend =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6097,6 +9055,57 @@ legend = tag "legend" :: Tag Props_legend
 
 type Props_li =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6202,6 +9211,57 @@ li = tag "li" :: Tag Props_li
 
 type Props_link =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6316,6 +9376,57 @@ link = tagNoContent "link" :: TagNoContent Props_link
 
 type Props_main =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6419,6 +9530,57 @@ main = tag "main" :: Tag Props_main
 
 type Props_map =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6523,6 +9685,57 @@ map = tag "map" :: Tag Props_map
 
 type Props_mark =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6626,6 +9839,57 @@ mark = tag "mark" :: Tag Props_mark
 
 type Props_math =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6729,6 +9993,57 @@ math = tag "math" :: Tag Props_math
 
 type Props_menu =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6832,6 +10147,57 @@ menu = tag "menu" :: Tag Props_menu
 
 type Props_menuitem =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -6935,6 +10301,57 @@ menuitem = tag "menuitem" :: Tag Props_menuitem
 
 type Props_meta =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7040,6 +10457,57 @@ meta = tagNoContent "meta" :: TagNoContent Props_meta
 
 type Props_meter =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7149,6 +10617,57 @@ meter = tag "meter" :: Tag Props_meter
 
 type Props_nav =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7252,6 +10771,57 @@ nav = tag "nav" :: Tag Props_nav
 
 type Props_noscript =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7355,6 +10925,57 @@ noscript = tag "noscript" :: Tag Props_noscript
 
 type Props_object =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7464,6 +11085,57 @@ object = tag "object" :: Tag Props_object
 
 type Props_ol =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7570,6 +11242,57 @@ ol = tag "ol" :: Tag Props_ol
 
 type Props_optgroup =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7675,6 +11398,57 @@ optgroup = tag "optgroup" :: Tag Props_optgroup
 
 type Props_option =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7782,6 +11556,57 @@ option = tag "option" :: Tag Props_option
 
 type Props_output =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7887,6 +11712,57 @@ output = tag "output" :: Tag Props_output
 
 type Props_p =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -7990,6 +11866,57 @@ p = tag "p" :: Tag Props_p
 
 type Props_param =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8096,6 +12023,57 @@ param = tagNoContent "param" :: TagNoContent Props_param
 
 type Props_picture =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8199,6 +12177,57 @@ picture = tag "picture" :: Tag Props_picture
 
 type Props_pre =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8303,6 +12332,57 @@ pre = tag "pre" :: Tag Props_pre
 
 type Props_progress =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8408,6 +12488,57 @@ progress = tag "progress" :: Tag Props_progress
 
 type Props_q =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8512,6 +12643,57 @@ q = tag "q" :: Tag Props_q
 
 type Props_rb =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8615,6 +12797,57 @@ rb = tag "rb" :: Tag Props_rb
 
 type Props_rp =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8718,6 +12951,57 @@ rp = tag "rp" :: Tag Props_rp
 
 type Props_rt =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8821,6 +13105,57 @@ rt = tag "rt" :: Tag Props_rt
 
 type Props_rtc =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -8924,6 +13259,57 @@ rtc = tag "rtc" :: Tag Props_rtc
 
 type Props_ruby =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9027,6 +13413,57 @@ ruby = tag "ruby" :: Tag Props_ruby
 
 type Props_s =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9130,6 +13567,57 @@ s = tag "s" :: Tag Props_s
 
 type Props_samp =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9233,6 +13721,57 @@ samp = tag "samp" :: Tag Props_samp
 
 type Props_script =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9342,6 +13881,57 @@ script = tag "script" :: Tag Props_script
 
 type Props_section =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9445,6 +14035,57 @@ section = tag "section" :: Tag Props_section
 
 type Props_select =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9557,6 +14198,57 @@ select = tag "select" :: Tag Props_select
 
 type Props_slot =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9661,6 +14353,57 @@ slot = tag "slot" :: Tag Props_slot
 
 type Props_small =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9764,6 +14507,57 @@ small = tag "small" :: Tag Props_small
 
 type Props_source =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9871,6 +14665,57 @@ source = tagNoContent "source" :: TagNoContent Props_source
 
 type Props_span =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -9974,6 +14819,57 @@ span = tag "span" :: Tag Props_span
 
 type Props_strong =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10077,6 +14973,57 @@ strong = tag "strong" :: Tag Props_strong
 
 type Props_style =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10184,6 +15131,57 @@ style = tag "style" :: Tag Props_style
 
 type Props_sub =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10287,6 +15285,57 @@ sub = tag "sub" :: Tag Props_sub
 
 type Props_summary =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10390,6 +15439,57 @@ summary = tag "summary" :: Tag Props_summary
 
 type Props_sup =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10493,6 +15593,57 @@ sup = tag "sup" :: Tag Props_sup
 
 type Props_svg =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , accentHeight :: String
   , acceptCharset :: String
@@ -10838,6 +15989,57 @@ svg = tag "svg" :: Tag Props_svg
 
 type Props_table =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -10943,6 +16145,57 @@ table = tag "table" :: Tag Props_table
 
 type Props_tbody =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11046,6 +16299,57 @@ tbody = tag "tbody" :: Tag Props_tbody
 
 type Props_td =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11153,6 +16457,57 @@ td = tag "td" :: Tag Props_td
 
 type Props_template =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11256,6 +16611,57 @@ template = tag "template" :: Tag Props_template
 
 type Props_textarea =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11372,6 +16778,57 @@ textarea = tagNoContent "textarea" :: TagNoContent Props_textarea
 
 type Props_tfoot =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11475,6 +16932,57 @@ tfoot = tag "tfoot" :: Tag Props_tfoot
 
 type Props_th =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11582,6 +17090,57 @@ th = tag "th" :: Tag Props_th
 
 type Props_thead =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11685,6 +17244,57 @@ thead = tag "thead" :: Tag Props_thead
 
 type Props_time =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11788,6 +17398,57 @@ time = tag "time" :: Tag Props_time
 
 type Props_title =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11891,6 +17552,57 @@ title = tag "title" :: Tag Props_title
 
 type Props_tr =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -11994,6 +17706,57 @@ tr = tag "tr" :: Tag Props_tr
 
 type Props_track =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -12101,6 +17864,57 @@ track = tagNoContent "track" :: TagNoContent Props_track
 
 type Props_u =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -12204,6 +18018,57 @@ u = tag "u" :: Tag Props_u
 
 type Props_ul =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -12308,6 +18173,57 @@ ul = tag "ul" :: Tag Props_ul
 
 type Props_var =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -12411,6 +18327,57 @@ var = tag "var" :: Tag Props_var
 
 type Props_video =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
@@ -12530,6 +18497,57 @@ video = tag "video" :: Tag Props_video
 
 type Props_wbr =
   ( _data :: Object String
+  -- ARIA
+  , aria-activedescendant :: String
+  , aria-atomic :: String
+  , aria-autocomplete :: String
+  , aria-busy :: String
+  , aria-checked :: String
+  , aria-colcount :: String
+  , aria-colindex :: String
+  , aria-colspan :: String
+  , aria-controls :: String
+  , aria-current :: String
+  , aria-describedby :: String
+  , aria-details :: String
+  , aria-disabled :: String
+  , aria-dropeffect :: String
+  , aria-errormessage :: String
+  , aria-expanded :: String
+  , aria-flowto :: String
+  , aria-grabbed :: String
+  , aria-haspopup :: String
+  , aria-hidden :: String
+  , aria-invalid :: String
+  , aria-keyshortcuts :: String
+  , aria-label :: String
+  , aria-labelledby :: String
+  , aria-level :: String
+  , aria-live :: String
+  , aria-modal :: String
+  , aria-multiline :: String
+  , aria-multiselectable :: String
+  , aria-orientation :: String
+  , aria-owns :: String
+  , aria-placeholder :: String
+  , aria-posinset :: String
+  , aria-pressed :: String
+  , aria-readonly :: String
+  , aria-relevant :: String
+  , aria-required :: String
+  , aria-roledescription :: String
+  , aria-rowcount :: String
+  , aria-rowindex :: String
+  , aria-rowspan :: String
+  , aria-selected :: String
+  , aria-setsize :: String
+  , aria-sort :: String
+  , aria-valuemax :: String
+  , aria-valuemin :: String
+  , aria-valuenow :: String
+  , aria-valuetext :: String
+  , role :: String
+  -- Props
   , about :: String
   , acceptCharset :: String
   , accessKey :: String
