@@ -1,5 +1,5 @@
 # purescript-elmish-html
-![build](https://github.com/collegevine/purescript-elmish-html/workflows/build/badge.svg?branch=master)
+[![build](https://github.com/collegevine/purescript-elmish-html/actions/workflows/build.yml/badge.svg)](https://github.com/collegevine/purescript-elmish-html/actions/workflows/build.yml)
 
 Render HTML elements in [Elmish](https://github.com/collegevine/purescript-elmish).
 
