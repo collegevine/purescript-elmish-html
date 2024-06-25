@@ -36,10 +36,16 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-// For now, we are using a local copy of react-html-attributes.
+// For now, we are using a local copy of 'react-html-attributes'.
 // Eventually, the relative path here should be removed, and
 // the version number of react-html-attributes should be bumped.
 module.exports.props = require("./react-html-attributes")
+
+// For now, we are using a local copy of 'aria-attributes' to avoid dealing
+// with ESM vs CommonJS incompatibility.
+// Eventually, the relative path here should be removed and the actual
+// package should be used.
+module.exports.ariaProps = require("./aria-attributes")
 
 module.exports.voids = [
   "area",

@@ -1,4 +1,4 @@
-const { props, voids, types, typesByElement, reserved } = require("./consts")
+const { ariaProps, props, voids, types, typesByElement, reserved } = require("./consts")
 
 module.exports = () => ({
   path: "Elmish/HTML/Generated.purs",
@@ -36,6 +36,9 @@ const printRow = (e, elProps) =>
   elProps.length > 0
     ? `
   ( _data :: Object String
+  -- ARIA
+  , ${ariaProps.map(p => `"${p}" :: String`).join("\n  , ")}
+  -- Props
   , ${elProps.map(p => `${p} :: ${propType(e, p)}`).join("\n  , ")}
   )`
     : "()"
