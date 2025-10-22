@@ -4,7 +4,7 @@
 
 module Elmish.HTML.Generated where
 
-import Elmish (ReactElement, Ref)
+import Elmish (Ref)
 import Elmish.HTML.Events as E
 import Elmish.HTML.Internal (CSS, Tag, TagNoContent, tag, tagNoContent)
 import Foreign.Object (Object)
