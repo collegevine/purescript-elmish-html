@@ -155,7 +155,6 @@ type Props_a =
   , security :: String
   , shape :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -311,7 +310,6 @@ type Props_abbr =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -466,7 +464,6 @@ type Props_address =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -626,7 +623,6 @@ type Props_area =
   , security :: String
   , shape :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -782,7 +778,6 @@ type Props_article =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -936,7 +931,6 @@ type Props_aside =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -1095,7 +1089,6 @@ type Props_audio =
   , security :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -1249,7 +1242,6 @@ type Props_b =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -1404,7 +1396,6 @@ type Props_base =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -1559,7 +1550,6 @@ type Props_bdi =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -1714,7 +1704,6 @@ type Props_bdo =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -1869,7 +1858,6 @@ type Props_blockquote =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2023,7 +2011,6 @@ type Props_body =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2177,7 +2164,6 @@ type Props_br =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2334,7 +2320,6 @@ type Props_button =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2491,7 +2476,6 @@ type Props_canvas =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2646,7 +2630,6 @@ type Props_caption =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2800,7 +2783,6 @@ type Props_cite =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -2954,7 +2936,6 @@ type Props_code =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -3109,7 +3090,6 @@ type Props_col =
   , security :: String
   , span :: Int
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -3265,7 +3245,6 @@ type Props_colgroup =
   , security :: String
   , span :: Int
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -3420,7 +3399,6 @@ type Props_data =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -3575,7 +3553,6 @@ type Props_datalist =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -3729,7 +3706,6 @@ type Props_dd =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -3884,7 +3860,6 @@ type Props_del =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4039,7 +4014,6 @@ type Props_details =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4193,7 +4167,6 @@ type Props_dfn =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4349,7 +4322,6 @@ type Props_dialog =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4503,7 +4475,6 @@ type Props_div =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4657,7 +4628,6 @@ type Props_dl =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4811,7 +4781,6 @@ type Props_dt =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -4965,7 +4934,6 @@ type Props_em =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -5121,7 +5089,6 @@ type Props_embed =
   , security :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -5280,7 +5247,6 @@ type Props_fieldset =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -5434,7 +5400,6 @@ type Props_figcaption =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -5588,7 +5553,6 @@ type Props_figure =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -5742,7 +5706,6 @@ type Props_footer =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -5904,7 +5867,6 @@ type Props_form =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6059,7 +6021,6 @@ type Props_h1 =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6213,7 +6174,6 @@ type Props_h2 =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6367,7 +6327,6 @@ type Props_h3 =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6521,7 +6480,6 @@ type Props_h4 =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6675,7 +6633,6 @@ type Props_h5 =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6829,7 +6786,6 @@ type Props_h6 =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -6984,7 +6940,6 @@ type Props_head =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -7138,7 +7093,6 @@ type Props_header =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -7292,7 +7246,6 @@ type Props_hgroup =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -7447,7 +7400,6 @@ type Props_hr =
   , security :: String
   , size :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -7603,7 +7555,6 @@ type Props_html =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -7757,7 +7708,6 @@ type Props_i =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -7916,7 +7866,7 @@ type Props_iframe =
   , security :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
+  , srcDoc :: String
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -8078,7 +8028,6 @@ type Props_img =
   , sizes :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -8256,7 +8205,6 @@ type Props_input =
   , size :: Int
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , step :: String
@@ -8416,7 +8364,6 @@ type Props_ins =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -8570,7 +8517,6 @@ type Props_kbd =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -8728,7 +8674,6 @@ type Props_keygen =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -8883,7 +8828,6 @@ type Props_label =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9037,7 +8981,6 @@ type Props_legend =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9191,7 +9134,6 @@ type Props_li =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9355,7 +9297,6 @@ type Props_link =
   , security :: String
   , sizes :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9512,7 +9453,6 @@ type Props_main =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9667,7 +9607,6 @@ type Props_map =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9821,7 +9760,6 @@ type Props_mark =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -9975,7 +9913,6 @@ type Props_math =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -10129,7 +10066,6 @@ type Props_menu =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -10283,7 +10219,6 @@ type Props_menuitem =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -10439,7 +10374,6 @@ type Props_meta =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -10598,7 +10532,6 @@ type Props_meter =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -10753,7 +10686,6 @@ type Props_nav =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -10907,7 +10839,6 @@ type Props_noscript =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -11065,7 +10996,6 @@ type Props_object =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -11222,7 +11152,6 @@ type Props_ol =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , start :: Int
@@ -11380,7 +11309,6 @@ type Props_optgroup =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -11537,7 +11465,6 @@ type Props_option =
   , security :: String
   , selected :: Boolean
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -11694,7 +11621,6 @@ type Props_output =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -11848,7 +11774,6 @@ type Props_p =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12003,7 +11928,6 @@ type Props_param =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12159,7 +12083,6 @@ type Props_picture =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12313,7 +12236,6 @@ type Props_pre =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12469,7 +12391,6 @@ type Props_progress =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12625,7 +12546,6 @@ type Props_q =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12779,7 +12699,6 @@ type Props_rb =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -12933,7 +12852,6 @@ type Props_rp =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -13087,7 +13005,6 @@ type Props_rt =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -13241,7 +13158,6 @@ type Props_rtc =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -13395,7 +13311,6 @@ type Props_ruby =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -13549,7 +13464,6 @@ type Props_s =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -13703,7 +13617,6 @@ type Props_samp =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -13862,7 +13775,6 @@ type Props_script =
   , security :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14017,7 +13929,6 @@ type Props_section =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14179,7 +14090,6 @@ type Props_select =
   , security :: String
   , size :: Int
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14335,7 +14245,6 @@ type Props_slot =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14489,7 +14398,6 @@ type Props_small =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14646,7 +14554,6 @@ type Props_source =
   , sizes :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14801,7 +14708,6 @@ type Props_span =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -14955,7 +14861,6 @@ type Props_strong =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -15111,7 +15016,6 @@ type Props_style =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -15267,7 +15171,6 @@ type Props_sub =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -15421,7 +15324,6 @@ type Props_summary =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -15575,7 +15477,6 @@ type Props_sup =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -15894,7 +15795,6 @@ type Props_svg =
   , speed :: String
   , spellCheck :: Boolean
   , spreadMethod :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , startOffset :: String
@@ -16125,7 +16025,6 @@ type Props_table =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -16281,7 +16180,6 @@ type Props_tbody =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -16438,7 +16336,6 @@ type Props_td =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -16593,7 +16490,6 @@ type Props_template =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -16758,7 +16654,6 @@ type Props_textarea =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -16914,7 +16809,6 @@ type Props_tfoot =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -17071,7 +16965,6 @@ type Props_th =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -17226,7 +17119,6 @@ type Props_thead =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -17380,7 +17272,6 @@ type Props_time =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -17534,7 +17425,6 @@ type Props_title =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -17688,7 +17578,6 @@ type Props_tr =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -17846,7 +17735,6 @@ type Props_track =
   , security :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -18000,7 +17888,6 @@ type Props_u =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -18154,7 +18041,6 @@ type Props_ul =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -18309,7 +18195,6 @@ type Props_var =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -18478,7 +18363,6 @@ type Props_video =
   , security :: String
   , spellCheck :: Boolean
   , src :: String
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS
@@ -18633,7 +18517,6 @@ type Props_wbr =
   , seamless :: Boolean
   , security :: String
   , spellCheck :: Boolean
-  , srcDoc :: ReactElement
   , srcLang :: String
   , srcSet :: String
   , style :: CSS

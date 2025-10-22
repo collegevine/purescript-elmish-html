@@ -155,7 +155,7 @@ module.exports.typesByElement = {
   size: {
     input: "Int",
     select: "Int",
-  },
+  }
 }
 module.exports.types = {
   allowFullScreen: "Boolean",
@@ -225,7 +225,6 @@ module.exports.types = {
   selected: "Boolean",
   span: "Int",
   spellCheck: "Boolean",
-  srcDoc: "ReactElement",
   start: "Int",
   style: "CSS",
   suppressContentEditableWarning: "Boolean",
