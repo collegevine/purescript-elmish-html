@@ -1,7 +1,7 @@
 -- | This module exports all the primitive HTML elements in a way that is
--- | friendly to CSS frameworks (such as Bootstrap), which means promoting the
--- | `className` prop to the first parameter and optionally dropping all other
--- | props completely. This lets us write:
+-- | friendly to CSS frameworks (such as Bootstrap + Tailwind), which means
+-- | promoting the `className` prop to the first parameter and optionally
+-- | dropping all other props completely. This lets us write:
 -- |
 -- |     div "row" $
 -- |       div "col pl-5 border-right"
@@ -19,7 +19,7 @@
 -- | Each tag comes in two flavors: without any props besides the class, and
 -- | with other props. The former is named after the element (e.g. `div`), and
 -- | the latter has an extra underscore at the end (e.g. `div_`). This is done
--- | because, in practice, most elements don't have any props besides
+-- | because, in practice, most elements don’t have any props besides
 -- | `className`, so it makes the code that much less noisy. For example:
 -- |
 -- |     import Elmish.HTML.Styled as H
