@@ -85,7 +85,6 @@
     "seamless",
     "security",
     "spellCheck",
-    "srcDoc",
     "srcLang",
     "srcSet",
     "style",
@@ -144,8 +143,25 @@
   "head": ["profile"],
   "hr": ["size", "width"],
   "html": ["manifest"],
-  "iframe": ["height", "name", "sandbox", "scrolling", "src", "width"],
-  "img": ["alt", "height", "loading", "name", "onError", "sizes", "src", "width"],
+  "iframe": [
+    "height",
+    "name",
+    "sandbox",
+    "scrolling",
+    "src",
+    "srcDoc",
+    "width"
+  ],
+  "img": [
+    "alt",
+    "height",
+    "loading",
+    "name",
+    "onError",
+    "sizes",
+    "src",
+    "width"
+  ],
   "input": [
     "accept",
     "alt",

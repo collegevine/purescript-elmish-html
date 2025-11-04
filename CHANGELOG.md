@@ -1,5 +1,13 @@
 # purescript-elmish-html
 
+## 0.10.0
+
+### Changed
+
+- **Breaking**
+  - Change `iframe.srcDoc` from `ReactElement` to `String` (per spec)
+  - Remove `srcDoc` from global attributes (per spec)
+
 ## 0.9.0
 
 ### Changed
