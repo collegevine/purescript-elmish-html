@@ -9,9 +9,9 @@ module Elmish.HTML.Events
   , SyntheticEvent(..)
   , TextAreaChangeEvent(..)
   , TouchEvent(..)
+  , handle
   , inputChecked
   , inputText
-  , module HandleReexport
   , module MethodsReexport
   , selectSelectedValue
   , textareaText
@@ -21,8 +21,8 @@ module Elmish.HTML.Events
 import Prelude
 
 import Data.Maybe (fromMaybe)
-import Effect.Uncurried (EffectFn1)
-import Elmish.Dispatch (handleEffect) as HandleReexport
+import Effect.Uncurried (EffectFn1, mkEffectFn1)
+import Elmish.Dispatch (Dispatch)
 import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RMouseEvent, RSyntheticEvent, RTouchEvent)
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
@@ -32,7 +32,11 @@ import Foreign (unsafeToForeign)
 -- | Type of every `onXyz` property on every HTML tag in this library. This is
 -- | the standard shape of all event handlers on React's built-in components
 -- | (aka tags).
-type EventHandler a = EffectFn1 a Unit
+newtype EventHandler a = EventHandler (EffectFn1 a Unit)
+
+-- | Create a React event handler from a function `event -> Effect Unit`.
+handle :: forall event. Dispatch event -> EventHandler event
+handle dispatch = EventHandler $ mkEffectFn1 dispatch
 
 -- | The most generic event object from React, for events that don't have any
 -- | special properties. This type follows React docs at https://reactjs.org/docs/events.html
