@@ -1,6 +1,6 @@
 # purescript-elmish-html
 
-## 0.11.1
+## 0.12.0
 
 ### Changed
 
@@ -8,7 +8,8 @@
   - Change `iframe.srcDoc` from `ReactElement` to `String` (per spec)
   - Remove `srcDoc` from global attributes (per spec)
   - `EventHandler` is no longer a type alias for `EffectFn1`, but a newtype with
-    hidden constructor. Use the new `handle` function to create event handlers.
+    hidden constructor, imported from `Elmish.Dispatch`. Use the new `handle`
+    function to create event handlers.
 
 - Upgraded to Spago 1.0.3 and PureScript 0.15.15
 

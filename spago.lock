@@ -9,7 +9,7 @@
               "effect": ">=4.0.0 <5.0.0"
             },
             {
-              "elmish": ">=0.13.0 <0.14.0"
+              "elmish": ">=0.14.0 <0.15.0"
             },
             {
               "foreign": ">=7.0.0 <8.0.0"
@@ -640,7 +640,10 @@
       }
     },
     "extra_packages": {
-      "elmish": "0.13.0"
+      "elmish": {
+        "git": "https://github.com/collegevine/purescript-elmish.git",
+        "ref": "v0.14.0"
+      }
     }
   },
   "packages": {
@@ -820,9 +823,9 @@
       ]
     },
     "elmish": {
-      "type": "registry",
-      "version": "0.13.0",
-      "integrity": "sha256-ikyo9n9XJXU3AY0kiuQD7paVXsMJQXYjiwwPjrsAMNs=",
+      "type": "git",
+      "url": "https://github.com/collegevine/purescript-elmish.git",
+      "rev": "673c655db9449c754fb10da9dbf10d14eea791c4",
       "dependencies": [
         "aff",
         "argonaut-core",
