@@ -19,10 +19,10 @@ jobs:
           .spago
           output
           node_modules
-        key: build-atrifacts-v3-${{ hashFiles('package-lock.json', 'spago.dhall', 'packages.dhall') }}
+        key: build-atrifacts-v3-${{ hashFiles('package-lock.json', 'spago.yaml', 'spago.lock') }}
     - uses: actions/setup-node@v4
       with:
-        node-version: 14.19.1
+        node-version: 24.13.0
     - run: npm i
     - run: npm run build
 
