@@ -23,7 +23,7 @@ import Prelude
 import Data.Maybe (fromMaybe)
 import Effect.Uncurried (EffectFn1, mkEffectFn1)
 import Elmish.Dispatch (Dispatch)
-import Elmish.Foreign (class CanReceiveFromJavaScript, readForeign, validateForeignType)
+import Elmish.Foreign (class CanPassToJavaScript, class CanReceiveFromJavaScript, readForeign, validateForeignType)
 import Elmish.HTML.Events.Internal (RKeyboardEvent, RMouseEvent, RSyntheticEvent, RTouchEvent)
 import Elmish.HTML.Events.Methods (class IsKeyboardOrMouseEvent, class IsSyntheticEvent)
 import Elmish.HTML.Events.Methods (preventDefault, stopPropagation, getModifierState) as MethodsReexport
@@ -33,6 +33,7 @@ import Foreign (unsafeToForeign)
 -- | the standard shape of all event handlers on React's built-in components
 -- | (aka tags).
 newtype EventHandler a = EventHandler (EffectFn1 a Unit)
+instance CanPassToJavaScript (EventHandler a)
 
 -- | Create a React event handler from a function `event -> Effect Unit`.
 handle :: forall event. Dispatch event -> EventHandler event
