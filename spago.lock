@@ -50,7 +50,7 @@
     },
     "package_set": {
       "address": {
-        "registry": "73.0.0"
+        "registry": "73.1.0"
       },
       "compiler": ">=0.15.15 <0.16.0",
       "content": {
@@ -389,7 +389,7 @@
         "options": "7.0.0",
         "optparse": "5.0.1",
         "ordered-collections": "3.2.0",
-        "ordered-set": "0.4.0",
+        "ordered-set": "0.5.0",
         "orders": "6.0.0",
         "org-doc": "0.1.0",
         "owoify": "1.2.0",
@@ -494,7 +494,7 @@
         "sparse-matrices": "2.0.1",
         "sparse-polynomials": "3.0.1",
         "spec": "8.1.1",
-        "spec-discovery": "8.4.0",
+        "spec-discovery": "8.4.1",
         "spec-mocha": "5.1.1",
         "spec-node": "0.0.3",
         "spec-quickcheck": "5.0.2",
@@ -640,10 +640,7 @@
       }
     },
     "extra_packages": {
-      "elmish": {
-        "git": "https://github.com/collegevine/purescript-elmish.git",
-        "ref": "v0.14.0"
-      }
+      "elmish": "0.14.0"
     }
   },
   "packages": {
@@ -823,9 +820,9 @@
       ]
     },
     "elmish": {
-      "type": "git",
-      "url": "https://github.com/collegevine/purescript-elmish.git",
-      "rev": "673c655db9449c754fb10da9dbf10d14eea791c4",
+      "type": "registry",
+      "version": "0.14.0",
+      "integrity": "sha256-IRVU9rKJBa+Q1luPIseBsvj16t8dOLobEBfOmCNj/rA=",
       "dependencies": [
         "aff",
         "argonaut-core",
@@ -846,8 +843,6 @@
         "partial",
         "prelude",
         "refs",
-        "safe-coerce",
-        "type-equality",
         "typelevel-prelude",
         "undefined-is-not-a-problem",
         "unsafe-coerce",

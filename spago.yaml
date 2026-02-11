@@ -21,8 +21,6 @@ package:
     - web-html: ">=4.1.1 <5.0.0"
 workspace:
   extraPackages:
-    elmish:
-      git: https://github.com/collegevine/purescript-elmish.git
-      ref: v0.14.0
+    elmish: 0.14.0
   packageSet:
-    registry: 73.0.0
+    registry: 73.1.0
