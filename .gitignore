@@ -6,6 +6,7 @@
 /generated-docs/
 /output/
 /.spago/
+/.vscode/
 
 # Bower
 bower_components

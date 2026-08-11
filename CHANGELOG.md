@@ -1,5 +1,18 @@
 # purescript-elmish-html
 
+## 0.13.0
+
+### Added
+
+- `Elmish.HTML.Boot` - `boot`, `BootRecord`, and `defaultMain`, moved here from
+  `Elmish.Boot` in `elmish`.
+- `Elmish.HTML.DOM` - `render`, `hydrate`, `renderToString`, and `unmount`,
+  moved here from `Elmish.React` in `elmish`.
+
+### Changed
+
+- Requires `elmish` 0.15.0 or later.
+
 ## 0.12.0
 
 ### Changed
