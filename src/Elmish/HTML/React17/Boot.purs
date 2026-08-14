@@ -1,11 +1,11 @@
--- | Entry points for mounting an Elmish component into a page. This is React 18
--- | and later only. If you're still on React 17, you want
--- | `Elmish.HTML.React17.Boot` instead. Same API, but for React 17.
-module Elmish.HTML.Boot
-  ( module Reexport
-  , boot
-  , defaultMain
-  ) where
+-- | Entry points for applications on React 17. Applications on React 18 or
+-- | later want `Elmish.HTML.Boot` instead, which has the same API. Import one
+-- | or the other, never both.
+module Elmish.HTML.React17.Boot
+    ( module Reexport
+    , boot
+    , defaultMain
+    ) where
 
 import Prelude
 
@@ -13,17 +13,16 @@ import Effect (Effect)
 import Elmish.Component as Comp
 import Elmish.HTML.Boot.Internal (BootRecord) as Reexport
 import Elmish.HTML.Boot.Internal (BootRecord, DomApi, bootWith, defaultMainWith)
-import Elmish.HTML.DOM as ReactDOM
+import Elmish.HTML.React17.DOM as ReactDOM
 
 reactDom :: DomApi
 reactDom =
-  { hydrate: ReactDOM.hydrate
-  , render: ReactDOM.render
-  , renderToString: ReactDOM.renderToString
-  }
+    { hydrate: ReactDOM.hydrate
+    , render: ReactDOM.render
+    , renderToString: ReactDOM.renderToString
+    }
 
--- | Creates a boot record for the given component. See comments for
--- | `BootRecord`.
+-- | Creates a boot record for the given component. See comments for `BootRecord`.
 boot :: forall msg state props. (props -> Comp.ComponentDef msg state) -> BootRecord props
 boot = bootWith reactDom
 
@@ -38,7 +37,7 @@ boot = bootWith reactDom
 -- |
 -- |     module Main
 -- |     import MyComponent(def)
--- |     import Elmish.HTML.Boot as Boot
+-- |     import Elmish.HTML.React17.Boot as Boot
 -- |
 -- |     main :: Effect Unit
 -- |     main = Boot.defaultMain { elementId: "app", def: def }

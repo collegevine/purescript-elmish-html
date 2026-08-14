@@ -1,5 +1,23 @@
 # purescript-elmish-html
 
+## 0.14.0
+
+### Changed
+
+- **Breaking**
+  - `Elmish.HTML.DOM` and `Elmish.HTML.Boot` now target **React 18 and later**,
+    mounting via `createRoot` and `hydrateRoot` from the `react-dom/client`
+    entry point.
+
+    Their React 17 counterparts (with same semantics) are still there, but moved
+    to `Elmish.HTML.React17.DOM` and `Elmish.HTML.React17.Boot` respectively.
+    This means, if you're still on React 17 and not ready to upgrade, you have
+    to change your imports to these.
+
+### Added
+
+- `Elmish.HTML.React17.DOM` and `Elmish.HTML.React17.Boot` - see above.
+
 ## 0.13.0
 
 ### Added
