@@ -22,9 +22,8 @@ package:
     - web-html: ">=4.1.1 <5.0.0"
 workspace:
   extraPackages:
-    # TODO: revert to `elmish: 0.15.0` once purescript-elmish 0.15.0 is released
     elmish:
       git: https://github.com/collegevine/purescript-elmish.git
-      ref: split-react
+      ref: v0.15.0
   packageSet:
     registry: 73.1.0
