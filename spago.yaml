@@ -21,9 +21,5 @@ package:
     - web-events: ">=4.0.0 <5.0.0"
     - web-html: ">=4.1.1 <5.0.0"
 workspace:
-  extraPackages:
-    elmish:
-      git: https://github.com/collegevine/purescript-elmish.git
-      ref: v0.15.0
   packageSet:
-    registry: 73.1.0
+    registry: 80.6.0

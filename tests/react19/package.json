@@ -1,0 +1,18 @@
+{
+  "name": "elmish-html-test-react19",
+  "description": "Smoke test for elmish-html under React 19",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "spago test"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "7.4.0",
+    "@testing-library/dom": "^10.4.1",
+    "purescript": "^0.15.15",
+    "purescript-psa": "^0.8.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "spago": "^1.0.3"
+  }
+}
