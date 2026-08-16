@@ -26,3 +26,30 @@ jobs:
     - run: npm i
     - run: npm run build
 
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        react: [ react17, react19 ]
+
+    defaults:
+      run:
+        working-directory: tests/${{ matrix.react }}
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
+      with:
+        path: |
+          tests/${{ matrix.react }}/.spago
+          tests/${{ matrix.react }}/output
+          tests/${{ matrix.react }}/node_modules
+        key: test-artifacts-v1-${{ matrix.react }}-${{ hashFiles(format('tests/{0}/package-lock.json', matrix.react), format('tests/{0}/spago.yaml', matrix.react), format('tests/{0}/spago.lock', matrix.react), 'spago.yaml') }}
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 24.13.0
+    - run: npm i
+    - run: npm test

@@ -4,8 +4,9 @@
 /.pulp-cache
 .purs*
 /generated-docs/
-/output/
-/.spago/
+output/
+.spago/
+.spec-results
 /.vscode/
 
 # Bower

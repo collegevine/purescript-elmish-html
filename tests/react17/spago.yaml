@@ -1,0 +1,27 @@
+package:
+  name: elmish-html-test-react17
+  dependencies: []
+  test:
+    main: Test.Main
+    dependencies:
+      - aff
+      - effect
+      - elmish
+      - elmish-html
+      - elmish-testing-library
+      - foldable-traversable
+      - prelude
+      - spec
+      - spec-node
+      - transformers
+      - web-dom
+      - web-html
+workspace:
+  extraPackages:
+    elmish-html:
+      path: ../..
+    elmish-testing-library:
+      git: https://github.com/collegevine/purescript-elmish-testing-library.git
+      ref: v0.5.0
+  packageSet:
+    registry: 80.6.0
